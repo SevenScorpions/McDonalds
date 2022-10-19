@@ -46,11 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dangNhapNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangNhapNV.Designer.cs">
+      <DependentUpon>dangNhapNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giaoDienNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giaoDienNV.Designer.cs">
+      <DependentUpon>giaoDienNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +88,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DTO\Text.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
