@@ -57,6 +57,9 @@
     <Compile Include="DTO\HDCombo.cs" />
     <Compile Include="DTO\HDCTMon.cs" />
     <Compile Include="DTO\HDMon.cs" />
+    <Compile Include="DTO\KiemKho.cs" />
+    <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="DTO\NhapHang.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,8 +97,5 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="DTO\Text.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
