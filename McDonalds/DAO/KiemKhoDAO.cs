@@ -47,7 +47,7 @@ namespace McDonalds.DAO
         public List<KiemKho> getKiemKhoFromLH(string idLH)
         {
             List<KiemKho> list = new List<KiemKho>();
-            string query = string.Format(@"Select * from KIEMKHO WHERE LH={0} and SOLUONG>0",idLH);
+            string query = string.Format(@"Select * from KIEMKHO WHERE IDLH='{0}'",idLH);
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow row in data.Rows)
             {

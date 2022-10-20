@@ -32,7 +32,7 @@ namespace McDonalds.DTO
             IDLH = row["IDLH"].ToString();
             IDNL = row["IDNL"].ToString();
             HanSD = (DateTime)row["HANSD"];
-            SoLuong = (float)row["SOLUONG"];
+            SoLuong = float.Parse(row["SOLUONG"].ToString());
             IDNH = row["IDNH"].ToString();
         }
     }

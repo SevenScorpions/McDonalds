@@ -37,7 +37,7 @@ namespace McDonalds
                 tbPassword.Clear();
                 tbUsername.Clear();
                 this.Hide();
-                giaoDienNV.Show();
+                giaoDienNV.ShowDialog();
                 this.Show();
             }
         }

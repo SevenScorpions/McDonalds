@@ -29,7 +29,7 @@ namespace McDonalds.DTO
         {
             IDKK = row["IDKK"].ToString();
             TGKiemTra = (DateTime)row["TGKIEMTRA"];
-            SoLuong = (float)row["SOLUONG"];
+            SoLuong = float.Parse(row["SOLUONG"].ToString());
             IDLH = row["IDLH"].ToString();
         }
     }

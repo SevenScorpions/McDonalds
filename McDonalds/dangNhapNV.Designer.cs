@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhapNV));
             this.panel1 = new System.Windows.Forms.Panel();
             this.bttnDangNhap = new System.Windows.Forms.Button();
             this.bttnThoat = new System.Windows.Forms.Button();
@@ -40,84 +41,59 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.bttnDangNhap);
             this.panel1.Controls.Add(this.bttnThoat);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.tbPassword);
             this.panel1.Controls.Add(this.tbUsername);
-            this.panel1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(572, 215);
-            this.panel1.TabIndex = 0;
             // 
             // bttnDangNhap
             // 
-            this.bttnDangNhap.Location = new System.Drawing.Point(348, 150);
+            resources.ApplyResources(this.bttnDangNhap, "bttnDangNhap");
             this.bttnDangNhap.Name = "bttnDangNhap";
-            this.bttnDangNhap.Size = new System.Drawing.Size(183, 40);
-            this.bttnDangNhap.TabIndex = 6;
-            this.bttnDangNhap.Text = "Đăng Nhập";
             this.bttnDangNhap.UseVisualStyleBackColor = true;
             this.bttnDangNhap.Click += new System.EventHandler(this.bttnDangNhap_Click);
             // 
             // bttnThoat
             // 
-            this.bttnThoat.Location = new System.Drawing.Point(39, 150);
+            resources.ApplyResources(this.bttnThoat, "bttnThoat");
             this.bttnThoat.Name = "bttnThoat";
-            this.bttnThoat.Size = new System.Drawing.Size(118, 40);
-            this.bttnThoat.TabIndex = 5;
-            this.bttnThoat.Text = "Thoát";
             this.bttnThoat.UseVisualStyleBackColor = true;
             this.bttnThoat.Click += new System.EventHandler(this.bttnThoat_Click);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 78);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 27);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Mật Khẩu";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 37);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 27);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tài Khoản";
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(192, 75);
+            resources.ApplyResources(this.tbPassword, "tbPassword");
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(339, 34);
-            this.tbPassword.TabIndex = 1;
             // 
             // tbUsername
             // 
-            this.tbUsername.Location = new System.Drawing.Point(192, 34);
+            resources.ApplyResources(this.tbUsername, "tbUsername");
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(339, 34);
-            this.tbUsername.TabIndex = 0;
             // 
             // DangNhapNV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AcceptButton = this.bttnDangNhap;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 215);
+            this.CancelButton = this.bttnThoat;
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DangNhapNV";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DangNhapNV";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

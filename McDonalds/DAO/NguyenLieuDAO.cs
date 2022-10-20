@@ -33,5 +33,16 @@ namespace McDonalds.DAO
             }
             return list;
         }
+        public List<NguyenLieu> getNguyenLieu(string id)
+        {
+            List<NguyenLieu> list = new List<NguyenLieu>();
+            string query = @"Select * from NGUYENLIEU where idnl='"+id+"'";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new NguyenLieu(row));
+            }
+            return list;
+        }
     }
 }

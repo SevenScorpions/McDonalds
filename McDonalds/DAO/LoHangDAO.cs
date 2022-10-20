@@ -55,5 +55,16 @@ namespace McDonalds.DAO
             }
             return list;
         }
+        public List<LoHang> getLoHang()
+        {
+            List<LoHang> list = new List<LoHang>();
+            string query = string.Format(@"Select * from LOHANG");
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new LoHang(row));
+            }
+            return list;
+        }
     }
 }
