@@ -31,7 +31,7 @@ namespace McDonalds.DTO
         public HDCTMon(string idHD, string idCTMon, int soLuong)
         {
             IDHD = idHD;
-            idCTMon = idCTMon;
+            IDCTMon = idCTMon;
             SoLuong = soLuong;
         }
         public HDCTMon(DataRow row)
