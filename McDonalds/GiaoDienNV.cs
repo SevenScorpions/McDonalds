@@ -1,4 +1,5 @@
-﻿using System;
+﻿using McDonalds.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,10 @@ namespace McDonalds
 {
     public partial class GiaoDienNV : Form
     {
-        public GiaoDienNV()
+        public TaiKhoan taiKhoan;
+        public GiaoDienNV(TaiKhoan taiKhoan)
         {
+            this.taiKhoan = taiKhoan;
             InitializeComponent();
         }
     }
