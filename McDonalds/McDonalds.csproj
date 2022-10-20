@@ -73,7 +73,12 @@
     <Compile Include="DTO\NhanVien.cs" />
     <Compile Include="DTO\NhapHang.cs" />
     <Compile Include="DTO\TaiKhoan.cs" />
+<<<<<<< HEAD
 >>>>>>> 238c5493cfc643bda066d95f04be32ec05759892
+=======
+>>>>>> 238c5493cfc643bda066d95f04be32ec05759892
+
+>>>>>>> 5eb6b9602570bd9649493af5d4769154407ce5a4
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
