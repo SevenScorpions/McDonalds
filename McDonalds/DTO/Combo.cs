@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace McDonalds.DTO
 {
-    internal class Combo
+    public class Combo
     {
+        public string idCombo;
+        public int giaCombo;
     }
 }
