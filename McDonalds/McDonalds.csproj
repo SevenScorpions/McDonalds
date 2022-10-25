@@ -52,13 +52,26 @@
     <Compile Include="dangNhapNV.Designer.cs">
       <DependentUpon>dangNhapNV.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\ComboDAO.cs" />
+    <Compile Include="DAO\CTComboDAO.cs" />
+    <Compile Include="DAO\CTMonDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\GiamGiaComboDAO.cs" />
+    <Compile Include="DAO\GiamGiaMonDAO.cs" />
+    <Compile Include="DAO\HDComboDAO.cs" />
+    <Compile Include="DAO\HDCTMonDAO.cs" />
+    <Compile Include="DAO\HDMonDAO.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\KiemKhoDAO.cs" />
     <Compile Include="DAO\LoHangDAO.cs" />
+    <Compile Include="DAO\MonDAO.cs" />
     <Compile Include="DAO\NguyenLieuDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\NhapHangDAO.cs" />
+    <Compile Include="DAO\SoHuuDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
+    <Compile Include="DAO\TaiKhoanKHDAO.cs" />
+    <Compile Include="DAO\VoucherDAO.cs" />
     <Compile Include="DTO\Combo.cs" />
     <Compile Include="DTO\CTCombo.cs" />
     <Compile Include="DTO\CTMon.cs" />
