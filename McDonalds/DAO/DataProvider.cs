@@ -25,7 +25,7 @@ namespace McDonalds.DAO
         public DataTable ExcuteQuery(string query)
         {
 
-            string connectionStr = @"Data Source=26.161.163.91\sqlexpress;Initial Catalog=MCDONALDS;Integrated Security=True";
+            string connectionStr = @"Data Source=.\sqlexpress;Initial Catalog=MCDONALDS;Integrated Security=True";
             DataTable data = new DataTable();
             using (SqlConnection connection = new SqlConnection(connectionStr))
             {
