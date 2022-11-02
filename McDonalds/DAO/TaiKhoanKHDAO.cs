@@ -16,6 +16,7 @@ namespace McDonalds.DAO
         {
             get
             {
+
                 if (instance == null)
                 {
                     instance = new TaiKhoanKHDAO();
