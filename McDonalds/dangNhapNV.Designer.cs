@@ -60,6 +60,7 @@
             // bttnThoat
             // 
             resources.ApplyResources(this.bttnThoat, "bttnThoat");
+            this.bttnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.bttnThoat.Name = "bttnThoat";
             this.bttnThoat.UseVisualStyleBackColor = true;
             this.bttnThoat.Click += new System.EventHandler(this.bttnThoat_Click);

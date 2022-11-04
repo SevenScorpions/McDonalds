@@ -124,9 +124,6 @@
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 78</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Tài Khoản</value>
   </data>
@@ -230,6 +227,9 @@
   </data>
   <data name="bttnDangNhap.Location" type="System.Drawing.Point, System.Drawing">
     <value>348, 150</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 78</value>
   </data>
   <data name="&gt;&gt;bttnThoat.ZOrder" xml:space="preserve">
     <value>1</value>
