@@ -37,7 +37,17 @@ namespace McDonalds.DAO
             }
             return data;
         }
+        public void ExcuteNonQuery(string query)
+        {
 
-
+            string connectionStr = @"Data Source=.\sqlexpress;Initial Catalog=MCDONALDS;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                connection.Close();
+            }
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace McDonalds
 
         private void bttnThoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void bttnDangNhap_Click(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace McDonalds
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhapNV());
+            Application.Run(new Form1());
         }
     }
 }
