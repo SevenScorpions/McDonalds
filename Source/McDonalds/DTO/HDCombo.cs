@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace McDonalds.DTO
 {
-    internal class HDCombo
+    public class HDCombo
     {
         private string idHD;
         private string idCombo;

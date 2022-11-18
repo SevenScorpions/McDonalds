@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//Anh
+
 namespace McDonalds.DAO
 {
     public class HDComboDAO
@@ -15,6 +15,7 @@ namespace McDonalds.DAO
         {
             get
             {
+
                 if (instance == null)
                 {
                     instance = new HDComboDAO();
@@ -24,12 +25,12 @@ namespace McDonalds.DAO
             private set => instance = value;
         }
         private HDComboDAO() { }
-        public List<HDCombo> getHDCombo()
+        public List<HDCombo> GetHDCombos()
         {
             List<HDCombo> list = new List<HDCombo>();
-            string query = string.Format(@"SELECT * FROM HDCombo");
-            DataTable table = DataProvider.Instance.ExcuteQuery(query);
-            foreach (DataRow row in table.Rows)
+            string query = @"Select * from HDCombo";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            foreach (DataRow row in data.Rows)
             {
                 list.Add(new HDCombo(row));
             }
