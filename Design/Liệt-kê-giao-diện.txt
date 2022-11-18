@@ -1,0 +1,16 @@
+Số giao diện:
+1. Giao diện chọn chức năng Admin(Bao gồm: Ví dụ: Nhân viên, khách hàng và những màn hình không cần đăng nhập)
+2. Đăng nhập cho khách hàng(Bao gồm tài khoản khách hàng chính thức và tài khoản khách).
+3. Đăng nhập cho nhân viên.
+4. Giao diện đặt hàng + Thông tin cá nhân.
+5. Đăng kí.
+6. Thanh toán.
+7. Giao diện giỏ hàng.
+8. Giao diện chọn voucher.
+9. Giao diện tại quầy thu ngân. (Không cần đăng nhập)
+10. Giao diện tại nhà bếp. (Không cần đăng nhập)
+11. Giao diện hoàn tất đơn hàng (Bao gồm hiển thị danh sách các món đã sẵn sàng + nút "Hoàn tất").(Không cần đăng nhập)
+12. Giao diện Nhân viên: Quản lý nhân viên kho, kiểm kho(bao gồm thống kê cuối ngày của kho) + lập phiếu nhập kho, hiển thị thông tin hóa đơn.
+
+
+CỐ GẮNG LÀM ĐẸP NHẤT CÓ THỂ.
