@@ -1,4 +1,6 @@
-﻿namespace LogInDemo
+﻿using System.Windows.Forms;
+
+namespace McDonalds
 {
     partial class frmLogin
     {
@@ -167,7 +169,6 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::LogInDemo.Properties.Resources.download__3_;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(723, 12);
             this.panel1.Name = "panel1";

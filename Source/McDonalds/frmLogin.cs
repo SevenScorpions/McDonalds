@@ -1,8 +1,15 @@
-﻿using LogInDemo.DAO;
-using LogInDemo.DTO;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-namespace LogInDemo
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace McDonalds
 {
     public partial class frmLogin : Form
     {
@@ -20,7 +27,7 @@ namespace LogInDemo
                 process.StartInfo = startInfo;
                 process.Start();
             }
-            
+
         }
         private static bool IsServerConnected(string connectionString)
         {
@@ -63,19 +70,7 @@ namespace LogInDemo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(CheckError())
-            {
-                if(UserDAO.Instance.logIn(tbUserName.Text, tbPassWord.Text))
-                {
-                    User user = UserDAO.Instance.getAccount(tbUserName.Text, tbPassWord.Text);
-                    var frm = new mainFrm();
-                    frm.user = user;
-                    this.Hide();
-                    frm.ShowDialog();
-                    this.Show();
-                }    
-            }    
-           
+
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
@@ -90,14 +85,10 @@ namespace LogInDemo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var frm = new frmDangKi();
-            frm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var frm = new frmQuenMatKhaucs();
-            frm.Show();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
