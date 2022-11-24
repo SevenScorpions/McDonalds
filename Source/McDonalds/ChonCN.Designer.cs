@@ -33,11 +33,11 @@
             this.bttnExit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bttnDelivery = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bttnCounter = new System.Windows.Forms.Button();
             this.bttnKitchen = new System.Windows.Forms.Button();
             this.bttnStaff = new System.Windows.Forms.Button();
             this.bttnCustomer = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -60,10 +60,11 @@
             // bttnExit
             // 
             this.bttnExit.BackColor = System.Drawing.Color.IndianRed;
+            this.bttnExit.Font = new System.Drawing.Font("Gugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnExit.Location = new System.Drawing.Point(708, 462);
             this.bttnExit.Name = "bttnExit";
             this.bttnExit.Size = new System.Drawing.Size(77, 38);
-            this.bttnExit.TabIndex = 7;
+            this.bttnExit.TabIndex = 5;
             this.bttnExit.Text = "Exit";
             this.bttnExit.UseVisualStyleBackColor = false;
             this.bttnExit.Click += new System.EventHandler(this.bttnExit_Click);
@@ -78,6 +79,7 @@
             this.panel3.Controls.Add(this.bttnStaff);
             this.panel3.Controls.Add(this.bttnCustomer);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
@@ -92,9 +94,20 @@
             this.bttnDelivery.Margin = new System.Windows.Forms.Padding(20, 25, 20, 25);
             this.bttnDelivery.Name = "bttnDelivery";
             this.bttnDelivery.Size = new System.Drawing.Size(100, 100);
-            this.bttnDelivery.TabIndex = 6;
+            this.bttnDelivery.TabIndex = 4;
             this.bttnDelivery.Text = "Delivery";
             this.bttnDelivery.UseVisualStyleBackColor = false;
+            this.bttnDelivery.Click += new System.EventHandler(this.bttnDelivery_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::McDonalds.Properties.Resources.McDonald_s_Golden_Arches_svg;
+            this.pictureBox2.Location = new System.Drawing.Point(33, 30);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(87, 83);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // bttnCounter
             // 
@@ -105,7 +118,7 @@
             this.bttnCounter.Margin = new System.Windows.Forms.Padding(20, 25, 20, 25);
             this.bttnCounter.Name = "bttnCounter";
             this.bttnCounter.Size = new System.Drawing.Size(100, 100);
-            this.bttnCounter.TabIndex = 3;
+            this.bttnCounter.TabIndex = 2;
             this.bttnCounter.Text = "Counter";
             this.bttnCounter.UseVisualStyleBackColor = false;
             // 
@@ -117,7 +130,7 @@
             this.bttnKitchen.Margin = new System.Windows.Forms.Padding(20, 25, 20, 25);
             this.bttnKitchen.Name = "bttnKitchen";
             this.bttnKitchen.Size = new System.Drawing.Size(100, 100);
-            this.bttnKitchen.TabIndex = 2;
+            this.bttnKitchen.TabIndex = 3;
             this.bttnKitchen.Text = "Kitchen";
             this.bttnKitchen.UseVisualStyleBackColor = false;
             // 
@@ -138,6 +151,7 @@
             // 
             this.bttnCustomer.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bttnCustomer.BackColor = System.Drawing.Color.IndianRed;
+            this.bttnCustomer.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCustomer.Location = new System.Drawing.Point(205, 183);
             this.bttnCustomer.Margin = new System.Windows.Forms.Padding(20, 25, 20, 25);
             this.bttnCustomer.Name = "bttnCustomer";
@@ -146,16 +160,6 @@
             this.bttnCustomer.Text = "Customer";
             this.bttnCustomer.UseVisualStyleBackColor = false;
             this.bttnCustomer.Click += new System.EventHandler(this.bttnCustomer_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::McDonalds.Properties.Resources.McDonald_s_Golden_Arches_svg;
-            this.pictureBox2.Location = new System.Drawing.Point(33, 30);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 83);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 

@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace McDonalds
 {
-    public partial class FrmStaff : Form
+    public partial class FrmSignUp : Form
     {
-        public FrmStaff()
+        public FrmSignUp()
         {
             InitializeComponent();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void FrmStaff_Load(object sender, EventArgs e)
         {
 
         }

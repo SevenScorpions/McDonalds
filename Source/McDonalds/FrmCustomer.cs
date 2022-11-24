@@ -21,5 +21,13 @@ namespace McDonalds
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmSignUp frmSignUp = new FrmSignUp();
+            this.Hide();
+            frmSignUp.ShowDialog();
+            this.Show();
+        }
     }
 }

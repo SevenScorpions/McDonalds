@@ -12,7 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Study\%282022-2023%29 Semester 1\Công nghệ phần mềm\Workspace\McDonalds\McDonalds\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,10 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -49,6 +51,18 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>mcdonalds.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F799AAAB8878E69E32BC52C0A7DD58CD51880845</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>McDonalds_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -109,11 +123,23 @@
     <Compile Include="ChonCN.Designer.cs">
       <DependentUpon>ChonCN.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCustomer - Copy.cs">
+    <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCustomer - Copy.Designer.cs">
-      <DependentUpon>FrmCustomer - Copy.cs</DependentUpon>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMainStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMainStaff.Designer.cs">
+      <DependentUpon>FrmMainStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSignUp.Designer.cs">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCustomer.cs">
       <SubType>Form</SubType>
@@ -132,8 +158,11 @@
     <EmbeddedResource Include="ChonCN.resx">
       <DependentUpon>ChonCN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCustomer - Copy.resx">
-      <DependentUpon>FrmCustomer - Copy.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSignUp.resx">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCustomer.resx">
       <DependentUpon>FrmCustomer.cs</DependentUpon>
@@ -151,6 +180,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="McDonalds_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -175,6 +205,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mcdonalds.ico" />
+    <None Include="Resources\seamless-background-fast-food-red-68378235.jpg" />
+    <None Include="Resources\istockphoto-165907430-612x6121.jpg" />
+    <None Include="Resources\istockphoto-1176097155-612x612.jpg" />
+    <None Include="Resources\istockphoto-165907430-612x612.jpg" />
+    <None Include="Resources\istockphoto-1182393436-612x612.jpg" />
+    <None Include="Resources\fast-food-banner-juicy-meat-burgers-with-beef-tomato-cheese-onion-cucumber-lettuce-yellow-background.png" />
+    <None Include="Resources\1600px_COLOURBOX54593006.jpg" />
+    <None Include="Resources\wp1919509.jpg" />
+    <None Include="Resources\mcdonalds-franchisees-call-chicken-with-chick-fil-a.jpg" />
+    <None Include="Resources\pexels-polina-tankilevitch-4109206.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

@@ -37,5 +37,10 @@ namespace McDonalds
             frmCustomer.ShowDialog();
             this.Show();
         }
+
+        private void bttnDelivery_Click(object sender, EventArgs e)
+        {
+            new FrmMain().ShowDialog();
+        }
     }
 }

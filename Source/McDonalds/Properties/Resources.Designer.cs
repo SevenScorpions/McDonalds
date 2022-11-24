@@ -63,6 +63,67 @@ namespace McDonalds.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1600px_COLOURBOX54593006 {
+            get {
+                object obj = ResourceManager.GetObject("1600px_COLOURBOX54593006", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fast_food_banner_juicy_meat_burgers_with_beef_tomato_cheese_onion_cucumber_lettuce_yellow_background {
+            get {
+                object obj = ResourceManager.GetObject("fast-food-banner-juicy-meat-burgers-with-beef-tomato-cheese-onion-cucumber-lettuc" +
+                        "e-yellow-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1176097155_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1176097155-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1182393436_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1182393436-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_165907430_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-165907430-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_165907430_612x6121 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-165907430-612x6121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mau {
             get {
                 object obj = ResourceManager.GetObject("mau", resourceCulture);
@@ -86,6 +147,46 @@ namespace McDonalds.Properties {
         internal static System.Drawing.Bitmap McDonald_s_Golden_Arches_svg {
             get {
                 object obj = ResourceManager.GetObject("McDonald\'s_Golden_Arches.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mcdonalds_franchisees_call_chicken_with_chick_fil_a {
+            get {
+                object obj = ResourceManager.GetObject("mcdonalds-franchisees-call-chicken-with-chick-fil-a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_polina_tankilevitch_4109206 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-polina-tankilevitch-4109206", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seamless_background_fast_food_red_68378235 {
+            get {
+                object obj = ResourceManager.GetObject("seamless-background-fast-food-red-68378235", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wp1919509 {
+            get {
+                object obj = ResourceManager.GetObject("wp1919509", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
