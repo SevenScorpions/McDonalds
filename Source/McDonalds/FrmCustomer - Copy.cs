@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace McDonalds
 {
-    public partial class DangNhapKH : Form
+    public partial class FrmCustomer : Form
     {
-        public DangNhapKH()
+        public FrmCustomer()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

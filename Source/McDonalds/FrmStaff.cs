@@ -10,19 +10,16 @@ using System.Windows.Forms;
 
 namespace McDonalds
 {
-    public partial class Form1 : Form
+    public partial class FrmStaff : Form
     {
-        public Form1()
+        public FrmStaff()
         {
             InitializeComponent();
         }
 
-        private void bttnDangNhapNV_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            DangNhapNV dangNhapNV = new DangNhapNV();
-            this.Hide();
-            dangNhapNV.ShowDialog();
-            this.Show();
+
         }
     }
 }
