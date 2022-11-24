@@ -22,7 +22,7 @@ namespace McDonalds.DAO
             private set => instance = value;
         }
         private TaiKhoanDAO() { }
-        public List<TaiKhoan> getTaiKhoan(string username,string password)
+        public TaiKhoan getTaiKhoan(string username,string password)
         {
             List<TaiKhoan> list = new List<TaiKhoan>();
             string query = @"Select * from TAIKHOAN where USERNAME = '" + username + "' AND PASSWORD = '" + password + "'";
@@ -31,7 +31,11 @@ namespace McDonalds.DAO
             {
                 list.Add(new TaiKhoan(row));
             }
-            return list;
+            if(list.Count > 0)
+            {
+                return list[0];
+            }
+            return null;
         }
         public void createTaiKhoan(string username, string password, string chucvu)
         {

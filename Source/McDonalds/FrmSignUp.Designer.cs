@@ -122,7 +122,7 @@
             this.tbLastName.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLastName.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.tbLastName.Location = new System.Drawing.Point(412, 213);
-            this.tbLastName.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.tbLastName.Margin = new System.Windows.Forms.Padding(15);
             this.tbLastName.Name = "tbLastName";
             this.tbLastName.Size = new System.Drawing.Size(191, 41);
             this.tbLastName.TabIndex = 1;
@@ -131,6 +131,7 @@
             // 
             this.dtpBirthday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dtpBirthday.CalendarFont = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirthday.CustomFormat = "dd/mm/yyyy";
             this.dtpBirthday.Location = new System.Drawing.Point(753, 220);
             this.dtpBirthday.Name = "dtpBirthday";
             this.dtpBirthday.Size = new System.Drawing.Size(351, 36);
@@ -156,7 +157,7 @@
             this.tbRePassword.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbRePassword.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.tbRePassword.Location = new System.Drawing.Point(191, 427);
-            this.tbRePassword.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.tbRePassword.Margin = new System.Windows.Forms.Padding(15);
             this.tbRePassword.Name = "tbRePassword";
             this.tbRePassword.PasswordChar = '.';
             this.tbRePassword.Size = new System.Drawing.Size(412, 41);
@@ -234,7 +235,7 @@
             this.tbAddress.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAddress.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.tbAddress.Location = new System.Drawing.Point(753, 355);
-            this.tbAddress.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.tbAddress.Margin = new System.Windows.Forms.Padding(15);
             this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(351, 113);
@@ -272,7 +273,7 @@
             this.tbFirstName.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFirstName.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.tbFirstName.Location = new System.Drawing.Point(191, 213);
-            this.tbFirstName.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.tbFirstName.Margin = new System.Windows.Forms.Padding(15);
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.Size = new System.Drawing.Size(214, 41);
             this.tbFirstName.TabIndex = 0;
@@ -285,7 +286,7 @@
             this.tbEmail.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.tbEmail.Location = new System.Drawing.Point(753, 284);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(15);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.PasswordChar = '.';
             this.tbEmail.Size = new System.Drawing.Size(351, 41);
@@ -358,7 +359,7 @@
             this.tbPhone.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPhone.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.tbPhone.Location = new System.Drawing.Point(191, 284);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(15);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(412, 41);
             this.tbPhone.TabIndex = 2;
@@ -371,7 +372,7 @@
             this.tbPassword.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.tbPassword.Location = new System.Drawing.Point(191, 355);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(15);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '.';
             this.tbPassword.Size = new System.Drawing.Size(412, 41);

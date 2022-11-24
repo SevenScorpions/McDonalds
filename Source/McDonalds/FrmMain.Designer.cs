@@ -167,7 +167,7 @@
             this.panel5.Controls.Add(this.tbEmail);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.tbPhone);
-            this.panel5.Location = new System.Drawing.Point(151, 25);
+            this.panel5.Location = new System.Drawing.Point(145, 25);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(801, 697);
             this.panel5.TabIndex = 4;

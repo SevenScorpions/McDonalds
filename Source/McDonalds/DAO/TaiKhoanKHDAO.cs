@@ -48,5 +48,20 @@ namespace McDonalds.DAO
             }
             return list;
         }
+        public TaiKhoanKH getTaiKhoan(string phone, string password)
+        {
+            List<TaiKhoanKH> list = new List<TaiKhoanKH>();
+            string query = @"Select * from TAIKHOANKH where sdt = '" + phone + "' AND PASSWORD = '" + password + "'";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new TaiKhoanKH(row));
+            }
+            if (list.Count > 0)
+            {
+                return list[0];
+            }
+            return null;
+        }
     }
 }

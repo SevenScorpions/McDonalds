@@ -1,4 +1,5 @@
-﻿using System;
+﻿using McDonalds.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,11 @@ namespace McDonalds
 {
     public partial class FrmMain : Form
     {
-        public FrmMain()
+        private TaiKhoanKH taiKhoanKH;
+        public TaiKhoanKH TaiKhoanKH { get { return taiKhoanKH; } set { taiKhoanKH = value; } }
+        public FrmMain(TaiKhoanKH taiKhoanKH)
         {
+            this.taiKhoanKH = taiKhoanKH;
             InitializeComponent();
         }
 

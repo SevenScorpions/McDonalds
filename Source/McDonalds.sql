@@ -29,7 +29,7 @@ GO
 INSERT INTO TAIKHOANKH VALUES('KH0349780959', N'Đoàn',N'Thị Kim Yến','F','14/7/2002', '0349780959', 'kyen1407', 'doankimyen1407@gmail.com', N'Đại học Tôn Đức Thắng', N'Đồng', 0)
 INSERT INTO TAIKHOANKH VALUES('KH0834695543', N'Trần',N'Thị Ngọc Ánh','F','24/6/2002', '0834695543', 'ant2406', 'tranngocanh2406@gmail.com', N'Đại học Tôn Đức Thắng', N'Bạc', 0)
 INSERT INTO TAIKHOANKH VALUES('KH0337550422', N'Hoàng',N'Thị Mai Hoa','F','7/9/2002', '0337550422', 'maihoa792002', 'maihoa792002@gmail.com', N'Đại học Tôn Đức Thắng', N'Vàng', 0)
-INSERT INTO TAIKHOANKH VALUES('KH0917185388', N'Trần',N'Triều Huy','M','29/10/2002', '0917185388', 'trieuhuy123', 'trantrieunhuy@gmail.com', N'Đại học Tôn Đức Thắng', N'Kim Cương', 0)
+INSERT INTO TAIKHOANKH VALUES('KH0917185388', N'Trần',N'Triều Huy','M','29/10/2002', '0914722882', '0914722862aA', 'trantrieunhuy@gmail.com', N'Đại học Tôn Đức Thắng', N'Kim Cương', 0)
 
 SELECT * FROM TAIKHOANKH
 GO

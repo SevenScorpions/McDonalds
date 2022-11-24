@@ -31,14 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStaff));
             this.panel2 = new System.Windows.Forms.Panel();
             this.bttnSignIn = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.username = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
+            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbWrongPassword = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -47,14 +48,15 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
+            this.panel2.Controls.Add(this.lbWrongPassword);
             this.panel2.Controls.Add(this.bttnSignIn);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.username);
-            this.panel2.Controls.Add(this.password);
+            this.panel2.Controls.Add(this.tbUsername);
+            this.panel2.Controls.Add(this.tbPassword);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.Color.Gold;
@@ -69,25 +71,13 @@
             this.bttnSignIn.BackColor = System.Drawing.Color.Tan;
             this.bttnSignIn.Font = new System.Drawing.Font("Gugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSignIn.ForeColor = System.Drawing.Color.Black;
-            this.bttnSignIn.Location = new System.Drawing.Point(557, 368);
+            this.bttnSignIn.Location = new System.Drawing.Point(557, 396);
             this.bttnSignIn.Name = "bttnSignIn";
             this.bttnSignIn.Size = new System.Drawing.Size(125, 52);
             this.bttnSignIn.TabIndex = 2;
             this.bttnSignIn.Text = "Sign in";
             this.bttnSignIn.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Gugi", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(683, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 29);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "for Staff";
+            this.bttnSignIn.Click += new System.EventHandler(this.bttnSignIn_Click);
             // 
             // label3
             // 
@@ -147,35 +137,60 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Username";
             // 
-            // username
+            // tbUsername
             // 
-            this.username.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.username.BackColor = System.Drawing.Color.IndianRed;
-            this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.username.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.username.Location = new System.Drawing.Point(481, 238);
-            this.username.Margin = new System.Windows.Forms.Padding(15);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(361, 41);
-            this.username.TabIndex = 0;
+            this.tbUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.tbUsername.BackColor = System.Drawing.Color.IndianRed;
+            this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbUsername.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsername.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbUsername.Location = new System.Drawing.Point(481, 238);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(15);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(361, 41);
+            this.tbUsername.TabIndex = 0;
             // 
-            // password
+            // tbPassword
             // 
-            this.password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.password.BackColor = System.Drawing.Color.IndianRed;
-            this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.password.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.password.Location = new System.Drawing.Point(481, 309);
-            this.password.Margin = new System.Windows.Forms.Padding(15);
-            this.password.Name = "password";
-            this.password.PasswordChar = '.';
-            this.password.Size = new System.Drawing.Size(361, 41);
-            this.password.TabIndex = 1;
+            this.tbPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.tbPassword.BackColor = System.Drawing.Color.IndianRed;
+            this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbPassword.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbPassword.Location = new System.Drawing.Point(481, 309);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(15);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '.';
+            this.tbPassword.Size = new System.Drawing.Size(361, 41);
+            this.tbPassword.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Gugi", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(683, 153);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 29);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "for Staff";
+            // 
+            // lbWrongPassword
+            // 
+            this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongPassword.AutoSize = true;
+            this.lbWrongPassword.Font = new System.Drawing.Font("Gugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPassword.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongPassword.Location = new System.Drawing.Point(478, 365);
+            this.lbWrongPassword.Name = "lbWrongPassword";
+            this.lbWrongPassword.Size = new System.Drawing.Size(0, 18);
+            this.lbWrongPassword.TabIndex = 10;
             // 
             // FrmStaff
             // 
+            this.AcceptButton = this.bttnSignIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1208, 694);
@@ -201,10 +216,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button bttnSignIn;
+        private System.Windows.Forms.Label lbWrongPassword;
     }
 }

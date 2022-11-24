@@ -1,4 +1,6 @@
-﻿using System;
+﻿using McDonalds.DAO;
+using McDonalds.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +27,24 @@ namespace McDonalds
         private void FrmStaff_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bttnSignIn_Click(object sender, EventArgs e)
+        {
+            lbWrongPassword.Text = "";
+            TaiKhoan taiKhoan = TaiKhoanDAO.Instance.getTaiKhoan(tbUsername.Text, tbPassword.Text);
+            if (taiKhoan!=null)
+            {
+                FrmMainStaff frmMainStaff = new FrmMainStaff(taiKhoan);
+                this.Hide();
+                tbPassword.Text = "";
+                frmMainStaff.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                lbWrongPassword.Text = "Your Username or Password is incorrect";
+            }
         }
     }
 }

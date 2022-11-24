@@ -40,7 +40,7 @@ namespace McDonalds
 
         private void bttnDelivery_Click(object sender, EventArgs e)
         {
-            new FrmMain().ShowDialog();
+
         }
     }
 }

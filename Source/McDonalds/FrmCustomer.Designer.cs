@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCustomer));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bttnSignUp = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.bttnSignIn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
+            this.lbWrongPassword = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -48,7 +49,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.lbWrongPassword);
+            this.panel2.Controls.Add(this.bttnSignUp);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.bttnSignIn);
             this.panel2.Controls.Add(this.label3);
@@ -61,24 +63,24 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1208, 694);
+            this.panel2.Size = new System.Drawing.Size(1208, 731);
             this.panel2.TabIndex = 0;
             // 
-            // button1
+            // bttnSignUp
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(669, 444);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 43);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Create Now!";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bttnSignUp.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bttnSignUp.BackColor = System.Drawing.Color.Firebrick;
+            this.bttnSignUp.FlatAppearance.BorderSize = 0;
+            this.bttnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnSignUp.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnSignUp.ForeColor = System.Drawing.Color.White;
+            this.bttnSignUp.Location = new System.Drawing.Point(670, 464);
+            this.bttnSignUp.Name = "bttnSignUp";
+            this.bttnSignUp.Size = new System.Drawing.Size(162, 43);
+            this.bttnSignUp.TabIndex = 3;
+            this.bttnSignUp.Text = "Create Now!";
+            this.bttnSignUp.UseVisualStyleBackColor = false;
+            this.bttnSignUp.Click += new System.EventHandler(this.bttnSignUp_Click);
             // 
             // label4
             // 
@@ -86,7 +88,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Linen;
-            this.label4.Location = new System.Drawing.Point(398, 448);
+            this.label4.Location = new System.Drawing.Point(399, 468);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(276, 35);
             this.label4.TabIndex = 12;
@@ -97,12 +99,13 @@
             this.bttnSignIn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bttnSignIn.BackColor = System.Drawing.Color.Tan;
             this.bttnSignIn.Font = new System.Drawing.Font("Gugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnSignIn.Location = new System.Drawing.Point(549, 368);
+            this.bttnSignIn.Location = new System.Drawing.Point(550, 406);
             this.bttnSignIn.Name = "bttnSignIn";
             this.bttnSignIn.Size = new System.Drawing.Size(125, 52);
             this.bttnSignIn.TabIndex = 2;
             this.bttnSignIn.Text = "Sign in";
             this.bttnSignIn.UseVisualStyleBackColor = false;
+            this.bttnSignIn.Click += new System.EventHandler(this.bttnSignIn_Click);
             // 
             // label3
             // 
@@ -112,7 +115,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Gugi", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.Location = new System.Drawing.Point(513, 96);
+            this.label3.Location = new System.Drawing.Point(491, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(230, 62);
             this.label3.TabIndex = 8;
@@ -122,7 +125,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::McDonalds.Properties.Resources.mau1;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 498);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 535);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1208, 196);
             this.pictureBox1.TabIndex = 7;
@@ -189,11 +192,23 @@
             this.tbPassword.Size = new System.Drawing.Size(361, 41);
             this.tbPassword.TabIndex = 1;
             // 
+            // lbWrongPassword
+            // 
+            this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongPassword.AutoSize = true;
+            this.lbWrongPassword.Font = new System.Drawing.Font("Gugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPassword.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongPassword.Location = new System.Drawing.Point(478, 368);
+            this.lbWrongPassword.Name = "lbWrongPassword";
+            this.lbWrongPassword.Size = new System.Drawing.Size(0, 18);
+            this.lbWrongPassword.TabIndex = 13;
+            // 
             // FrmCustomer
             // 
+            this.AcceptButton = this.bttnSignIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1208, 694);
+            this.ClientSize = new System.Drawing.Size(1208, 731);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -220,7 +235,8 @@
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bttnSignIn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bttnSignUp;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbWrongPassword;
     }
 }
