@@ -33,7 +33,7 @@ namespace McDonalds
         {
             lbWrongPassword.Text = "";
             TaiKhoan taiKhoan = TaiKhoanDAO.Instance.getTaiKhoan(tbUsername.Text, tbPassword.Text);
-            if (taiKhoan!=null)
+            if (taiKhoan != null)
             {
                 FrmMainStaff frmMainStaff = new FrmMainStaff(taiKhoan);
                 this.Hide();
@@ -45,6 +45,21 @@ namespace McDonalds
             {
                 lbWrongPassword.Text = "Your Username or Password is incorrect";
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

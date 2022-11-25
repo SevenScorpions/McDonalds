@@ -19,11 +19,19 @@ namespace McDonalds
 
         private void bttnSignUp_Click(object sender, EventArgs e)
         {
+            bool valid = true;
             string firstName = tbFirstName.Text;
             string lastName = tbLastName.Text;
             if(firstName == "" || lastName == "")
             {
-                lbWrongName.Text = "First name or Last name is missing";
+                valid = false;
+                lbWrongName.Text = "Tên không hợp lê";
+            }
+            string phone = tbPhone.Text;
+            if(phone=="")
+            {
+                valid=false;
+                lbWrongPhone.Text = "";
             }
         }
     }

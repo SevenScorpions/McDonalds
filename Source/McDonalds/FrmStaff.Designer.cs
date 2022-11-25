@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStaff));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbWrongPassword = new System.Windows.Forms.Label();
             this.bttnSignIn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -39,7 +40,6 @@
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.lbWrongPassword = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -47,7 +47,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Firebrick;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.lbWrongPassword);
             this.panel2.Controls.Add(this.bttnSignIn);
             this.panel2.Controls.Add(this.label3);
@@ -64,18 +64,32 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1208, 694);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // lbWrongPassword
+            // 
+            this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongPassword.AutoSize = true;
+            this.lbWrongPassword.Font = new System.Drawing.Font("Gugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPassword.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongPassword.Location = new System.Drawing.Point(519, 365);
+            this.lbWrongPassword.Name = "lbWrongPassword";
+            this.lbWrongPassword.Size = new System.Drawing.Size(0, 18);
+            this.lbWrongPassword.TabIndex = 10;
             // 
             // bttnSignIn
             // 
             this.bttnSignIn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bttnSignIn.BackColor = System.Drawing.Color.Tan;
-            this.bttnSignIn.Font = new System.Drawing.Font("Gugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnSignIn.ForeColor = System.Drawing.Color.Black;
-            this.bttnSignIn.Location = new System.Drawing.Point(557, 396);
+            this.bttnSignIn.BackColor = System.Drawing.Color.Firebrick;
+            this.bttnSignIn.FlatAppearance.BorderSize = 0;
+            this.bttnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnSignIn.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnSignIn.ForeColor = System.Drawing.Color.White;
+            this.bttnSignIn.Location = new System.Drawing.Point(513, 409);
             this.bttnSignIn.Name = "bttnSignIn";
-            this.bttnSignIn.Size = new System.Drawing.Size(125, 52);
+            this.bttnSignIn.Size = new System.Drawing.Size(144, 52);
             this.bttnSignIn.TabIndex = 2;
-            this.bttnSignIn.Text = "Sign in";
+            this.bttnSignIn.Text = "Đăng nhập";
             this.bttnSignIn.UseVisualStyleBackColor = false;
             this.bttnSignIn.Click += new System.EventHandler(this.bttnSignIn_Click);
             // 
@@ -85,13 +99,13 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Gugi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.Location = new System.Drawing.Point(520, 105);
+            this.label3.Font = new System.Drawing.Font("Roboto Th", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Firebrick;
+            this.label3.Location = new System.Drawing.Point(459, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 62);
+            this.label3.Size = new System.Drawing.Size(360, 81);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Sign In";
+            this.label3.Text = "Đăng nhập";
             // 
             // pictureBox1
             // 
@@ -117,76 +131,67 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(297, 317);
+            this.label2.Font = new System.Drawing.Font("Roboto Th", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(262, 314);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 31);
+            this.label2.Size = new System.Drawing.Size(145, 37);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Password";
+            this.label2.Text = "Mật khẩu";
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(297, 246);
+            this.label1.Font = new System.Drawing.Font("Roboto Th", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(262, 243);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 31);
+            this.label1.Size = new System.Drawing.Size(151, 37);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Username";
+            this.label1.Text = "Tài khoản";
             // 
             // tbUsername
             // 
             this.tbUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.tbUsername.BackColor = System.Drawing.Color.IndianRed;
+            this.tbUsername.BackColor = System.Drawing.Color.Gainsboro;
             this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbUsername.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.tbUsername.Location = new System.Drawing.Point(481, 238);
+            this.tbUsername.Font = new System.Drawing.Font("Roboto Th", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbUsername.Location = new System.Drawing.Point(488, 238);
             this.tbUsername.Margin = new System.Windows.Forms.Padding(15);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(361, 41);
+            this.tbUsername.Size = new System.Drawing.Size(405, 45);
             this.tbUsername.TabIndex = 0;
+            this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
             // 
             // tbPassword
             // 
             this.tbPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.tbPassword.BackColor = System.Drawing.Color.IndianRed;
+            this.tbPassword.BackColor = System.Drawing.Color.Gainsboro;
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbPassword.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.tbPassword.Location = new System.Drawing.Point(481, 309);
+            this.tbPassword.Font = new System.Drawing.Font("Roboto Th", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbPassword.Location = new System.Drawing.Point(488, 309);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(15);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '.';
-            this.tbPassword.Size = new System.Drawing.Size(361, 41);
+            this.tbPassword.Size = new System.Drawing.Size(405, 45);
             this.tbPassword.TabIndex = 1;
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Gugi", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(683, 153);
+            this.label4.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Firebrick;
+            this.label4.Location = new System.Drawing.Point(712, 164);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 29);
+            this.label4.Size = new System.Drawing.Size(137, 33);
             this.label4.TabIndex = 9;
-            this.label4.Text = "for Staff";
-            // 
-            // lbWrongPassword
-            // 
-            this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbWrongPassword.AutoSize = true;
-            this.lbWrongPassword.Font = new System.Drawing.Font("Gugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongPassword.ForeColor = System.Drawing.Color.Linen;
-            this.lbWrongPassword.Location = new System.Drawing.Point(478, 365);
-            this.lbWrongPassword.Name = "lbWrongPassword";
-            this.lbWrongPassword.Size = new System.Drawing.Size(0, 18);
-            this.lbWrongPassword.TabIndex = 10;
+            this.label4.Text = "Nhân viên";
             // 
             // FrmStaff
             // 
