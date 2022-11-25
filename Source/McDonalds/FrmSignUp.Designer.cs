@@ -30,6 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSignUp));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbWrongAddress = new System.Windows.Forms.Label();
+            this.lbWrongEmail = new System.Windows.Forms.Label();
+            this.lbWrongBirthday = new System.Windows.Forms.Label();
+            this.lbWrongGender = new System.Windows.Forms.Label();
+            this.lbWrongRePassword = new System.Windows.Forms.Label();
+            this.lbWrongPassword = new System.Windows.Forms.Label();
+            this.lbWrongPhone = new System.Windows.Forms.Label();
+            this.lbWrongName = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tbLastName = new System.Windows.Forms.TextBox();
@@ -60,6 +68,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
+            this.panel2.Controls.Add(this.lbWrongAddress);
+            this.panel2.Controls.Add(this.lbWrongEmail);
+            this.panel2.Controls.Add(this.lbWrongBirthday);
+            this.panel2.Controls.Add(this.lbWrongGender);
+            this.panel2.Controls.Add(this.lbWrongRePassword);
+            this.panel2.Controls.Add(this.lbWrongPassword);
+            this.panel2.Controls.Add(this.lbWrongPhone);
+            this.panel2.Controls.Add(this.lbWrongName);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.tbLastName);
@@ -89,6 +105,94 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1161, 660);
             this.panel2.TabIndex = 0;
+            // 
+            // lbWrongAddress
+            // 
+            this.lbWrongAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongAddress.AutoSize = true;
+            this.lbWrongAddress.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongAddress.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongAddress.Location = new System.Drawing.Point(749, 475);
+            this.lbWrongAddress.Name = "lbWrongAddress";
+            this.lbWrongAddress.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongAddress.TabIndex = 38;
+            // 
+            // lbWrongEmail
+            // 
+            this.lbWrongEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongEmail.AutoSize = true;
+            this.lbWrongEmail.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongEmail.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongEmail.Location = new System.Drawing.Point(749, 331);
+            this.lbWrongEmail.Name = "lbWrongEmail";
+            this.lbWrongEmail.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongEmail.TabIndex = 36;
+            // 
+            // lbWrongBirthday
+            // 
+            this.lbWrongBirthday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongBirthday.AutoSize = true;
+            this.lbWrongBirthday.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongBirthday.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongBirthday.Location = new System.Drawing.Point(750, 261);
+            this.lbWrongBirthday.Name = "lbWrongBirthday";
+            this.lbWrongBirthday.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongBirthday.TabIndex = 35;
+            // 
+            // lbWrongGender
+            // 
+            this.lbWrongGender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongGender.AutoSize = true;
+            this.lbWrongGender.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongGender.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongGender.Location = new System.Drawing.Point(187, 541);
+            this.lbWrongGender.Name = "lbWrongGender";
+            this.lbWrongGender.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongGender.TabIndex = 34;
+            // 
+            // lbWrongRePassword
+            // 
+            this.lbWrongRePassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongRePassword.AutoSize = true;
+            this.lbWrongRePassword.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongRePassword.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongRePassword.Location = new System.Drawing.Point(187, 475);
+            this.lbWrongRePassword.Name = "lbWrongRePassword";
+            this.lbWrongRePassword.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongRePassword.TabIndex = 33;
+            // 
+            // lbWrongPassword
+            // 
+            this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongPassword.AutoSize = true;
+            this.lbWrongPassword.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPassword.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongPassword.Location = new System.Drawing.Point(187, 402);
+            this.lbWrongPassword.Name = "lbWrongPassword";
+            this.lbWrongPassword.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongPassword.TabIndex = 32;
+            // 
+            // lbWrongPhone
+            // 
+            this.lbWrongPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongPhone.AutoSize = true;
+            this.lbWrongPhone.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPhone.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongPhone.Location = new System.Drawing.Point(187, 331);
+            this.lbWrongPhone.Name = "lbWrongPhone";
+            this.lbWrongPhone.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongPhone.TabIndex = 31;
+            // 
+            // lbWrongName
+            // 
+            this.lbWrongName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongName.AutoSize = true;
+            this.lbWrongName.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongName.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongName.Location = new System.Drawing.Point(188, 261);
+            this.lbWrongName.Name = "lbWrongName";
+            this.lbWrongName.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongName.TabIndex = 30;
             // 
             // label11
             // 
@@ -302,6 +406,7 @@
             this.bttnSignUp.TabIndex = 10;
             this.bttnSignUp.Text = "Sign Up";
             this.bttnSignUp.UseVisualStyleBackColor = false;
+            this.bttnSignUp.Click += new System.EventHandler(this.bttnSignUp_Click);
             // 
             // label3
             // 
@@ -423,5 +528,13 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox tbLastName;
+        private System.Windows.Forms.Label lbWrongPhone;
+        private System.Windows.Forms.Label lbWrongName;
+        private System.Windows.Forms.Label lbWrongGender;
+        private System.Windows.Forms.Label lbWrongRePassword;
+        private System.Windows.Forms.Label lbWrongPassword;
+        private System.Windows.Forms.Label lbWrongAddress;
+        private System.Windows.Forms.Label lbWrongEmail;
+        private System.Windows.Forms.Label lbWrongBirthday;
     }
 }

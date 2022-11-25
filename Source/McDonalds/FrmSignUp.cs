@@ -17,9 +17,14 @@ namespace McDonalds
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void bttnSignUp_Click(object sender, EventArgs e)
         {
-
+            string firstName = tbFirstName.Text;
+            string lastName = tbLastName.Text;
+            if(firstName == "" || lastName == "")
+            {
+                lbWrongName.Text = "First name or Last name is missing";
+            }
         }
     }
 }
