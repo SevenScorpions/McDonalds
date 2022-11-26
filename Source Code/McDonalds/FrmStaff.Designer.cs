@@ -85,7 +85,7 @@
             this.bttnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnSignIn.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSignIn.ForeColor = System.Drawing.Color.White;
-            this.bttnSignIn.Location = new System.Drawing.Point(513, 409);
+            this.bttnSignIn.Location = new System.Drawing.Point(531, 409);
             this.bttnSignIn.Name = "bttnSignIn";
             this.bttnSignIn.Size = new System.Drawing.Size(144, 52);
             this.bttnSignIn.TabIndex = 2;
@@ -101,7 +101,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Roboto Th", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(459, 95);
+            this.label3.Location = new System.Drawing.Point(454, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(360, 81);
             this.label3.TabIndex = 8;
@@ -187,7 +187,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Firebrick;
-            this.label4.Location = new System.Drawing.Point(712, 164);
+            this.label4.Location = new System.Drawing.Point(707, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 33);
             this.label4.TabIndex = 9;
