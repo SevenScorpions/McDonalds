@@ -1,0 +1,15 @@
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.csproj.AssemblyReference.cache
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.csproj.SuggestedBindingRedirects.cache
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.ChonCN.resources
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.FrmMain.resources
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.FrmSignUp.resources
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.FrmCustomer.resources
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.FrmStaff.resources
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.Properties.Resources.resources
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.csproj.GenerateResource.cache
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\bin\Debug\McDonalds.exe.config
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\bin\Debug\McDonalds.exe
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\bin\Debug\McDonalds.pdb
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.csproj.CoreCompileInputs.cache
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.exe
+E:\LAPTRINH\CongNghePhanMem\McDonalds\Source\McDonalds\obj\Debug\McDonalds.pdb
