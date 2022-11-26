@@ -71,8 +71,8 @@
             this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongPassword.AutoSize = true;
             this.lbWrongPassword.Font = new System.Drawing.Font("Gugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongPassword.ForeColor = System.Drawing.Color.Linen;
-            this.lbWrongPassword.Location = new System.Drawing.Point(519, 365);
+            this.lbWrongPassword.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbWrongPassword.Location = new System.Drawing.Point(486, 365);
             this.lbWrongPassword.Name = "lbWrongPassword";
             this.lbWrongPassword.Size = new System.Drawing.Size(0, 18);
             this.lbWrongPassword.TabIndex = 10;
@@ -179,6 +179,7 @@
             this.tbPassword.Size = new System.Drawing.Size(405, 45);
             this.tbPassword.TabIndex = 1;
             this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
+            this.tbPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPassword_KeyPress);
             // 
             // label4
             // 

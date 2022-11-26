@@ -61,5 +61,10 @@ namespace McDonalds
         {
 
         }
+
+        private void tbPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            lbWrongPassword.Text = "";
+        }
     }
 }

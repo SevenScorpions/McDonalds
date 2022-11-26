@@ -58,9 +58,11 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
+            this.bttnOrder = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.tabMenu.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tabProfile.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +78,7 @@
             this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.SelectedIndex = 0;
-            this.mainPanel.Size = new System.Drawing.Size(1100, 791);
+            this.mainPanel.Size = new System.Drawing.Size(1114, 788);
             this.mainPanel.TabIndex = 2;
             // 
             // tabMenu
@@ -111,7 +113,7 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(1092, 754);
+            this.tabPage1.Size = new System.Drawing.Size(1106, 751);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Your Cart";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -122,9 +124,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.bttnOrder);
             this.panel1.Location = new System.Drawing.Point(28, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1037, 696);
+            this.panel1.Size = new System.Drawing.Size(1051, 693);
             this.panel1.TabIndex = 5;
             // 
             // tabProfile
@@ -136,7 +139,7 @@
             this.tabProfile.Name = "tabProfile";
             this.tabProfile.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabProfile.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabProfile.Size = new System.Drawing.Size(1092, 754);
+            this.tabProfile.Size = new System.Drawing.Size(1106, 751);
             this.tabProfile.TabIndex = 4;
             this.tabProfile.Text = "Profile";
             this.tabProfile.UseVisualStyleBackColor = true;
@@ -167,9 +170,9 @@
             this.panel5.Controls.Add(this.tbEmail);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.tbPhone);
-            this.panel5.Location = new System.Drawing.Point(145, 25);
+            this.panel5.Location = new System.Drawing.Point(152, 25);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(801, 697);
+            this.panel5.Size = new System.Drawing.Size(801, 694);
             this.panel5.TabIndex = 4;
             // 
             // bttnSignOut
@@ -368,7 +371,7 @@
             this.tbAddress.Margin = new System.Windows.Forms.Padding(15);
             this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(361, 76);
+            this.tbAddress.Size = new System.Drawing.Size(361, 73);
             this.tbAddress.TabIndex = 35;
             // 
             // label4
@@ -447,11 +450,25 @@
             this.tbPhone.Size = new System.Drawing.Size(361, 30);
             this.tbPhone.TabIndex = 27;
             // 
+            // bttnOrder
+            // 
+            this.bttnOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bttnOrder.BackColor = System.Drawing.Color.DarkOrange;
+            this.bttnOrder.FlatAppearance.BorderSize = 0;
+            this.bttnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnOrder.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnOrder.Location = new System.Drawing.Point(910, 631);
+            this.bttnOrder.Name = "bttnOrder";
+            this.bttnOrder.Size = new System.Drawing.Size(128, 49);
+            this.bttnOrder.TabIndex = 0;
+            this.bttnOrder.Text = "Đặt hàng";
+            this.bttnOrder.UseVisualStyleBackColor = false;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 791);
+            this.ClientSize = new System.Drawing.Size(1114, 788);
             this.Controls.Add(this.mainPanel);
             this.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -462,6 +479,7 @@
             this.mainPanel.ResumeLayout(false);
             this.tabMenu.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.tabProfile.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -500,5 +518,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button bttnChangePassword;
         private System.Windows.Forms.Button bttnSignOut;
+        private System.Windows.Forms.Button bttnOrder;
     }
 }
