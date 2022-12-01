@@ -25,7 +25,7 @@ namespace McDonalds.DAO
         public TaiKhoan getTaiKhoan(string username,string password)
         {
             List<TaiKhoan> list = new List<TaiKhoan>();
-            string query = @"Select * from TAIKHOAN where USERNAME = '" + username + "' AND PASSWORD = '" + password + "'";
+            string query = @"Select * from TAIKHOAN where TENTAIKHOAN = '" + username + "' AND MATKHAU = '" + password + "'";
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow row in data.Rows)
             {
@@ -44,7 +44,7 @@ namespace McDonalds.DAO
         }
         public void createTaiKhoan(TaiKhoan taiKhoan)
         {
-            string query = string.Format(@"insert into TAIKHOAN VALUE({0},{1},{2})", taiKhoan.Username, taiKhoan.Password, taiKhoan.ChucVu);
+            string query = string.Format(@"insert into TAIKHOAN VALUE({0},{1},{2})", taiKhoan.TenTaiKhoan, taiKhoan.MatKhau, taiKhoan.ChucVu);
             DataProvider.Instance.ExcuteQuery(query);
         }
     }

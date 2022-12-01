@@ -51,7 +51,7 @@ namespace McDonalds.DAO
         public TaiKhoanKH getTaiKhoan(string phone, string password)
         {
             List<TaiKhoanKH> list = new List<TaiKhoanKH>();
-            string query = @"Select * from TAIKHOANKH where sdt = '" + phone + "' AND PASSWORD = '" + password + "'";
+            string query = @"Select * from TAIKHOANKH where sdt = '" + phone + "' AND MATKHAU = '" + password + "'";
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow row in data.Rows)
             {

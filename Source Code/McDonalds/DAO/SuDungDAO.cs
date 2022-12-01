@@ -9,51 +9,51 @@ using System.Threading.Tasks;
 //Hoa
 namespace McDonalds.DAO
 {
-    public class SoHuuDAO
+    public class SuDungDAO
     {
-        private static SoHuuDAO instance;
-        public static SoHuuDAO Instance
+        private static SuDungDAO instance;
+        public static SuDungDAO Instance
         {
             get { 
                 if(instance == null)
                 {
-                    instance = new SoHuuDAO();
+                    instance = new SuDungDAO();
                 }
                 return instance; 
             }
             private set => instance = value;
         }
-        private SoHuuDAO() { }
-        public List<SoHuu> getSoHuu()
+        private SuDungDAO() { }
+        public List<SuDung> getSoHuu()
         {
-            List<SoHuu> list = new List<SoHuu>();
+            List<SuDung> list = new List<SuDung>();
             string query = @"Select * from SOHUU";
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach(DataRow dataRow in data.Rows)
             {
-                list.Add(new SoHuu(dataRow));
+                list.Add(new SuDung(dataRow));
             }
             return list;
         }
-        public List<SoHuu> getSoHuu(string idKH)
+        public List<SuDung> getSoHuu(string idKH)
         {
-            List<SoHuu> list = new List<SoHuu>();
+            List<SuDung> list = new List<SuDung>();
             string query = @"Select * from SOHUU where IDKH = '" + idKH + "'";
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow dataRow in data.Rows)
             {
-                list.Add(new SoHuu(dataRow));
+                list.Add(new SuDung(dataRow));
             }
             return list;
         }
-        public List<SoHuu> getSoHuu(string idKH, string idVoucher)
+        public List<SuDung> getSoHuu(string idKH, string idVoucher)
         {
-            List<SoHuu> list = new List<SoHuu>();
+            List<SuDung> list = new List<SuDung>();
             string query = @"Select * from SOHUU where IDKH = '" + idKH + "' and IDVOUCHER = '" + idVoucher + "'";
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow dataRow in data.Rows)
             {
-                list.Add(new SoHuu(dataRow));
+                list.Add(new SuDung(dataRow));
             }
             return list;
         }

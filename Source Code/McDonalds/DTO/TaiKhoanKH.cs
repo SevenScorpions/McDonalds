@@ -15,7 +15,7 @@ namespace McDonalds.DTO
         private string gioiTinh;
         private DateTime ngaySinh;
         private string sdt;
-        private string password;
+        private string matkhau;
         private string email;
         private string diaChi;
         private string thuHang;
@@ -36,10 +36,10 @@ namespace McDonalds.DTO
             get { return email; }
             set {  email = value; }
         }
-        public string Password
+        public string MatKhau
         {
-            get { return password; }
-            set { password = value; }
+            get { return matkhau; }
+            set { matkhau = value; }
         }
         public string Ho
         {
@@ -64,12 +64,12 @@ namespace McDonalds.DTO
         public DateTime NgaySinh { get { return ngaySinh; } set { ngaySinh = value; } }
         public int DiemThuong { get { return diemThuong; } set { diemThuong = value; } }
         public string GioiTinh { get { return gioiTinh; } set { gioiTinh = value; } }
-        public TaiKhoanKH(string idKH, string ho, string ten, string gioiTinh, DateTime ngaySinh, string sdt, string password, string email, string diaChi, string thuHang, int diemThuong, string iDKH, string sDT)
+        public TaiKhoanKH(string idKH, string ho, string ten, string gioiTinh, DateTime ngaySinh, string sdt, string matkhau, string email, string diaChi, string thuHang, int diemThuong, string iDKH, string sDT)
         {
             IDKH = iDKH;
             SDT = sDT;
             Email = email;
-            Password = password;
+            MatKhau = matkhau;
             Ho = ho;
             Ten = ten;
             DiaChi = diaChi;
@@ -84,7 +84,7 @@ namespace McDonalds.DTO
             IDKH = row["IDKH"].ToString();
             SDT = row["SDT"].ToString();
             Email = row["EMAIL"].ToString();
-            Password = row["PASSWORD"].ToString();
+            MatKhau = row["MATKHAU"].ToString();
             Ho = row["HO"].ToString();
             DiaChi = row["DIACHI"].ToString();
             ThuHang = row["THUHANG"].ToString();

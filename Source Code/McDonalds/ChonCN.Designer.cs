@@ -133,6 +133,7 @@
             this.bttnKitchen.TabIndex = 3;
             this.bttnKitchen.Text = "Kitchen";
             this.bttnKitchen.UseVisualStyleBackColor = false;
+            this.bttnKitchen.Click += new System.EventHandler(this.bttnKitchen_Click);
             // 
             // bttnStaff
             // 
