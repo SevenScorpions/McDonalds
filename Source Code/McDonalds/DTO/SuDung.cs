@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace McDonalds.DTO
 {
-    public class SoHuu
+    public class SuDung
     {
         private string idKH;
         private string idVoucher;
-        private int soLanSD;
+    
 
         public string IDKH
         {
@@ -24,22 +24,15 @@ namespace McDonalds.DTO
             get { return idVoucher; }
             set { idVoucher = value; }
         }
-        public int SoLanSD
-        {
-            get { return soLanSD; }
-            set { soLanSD = value; }
-        }
-        public SoHuu(string idKH, string idVoucher, int soLanSD)
+        public SuDung(string idKH, string idVoucher)
         {
             IDKH = idKH;
             IDVoucher = idVoucher;
-            SoLanSD = soLanSD;
         }
-        public SoHuu(DataRow row)
+        public SuDung(DataRow row)
         {
             IDVoucher = row["IDVOUCHER"].ToString();
             IDKH = row["IDKH"].ToString();
-            SoLanSD = (int)row["SOLANSD"];
         }
     }
 }

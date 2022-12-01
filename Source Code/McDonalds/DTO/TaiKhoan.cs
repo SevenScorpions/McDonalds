@@ -9,22 +9,22 @@ namespace McDonalds.DTO
 {
     public class TaiKhoan
     {
-        private string username;
-        private string password;
+        private string tenTaiKhoan;
+        private string matKhau;
         private string chucVu;
-        public string Username { get { return username; } set { username = value; } }
-        public string Password { get { return password; } set { password = value; } }
+        public string TenTaiKhoan { get { return tenTaiKhoan; } set { tenTaiKhoan = value; } }
+        public string MatKhau { get { return matKhau; } set { matKhau = value; } }
         public string ChucVu { get { return chucVu; } set { chucVu = value; } }
-        public TaiKhoan(string username, string password, string chucVu)
+        public TaiKhoan(string tenTaiKhoan, string matKhau, string chucVu)
         {
-            Username = username;
-            Password = password;
+            TenTaiKhoan = tenTaiKhoan;
+            MatKhau = matKhau;
             ChucVu = chucVu;
         }
         public TaiKhoan(DataRow row)
         {
-            username = row["USERNAME"].ToString();
-            password = row["PASSWORD"].ToString();
+            tenTaiKhoan = row["TENTAIKHOAN"].ToString();
+            matKhau = row["MATKHAU"].ToString();
             chucVu = row["CHUCVU"].ToString();
         }
     }
