@@ -72,11 +72,19 @@ namespace McDonalds
 
         private void btnGuest_Click(object sender, EventArgs e)
         {
-            TaiKhoanKH taiKhoanKH = TaiKhoanKHDAO.Instance.getTaiKhoan("", "");
-            FrmMain frmMain = new FrmMain(taiKhoanKH);
-            this.Hide();
-            frmMain.ShowDialog();
-            this.Show();
+            TaiKhoanKH taiKhoanKH = TaiKhoanKHDAO.Instance.getTaiKhoan("0349780959", "kyen1407");
+            if (taiKhoanKH != null)
+            {
+                FrmMain frmMain = new FrmMain(taiKhoanKH);
+                this.Hide();
+                tbPassword.Text = "";
+                frmMain.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                lbWrongPassword.Text = "Your Username or Password is incorrect";
+            }
         }
     }
 }
