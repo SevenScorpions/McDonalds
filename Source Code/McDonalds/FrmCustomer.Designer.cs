@@ -103,7 +103,7 @@
             this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongPassword.AutoSize = true;
             this.lbWrongPassword.Font = new System.Drawing.Font("Gugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongPassword.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbWrongPassword.Location = new System.Drawing.Point(486, 326);
             this.lbWrongPassword.Name = "lbWrongPassword";
             this.lbWrongPassword.Size = new System.Drawing.Size(0, 18);
@@ -218,7 +218,7 @@
             this.tbPhone.BackColor = System.Drawing.Color.Gainsboro;
             this.tbPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPhone.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPhone.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbPhone.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tbPhone.Location = new System.Drawing.Point(489, 200);
             this.tbPhone.Margin = new System.Windows.Forms.Padding(15);
             this.tbPhone.Name = "tbPhone";
@@ -231,7 +231,7 @@
             this.tbPassword.BackColor = System.Drawing.Color.Gainsboro;
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPassword.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbPassword.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tbPassword.Location = new System.Drawing.Point(489, 271);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(15);
             this.tbPassword.Name = "tbPassword";
