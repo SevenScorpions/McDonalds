@@ -49,5 +49,34 @@ namespace McDonalds
                 lbWrongPassword.Text = "Your Username or Password is incorrect";
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuest_Click(object sender, EventArgs e)
+        {
+            TaiKhoanKH taiKhoanKH = TaiKhoanKHDAO.Instance.getTaiKhoan("", "");
+            FrmMain frmMain = new FrmMain(taiKhoanKH);
+            this.Hide();
+            frmMain.ShowDialog();
+            this.Show();
+        }
     }
 }
