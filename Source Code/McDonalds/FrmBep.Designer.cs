@@ -42,7 +42,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Roboto Th", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(518, 39);
+            this.label1.Location = new System.Drawing.Point(520, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 42);
             this.label1.TabIndex = 2;
@@ -53,9 +53,9 @@
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(56, 118);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(39, 118);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(509, 502);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(551, 502);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // flowLayoutPanel2
@@ -63,9 +63,9 @@
             this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(618, 118);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(601, 118);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(509, 502);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(551, 502);
             this.flowLayoutPanel2.TabIndex = 4;
             // 
             // label2
@@ -73,7 +73,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto Th", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(59, 92);
+            this.label2.Location = new System.Drawing.Point(42, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 24);
             this.label2.TabIndex = 0;
@@ -85,7 +85,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto Th", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(620, 92);
+            this.label3.Location = new System.Drawing.Point(603, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 24);
             this.label3.TabIndex = 5;
