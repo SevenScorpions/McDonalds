@@ -102,11 +102,11 @@
             // 
             this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongPassword.AutoSize = true;
-            this.lbWrongPassword.Font = new System.Drawing.Font("Gugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbWrongPassword.Location = new System.Drawing.Point(486, 326);
+            this.lbWrongPassword.Font = new System.Drawing.Font("Roboto Th", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPassword.ForeColor = System.Drawing.Color.Red;
+            this.lbWrongPassword.Location = new System.Drawing.Point(486, 324);
             this.lbWrongPassword.Name = "lbWrongPassword";
-            this.lbWrongPassword.Size = new System.Drawing.Size(0, 18);
+            this.lbWrongPassword.Size = new System.Drawing.Size(0, 22);
             this.lbWrongPassword.TabIndex = 13;
             // 
             // bttnSignUp
@@ -144,7 +144,7 @@
             this.bttnSignIn.BackColor = System.Drawing.Color.Firebrick;
             this.bttnSignIn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSignIn.ForeColor = System.Drawing.Color.White;
-            this.bttnSignIn.Location = new System.Drawing.Point(544, 345);
+            this.bttnSignIn.Location = new System.Drawing.Point(544, 355);
             this.bttnSignIn.Name = "bttnSignIn";
             this.bttnSignIn.Size = new System.Drawing.Size(140, 50);
             this.bttnSignIn.TabIndex = 2;

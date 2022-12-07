@@ -25,5 +25,10 @@ namespace McDonalds
         {
 
         }
+
+        private void menuMain_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

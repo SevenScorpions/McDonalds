@@ -34,6 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bttnOrder = new System.Windows.Forms.Button();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.bttnSignOut = new System.Windows.Forms.Button();
@@ -58,9 +59,10 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
-            this.bttnOrder = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.mainPanel.SuspendLayout();
             this.tabMenu.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabProfile.SuspendLayout();
@@ -73,25 +75,26 @@
             this.mainPanel.Controls.Add(this.tabPage1);
             this.mainPanel.Controls.Add(this.tabProfile);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Font = new System.Drawing.Font("Gugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainPanel.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.SelectedIndex = 0;
-            this.mainPanel.Size = new System.Drawing.Size(1114, 788);
+            this.mainPanel.Size = new System.Drawing.Size(1114, 746);
             this.mainPanel.TabIndex = 2;
             // 
             // tabMenu
             // 
             this.tabMenu.BackgroundImage = global::McDonalds.Properties.Resources._1600px_COLOURBOX54593006;
             this.tabMenu.Controls.Add(this.panel2);
-            this.tabMenu.Location = new System.Drawing.Point(4, 33);
+            this.tabMenu.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabMenu.Location = new System.Drawing.Point(4, 37);
             this.tabMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabMenu.Size = new System.Drawing.Size(1092, 754);
+            this.tabMenu.Size = new System.Drawing.Size(1106, 705);
             this.tabMenu.TabIndex = 0;
-            this.tabMenu.Text = "Menu";
+            this.tabMenu.Text = "Thực đơn";
             this.tabMenu.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -100,22 +103,24 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(28, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1037, 665);
+            this.panel2.Size = new System.Drawing.Size(1037, 619);
             this.panel2.TabIndex = 5;
             // 
             // tabPage1
             // 
             this.tabPage1.BackgroundImage = global::McDonalds.Properties.Resources.istockphoto_1176097155_612x612;
             this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 33);
+            this.tabPage1.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Location = new System.Drawing.Point(4, 37);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(1106, 751);
+            this.tabPage1.Size = new System.Drawing.Size(1106, 747);
             this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "Your Cart";
+            this.tabPage1.Text = "Giỏ hàng";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -127,21 +132,36 @@
             this.panel1.Controls.Add(this.bttnOrder);
             this.panel1.Location = new System.Drawing.Point(28, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1051, 693);
+            this.panel1.Size = new System.Drawing.Size(1051, 689);
             this.panel1.TabIndex = 5;
+            // 
+            // bttnOrder
+            // 
+            this.bttnOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bttnOrder.BackColor = System.Drawing.Color.DarkOrange;
+            this.bttnOrder.FlatAppearance.BorderSize = 0;
+            this.bttnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnOrder.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnOrder.Location = new System.Drawing.Point(910, 627);
+            this.bttnOrder.Name = "bttnOrder";
+            this.bttnOrder.Size = new System.Drawing.Size(128, 49);
+            this.bttnOrder.TabIndex = 0;
+            this.bttnOrder.Text = "Đặt hàng";
+            this.bttnOrder.UseVisualStyleBackColor = false;
             // 
             // tabProfile
             // 
             this.tabProfile.BackgroundImage = global::McDonalds.Properties.Resources.istockphoto_1182393436_612x612;
             this.tabProfile.Controls.Add(this.panel5);
-            this.tabProfile.Location = new System.Drawing.Point(4, 33);
+            this.tabProfile.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabProfile.Location = new System.Drawing.Point(4, 37);
             this.tabProfile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabProfile.Name = "tabProfile";
             this.tabProfile.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabProfile.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabProfile.Size = new System.Drawing.Size(1106, 751);
+            this.tabProfile.Size = new System.Drawing.Size(1106, 705);
             this.tabProfile.TabIndex = 4;
-            this.tabProfile.Text = "Profile";
+            this.tabProfile.Text = "Thông tin";
             this.tabProfile.UseVisualStyleBackColor = true;
             // 
             // panel5
@@ -172,29 +192,29 @@
             this.panel5.Controls.Add(this.tbPhone);
             this.panel5.Location = new System.Drawing.Point(152, 25);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(801, 694);
+            this.panel5.Size = new System.Drawing.Size(801, 648);
             this.panel5.TabIndex = 4;
             // 
             // bttnSignOut
             // 
             this.bttnSignOut.BackColor = System.Drawing.Color.DarkGray;
-            this.bttnSignOut.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnSignOut.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSignOut.Location = new System.Drawing.Point(231, 637);
             this.bttnSignOut.Name = "bttnSignOut";
             this.bttnSignOut.Size = new System.Drawing.Size(129, 45);
             this.bttnSignOut.TabIndex = 50;
-            this.bttnSignOut.Text = "Sign Out";
+            this.bttnSignOut.Text = "Đăng xuất";
             this.bttnSignOut.UseVisualStyleBackColor = false;
             // 
             // bttnChangePassword
             // 
             this.bttnChangePassword.BackColor = System.Drawing.Color.Tan;
-            this.bttnChangePassword.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnChangePassword.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnChangePassword.Location = new System.Drawing.Point(29, 637);
             this.bttnChangePassword.Name = "bttnChangePassword";
             this.bttnChangePassword.Size = new System.Drawing.Size(196, 45);
             this.bttnChangePassword.TabIndex = 49;
-            this.bttnChangePassword.Text = "Change Password";
+            this.bttnChangePassword.Text = "Đổi mật khẩu";
             this.bttnChangePassword.UseVisualStyleBackColor = false;
             // 
             // textBox1
@@ -214,71 +234,71 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label11.Location = new System.Drawing.Point(511, 132);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 23);
+            this.label11.Size = new System.Drawing.Size(48, 25);
             this.label11.TabIndex = 47;
-            this.label11.Text = "Last name";
+            this.label11.Text = "Tên";
             // 
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label10.Location = new System.Drawing.Point(307, 132);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 23);
+            this.label10.Size = new System.Drawing.Size(39, 25);
             this.label10.TabIndex = 46;
-            this.label10.Text = "First name";
+            this.label10.Text = "Họ";
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Roboto Th", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(184, 31);
+            this.label3.Size = new System.Drawing.Size(263, 37);
             this.label3.TabIndex = 45;
-            this.label3.Text = "Your Profile";
+            this.label3.Text = "Thông tin cá nhân";
             // 
             // bttnSave
             // 
             this.bttnSave.BackColor = System.Drawing.Color.Tan;
-            this.bttnSave.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSave.Location = new System.Drawing.Point(655, 637);
             this.bttnSave.Name = "bttnSave";
             this.bttnSave.Size = new System.Drawing.Size(129, 45);
             this.bttnSave.TabIndex = 44;
-            this.bttnSave.Text = "Save";
+            this.bttnSave.Text = "Lưu";
             this.bttnSave.UseVisualStyleBackColor = false;
             // 
             // dtpBirthday
             // 
             this.dtpBirthday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dtpBirthday.CalendarFont = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBirthday.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirthday.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBirthday.Location = new System.Drawing.Point(311, 335);
             this.dtpBirthday.Margin = new System.Windows.Forms.Padding(15);
             this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(361, 29);
+            this.dtpBirthday.Size = new System.Drawing.Size(361, 32);
             this.dtpBirthday.TabIndex = 43;
             // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gold;
             this.label9.Location = new System.Drawing.Point(29, 568);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(242, 40);
+            this.label9.Size = new System.Drawing.Size(306, 25);
             this.label9.TabIndex = 42;
-            this.label9.Text = "Enter Your Password to \r\nSave Changes";
+            this.label9.Text = "Nhập mật khẩu để lưu thay đổi";
             // 
             // tbRePassword
             // 
@@ -298,67 +318,67 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gold;
             this.label8.Location = new System.Drawing.Point(165, 273);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 20);
+            this.label8.Size = new System.Drawing.Size(91, 25);
             this.label8.TabIndex = 40;
-            this.label8.Text = "Gender";
+            this.label8.Text = "Giới tính";
             // 
             // rbttnFemale
             // 
             this.rbttnFemale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rbttnFemale.AutoSize = true;
-            this.rbttnFemale.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbttnFemale.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbttnFemale.ForeColor = System.Drawing.Color.LightGray;
             this.rbttnFemale.Location = new System.Drawing.Point(511, 278);
             this.rbttnFemale.Margin = new System.Windows.Forms.Padding(15);
             this.rbttnFemale.Name = "rbttnFemale";
-            this.rbttnFemale.Size = new System.Drawing.Size(99, 24);
+            this.rbttnFemale.Size = new System.Drawing.Size(60, 29);
             this.rbttnFemale.TabIndex = 39;
             this.rbttnFemale.TabStop = true;
-            this.rbttnFemale.Text = "Female";
+            this.rbttnFemale.Text = "Nữ";
             this.rbttnFemale.UseVisualStyleBackColor = true;
             // 
             // rbttnMale
             // 
             this.rbttnMale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rbttnMale.AutoSize = true;
-            this.rbttnMale.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbttnMale.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbttnMale.ForeColor = System.Drawing.Color.LightGray;
             this.rbttnMale.Location = new System.Drawing.Point(311, 278);
             this.rbttnMale.Margin = new System.Windows.Forms.Padding(15);
             this.rbttnMale.Name = "rbttnMale";
-            this.rbttnMale.Size = new System.Drawing.Size(76, 24);
+            this.rbttnMale.Size = new System.Drawing.Size(79, 29);
             this.rbttnMale.TabIndex = 38;
             this.rbttnMale.TabStop = true;
-            this.rbttnMale.Text = "Male";
+            this.rbttnMale.Text = "Nam";
             this.rbttnMale.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
             this.label6.Location = new System.Drawing.Point(165, 333);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 20);
+            this.label6.Size = new System.Drawing.Size(108, 25);
             this.label6.TabIndex = 37;
-            this.label6.Text = "Birthday";
+            this.label6.Text = "Ngày sinh";
             // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gold;
             this.label7.Location = new System.Drawing.Point(165, 454);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 20);
+            this.label7.Size = new System.Drawing.Size(77, 25);
             this.label7.TabIndex = 36;
-            this.label7.Text = "Address";
+            this.label7.Text = "Địa chỉ";
             // 
             // tbAddress
             // 
@@ -371,18 +391,18 @@
             this.tbAddress.Margin = new System.Windows.Forms.Padding(15);
             this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(361, 73);
+            this.tbAddress.Size = new System.Drawing.Size(361, 27);
             this.tbAddress.TabIndex = 35;
             // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gold;
             this.label4.Location = new System.Drawing.Point(165, 394);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 20);
+            this.label4.Size = new System.Drawing.Size(65, 25);
             this.label4.TabIndex = 34;
             this.label4.Text = "Email";
             // 
@@ -390,13 +410,13 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gold;
             this.label5.Location = new System.Drawing.Point(165, 158);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 20);
+            this.label5.Size = new System.Drawing.Size(104, 25);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Your Name";
+            this.label5.Text = "Họ và tên";
             // 
             // tbName
             // 
@@ -429,13 +449,13 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Roboto Th", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
             this.label1.Location = new System.Drawing.Point(165, 218);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.Size = new System.Drawing.Size(137, 25);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Phone";
+            this.label1.Text = "Số điện thoại";
             // 
             // tbPhone
             // 
@@ -450,25 +470,19 @@
             this.tbPhone.Size = new System.Drawing.Size(361, 30);
             this.tbPhone.TabIndex = 27;
             // 
-            // bttnOrder
+            // panel3
             // 
-            this.bttnOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bttnOrder.BackColor = System.Drawing.Color.DarkOrange;
-            this.bttnOrder.FlatAppearance.BorderSize = 0;
-            this.bttnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnOrder.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnOrder.Location = new System.Drawing.Point(910, 631);
-            this.bttnOrder.Name = "bttnOrder";
-            this.bttnOrder.Size = new System.Drawing.Size(128, 49);
-            this.bttnOrder.TabIndex = 0;
-            this.bttnOrder.Text = "Đặt hàng";
-            this.bttnOrder.UseVisualStyleBackColor = false;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(155, 619);
+            this.panel3.TabIndex = 0;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1114, 788);
+            this.ClientSize = new System.Drawing.Size(1114, 746);
             this.Controls.Add(this.mainPanel);
             this.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -478,6 +492,7 @@
             this.Text = "McDonalds";
             this.mainPanel.ResumeLayout(false);
             this.tabMenu.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tabProfile.ResumeLayout(false);
@@ -519,5 +534,6 @@
         private System.Windows.Forms.Button bttnChangePassword;
         private System.Windows.Forms.Button bttnSignOut;
         private System.Windows.Forms.Button bttnOrder;
+        private System.Windows.Forms.Panel panel3;
     }
 }
