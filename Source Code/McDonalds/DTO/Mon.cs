@@ -14,6 +14,7 @@ namespace McDonalds.DTO
         private string tenMon;
         private int giaMon;
         private string trangThai;
+        private string img;
 
         public string IDMon
         {
@@ -35,12 +36,18 @@ namespace McDonalds.DTO
             get { return trangThai; }
             set { trangThai = value; }
         }
-        public Mon(string idMon, string tenMon, int giaMon, string trangThai)
+        public string Img
+        {
+            get { return img; }
+            set { img = value; }
+        }
+        public Mon(string idMon, string tenMon, int giaMon, string trangThai, string img)
         {
             IDMon = idMon;
             TenMon = tenMon;
             GiaMon = giaMon;
             TrangThai = trangThai;
+            Img = img;
         }
         public Mon(DataRow row)
         {
@@ -48,6 +55,7 @@ namespace McDonalds.DTO
             TenMon = row["TENMON"].ToString();
             GiaMon = (int)row["GIAMON"];
             TrangThai = row["TRANGTHAI"].ToString();
+            Img = row["IMG"].ToString();
         }
     }
 }

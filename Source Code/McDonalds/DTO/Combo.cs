@@ -13,7 +13,7 @@ namespace McDonalds.DTO
         private int giaCombo;
         private string tenCombo;
         private string trangThai;
-
+        private string img;
         public string IDCombo
         {
             get { return idCombo; }
@@ -34,11 +34,17 @@ namespace McDonalds.DTO
             get { return trangThai; }
             set { trangThai = value; }
         }
-        public Combo(string idCombo, int giaCombo, string tenCombo, string trangThai) { 
+        public string Img
+        {
+            get { return img; }
+            set { img = value; }
+        }
+        public Combo(string idCombo, int giaCombo, string tenCombo, string trangThai, string img) { 
             IDCombo = idCombo;
             GiaCombo = giaCombo;
             TenCombo = tenCombo;
             TrangThai = trangThai;
+            Img = img;
         }
         public Combo(DataRow row)
         {
@@ -46,6 +52,7 @@ namespace McDonalds.DTO
             GiaCombo = (int)row["GIACOMBO"];
             TenCombo = row["TENCOMBO"].ToString();
             TrangThai = row["TRANGTHAI"].ToString();
+            Img = row["IMG"].ToString();
         }
     }
 }
