@@ -40,7 +40,10 @@ namespace McDonalds
 
         private void bttnDelivery_Click(object sender, EventArgs e)
         {
-
+            FrmHoanTatDonHang frmHoanTatDonHang = new FrmHoanTatDonHang();
+            this.Hide();
+            frmHoanTatDonHang.ShowDialog();
+            this.Show();
         }
 
         private void bttnKitchen_Click(object sender, EventArgs e)
@@ -48,6 +51,14 @@ namespace McDonalds
             FrmBep frmBep = new FrmBep();
             this.Hide();
             frmBep.ShowDialog();
+            this.Show();
+        }
+
+        private void bttnCounter_Click(object sender, EventArgs e)
+        {
+            FrmCounter frmCounter = new FrmCounter();
+            this.Hide();
+            frmCounter.ShowDialog();
             this.Show();
         }
     }

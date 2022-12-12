@@ -93,6 +93,7 @@
     <Compile Include="DTO\Combo.cs" />
     <Compile Include="DTO\CTCombo.cs" />
     <Compile Include="DTO\CTMon.cs" />
+    <Compile Include="DTO\DonHang.cs" />
     <Compile Include="DTO\GiamGiaCombo.cs" />
     <Compile Include="DTO\GiamGiaMon.cs" />
     <Compile Include="DTO\HDCombo.cs" />
@@ -121,6 +122,18 @@
     </Compile>
     <Compile Include="FrmBep.Designer.cs">
       <DependentUpon>FrmBep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCounter.Designer.cs">
+      <DependentUpon>FrmCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHoanTatDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHoanTatDonHang.Designer.cs">
+      <DependentUpon>FrmHoanTatDonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -165,6 +178,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBep.resx">
       <DependentUpon>FrmBep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCounter.resx">
+      <DependentUpon>FrmCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHoanTatDonHang.resx">
+      <DependentUpon>FrmHoanTatDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
