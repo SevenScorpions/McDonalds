@@ -100,7 +100,8 @@
             this.panel2.Controls.Add(this.tbPhone);
             this.panel2.Controls.Add(this.tbPassword);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Font = new System.Drawing.Font("Gugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.ForeColor = System.Drawing.Color.Firebrick;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1161, 660);
@@ -110,88 +111,88 @@
             // 
             this.lbWrongAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongAddress.AutoSize = true;
-            this.lbWrongAddress.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongAddress.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongAddress.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongAddress.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongAddress.Location = new System.Drawing.Point(780, 475);
             this.lbWrongAddress.Name = "lbWrongAddress";
-            this.lbWrongAddress.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongAddress.Size = new System.Drawing.Size(0, 15);
             this.lbWrongAddress.TabIndex = 38;
             // 
             // lbWrongEmail
             // 
             this.lbWrongEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongEmail.AutoSize = true;
-            this.lbWrongEmail.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongEmail.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongEmail.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongEmail.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongEmail.Location = new System.Drawing.Point(780, 331);
             this.lbWrongEmail.Name = "lbWrongEmail";
-            this.lbWrongEmail.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongEmail.Size = new System.Drawing.Size(0, 15);
             this.lbWrongEmail.TabIndex = 36;
             // 
             // lbWrongBirthday
             // 
             this.lbWrongBirthday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongBirthday.AutoSize = true;
-            this.lbWrongBirthday.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongBirthday.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongBirthday.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongBirthday.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongBirthday.Location = new System.Drawing.Point(781, 261);
             this.lbWrongBirthday.Name = "lbWrongBirthday";
-            this.lbWrongBirthday.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongBirthday.Size = new System.Drawing.Size(0, 15);
             this.lbWrongBirthday.TabIndex = 35;
             // 
             // lbWrongGender
             // 
             this.lbWrongGender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongGender.AutoSize = true;
-            this.lbWrongGender.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongGender.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongGender.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongGender.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongGender.Location = new System.Drawing.Point(214, 541);
             this.lbWrongGender.Name = "lbWrongGender";
-            this.lbWrongGender.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongGender.Size = new System.Drawing.Size(0, 15);
             this.lbWrongGender.TabIndex = 34;
             // 
             // lbWrongRePassword
             // 
             this.lbWrongRePassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongRePassword.AutoSize = true;
-            this.lbWrongRePassword.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongRePassword.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongRePassword.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongRePassword.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongRePassword.Location = new System.Drawing.Point(209, 475);
             this.lbWrongRePassword.Name = "lbWrongRePassword";
-            this.lbWrongRePassword.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongRePassword.Size = new System.Drawing.Size(0, 15);
             this.lbWrongRePassword.TabIndex = 33;
             // 
             // lbWrongPassword
             // 
             this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongPassword.AutoSize = true;
-            this.lbWrongPassword.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongPassword.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongPassword.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPassword.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongPassword.Location = new System.Drawing.Point(209, 402);
             this.lbWrongPassword.Name = "lbWrongPassword";
-            this.lbWrongPassword.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongPassword.Size = new System.Drawing.Size(0, 15);
             this.lbWrongPassword.TabIndex = 32;
             // 
             // lbWrongPhone
             // 
             this.lbWrongPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongPhone.AutoSize = true;
-            this.lbWrongPhone.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongPhone.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongPhone.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPhone.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongPhone.Location = new System.Drawing.Point(209, 331);
             this.lbWrongPhone.Name = "lbWrongPhone";
-            this.lbWrongPhone.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongPhone.Size = new System.Drawing.Size(0, 15);
             this.lbWrongPhone.TabIndex = 31;
             // 
             // lbWrongName
             // 
             this.lbWrongName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongName.AutoSize = true;
-            this.lbWrongName.Font = new System.Drawing.Font("Gugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWrongName.ForeColor = System.Drawing.Color.Linen;
+            this.lbWrongName.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongName.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongName.Location = new System.Drawing.Point(210, 261);
             this.lbWrongName.Name = "lbWrongName";
-            this.lbWrongName.Size = new System.Drawing.Size(0, 13);
+            this.lbWrongName.Size = new System.Drawing.Size(0, 15);
             this.lbWrongName.TabIndex = 30;
             // 
             // label11
@@ -224,7 +225,7 @@
             this.tbLastName.BackColor = System.Drawing.Color.Gainsboro;
             this.tbLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbLastName.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLastName.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbLastName.ForeColor = System.Drawing.Color.Black;
             this.tbLastName.Location = new System.Drawing.Point(434, 213);
             this.tbLastName.Margin = new System.Windows.Forms.Padding(15);
             this.tbLastName.Name = "tbLastName";
@@ -260,7 +261,7 @@
             this.tbRePassword.BackColor = System.Drawing.Color.Gainsboro;
             this.tbRePassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbRePassword.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbRePassword.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbRePassword.ForeColor = System.Drawing.Color.Black;
             this.tbRePassword.Location = new System.Drawing.Point(213, 427);
             this.tbRePassword.Margin = new System.Windows.Forms.Padding(15);
             this.tbRePassword.Name = "tbRePassword";
@@ -340,7 +341,7 @@
             this.tbAddress.BackColor = System.Drawing.Color.Gainsboro;
             this.tbAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbAddress.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbAddress.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbAddress.ForeColor = System.Drawing.Color.Black;
             this.tbAddress.Location = new System.Drawing.Point(784, 355);
             this.tbAddress.Margin = new System.Windows.Forms.Padding(15);
             this.tbAddress.Multiline = true;
@@ -378,7 +379,7 @@
             this.tbFirstName.BackColor = System.Drawing.Color.Gainsboro;
             this.tbFirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbFirstName.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFirstName.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbFirstName.ForeColor = System.Drawing.Color.Black;
             this.tbFirstName.Location = new System.Drawing.Point(213, 213);
             this.tbFirstName.Margin = new System.Windows.Forms.Padding(15);
             this.tbFirstName.Name = "tbFirstName";
@@ -391,11 +392,10 @@
             this.tbEmail.BackColor = System.Drawing.Color.Gainsboro;
             this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbEmail.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbEmail.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbEmail.ForeColor = System.Drawing.Color.Black;
             this.tbEmail.Location = new System.Drawing.Point(784, 284);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(15);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.PasswordChar = '.';
             this.tbEmail.Size = new System.Drawing.Size(351, 41);
             this.tbEmail.TabIndex = 8;
             // 
@@ -467,7 +467,7 @@
             this.tbPhone.BackColor = System.Drawing.Color.Gainsboro;
             this.tbPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPhone.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPhone.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbPhone.ForeColor = System.Drawing.Color.Black;
             this.tbPhone.Location = new System.Drawing.Point(213, 284);
             this.tbPhone.Margin = new System.Windows.Forms.Padding(15);
             this.tbPhone.Name = "tbPhone";
@@ -480,7 +480,7 @@
             this.tbPassword.BackColor = System.Drawing.Color.Gainsboro;
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPassword.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbPassword.ForeColor = System.Drawing.Color.Black;
             this.tbPassword.Location = new System.Drawing.Point(213, 355);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(15);
             this.tbPassword.Name = "tbPassword";

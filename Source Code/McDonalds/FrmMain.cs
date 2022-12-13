@@ -83,7 +83,7 @@ namespace McDonalds
             foreach (Mon item in data)
             {
                 list[i] = new Menu(item);
-                //list[i].uri_monan = item.Img;
+                list[i].uri_monan = item.Img;
                 list[i].name = item.TenMon;
                 list[i].price = item.GiaMon;
                 menu.Add(list[i]);
@@ -106,7 +106,7 @@ namespace McDonalds
             foreach (Combo item in data)
             {
                 list[i] = new Menu(item);
-                //list[i].uri_monan = item.Img;
+                list[i].uri_monan = item.Img;
                 list[i].name = item.TenCombo;
                 list[i].price = item.GiaCombo;
                 menu.Add(list[i]);
