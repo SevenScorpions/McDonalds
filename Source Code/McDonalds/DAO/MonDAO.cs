@@ -37,7 +37,7 @@ namespace McDonalds.DAO
         public List<Mon> getMon()
         {
             List<Mon> list = new List<Mon>();
-            string query = string.Format(@"Select * from MON");
+            string query = string.Format(@"Select * from MON where TRANGTHAI <> N'NGƯNG BÁN'");
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow row in data.Rows)
             {

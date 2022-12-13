@@ -44,9 +44,6 @@ namespace McDonalds
             foreach (Mon item in data)
             {
                 list[i] = new Menu(item);
-                list[i].uri_monan = item.Img;
-                list[i].name = item.TenMon;
-                list[i].price = item.GiaMon;
                 menu.Add(list[i]);
                 menuFilter.Add(list[i]);
 
@@ -61,9 +58,6 @@ namespace McDonalds
             foreach (Combo item in data1)
             {
                 list1[j] = new Menu(item);
-                list1[j].uri_monan = item.Img;
-                list1[j].name = item.TenCombo;
-                list1[j].price = item.GiaCombo;
                 menu.Add(list1[j]);
                 menuFilter.Add(list1[j]);
 
@@ -83,9 +77,6 @@ namespace McDonalds
             foreach (Mon item in data)
             {
                 list[i] = new Menu(item);
-                //list[i].uri_monan = item.Img;
-                list[i].name = item.TenMon;
-                list[i].price = item.GiaMon;
                 menu.Add(list[i]);
                 menuFilter.Add(list[i]);
 
@@ -106,9 +97,6 @@ namespace McDonalds
             foreach (Combo item in data)
             {
                 list[i] = new Menu(item);
-                //list[i].uri_monan = item.Img;
-                list[i].name = item.TenCombo;
-                list[i].price = item.GiaCombo;
                 menu.Add(list[i]);
                 menuFilter.Add(list[i]);
 
@@ -134,9 +122,6 @@ namespace McDonalds
             foreach (Mon item in data)
             {
                 list[i] = new Menu(item);
-                list[i].uri_monan = item.Img;
-                list[i].name = item.TenMon;
-                list[i].price = item.GiaMon;
                 menu.Add(list[i]);
                 menuFilter.Add(list[i]);
 
@@ -151,9 +136,6 @@ namespace McDonalds
             foreach (Combo item in data1)
             {
                 list1[j] = new Menu(item);
-                list1[j].uri_monan = item.Img;
-                list1[j].name = item.TenCombo;
-                list1[j].price = item.GiaCombo;
                 menu.Add(list1[j]);
                 menuFilter.Add(list1[j]);
 

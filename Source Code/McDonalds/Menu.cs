@@ -16,6 +16,7 @@ namespace McDonalds
         public Menu(object Mon)
         {
             InitializeComponent();
+            Obj = Mon;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -23,60 +24,48 @@ namespace McDonalds
 
         }
         private object obj;
-        public object Obj { get { return obj; } 
-            set { 
-                obj = value;
-                if(obj is Mon)
-                {
-
-                }
-            } 
-        }
         private string loai;
         private Mon mon;
         private Combo combo;
-
-        //load ảnh
-        public string _urimonan;
-        public string uri_monan
+        public Combo Combo { get { return combo; } set { combo = value; } }
+        public string Loai { get { return loai; } set { loai = value; } }
+        public Mon Mon
         {
+            get { return mon; }
+            set { mon = value; }
+        }
+        public object Obj
+        {
+            get { return obj; }
             set
             {
-                Object rm = McDonalds.Properties.Resources.ResourceManager.GetObject(value);
-                Bitmap myImage = (Bitmap)rm;
-                Image image = myImage;
-                this._urimonan = value;
-                pic_food.BackgroundImage = image;
+                obj = value;
+                if (obj is Mon)
+                {
+                    Loai = "Mon";
+                    Mon mon = (Mon)obj;
+                    this.mon = mon;
+                    Object rm = McDonalds.Properties.Resources.ResourceManager.GetObject(mon.Img);
+                    Bitmap myImage = (Bitmap)rm;
+                    Image image = myImage;
+                    pic_food.BackgroundImage = image;
+                    lbl_price.Text = "₫" + mon.GiaMon.ToString("#,#");
+                    lbl_name.Text = mon.TenMon;
+                }
+                else if (obj is Combo)
+                {
+                    Loai = "Combo";
+                    Combo combo = (Combo)obj;
+                    this.combo = combo;
+                    Object rm = McDonalds.Properties.Resources.ResourceManager.GetObject(combo.Img);
+                    Bitmap myImage = (Bitmap)rm;
+                    Image image = myImage;
+                    pic_food.BackgroundImage = image;
+                    lbl_price.Text = "₫" + combo.GiaCombo.ToString("#,#");
+                    lbl_name.Text = combo.TenCombo;
+                }
             }
-            get { return _urimonan; }
         }
-
-        //load tên
-        public string _name;
-        public string name
-        {
-            set
-            {
-                _name = value;
-                lbl_name.Text = value;
-            }
-            get { return this._name; }
-        }
-
-        //load giá
-        public int _price;
-        public int price
-        {
-            set
-            {
-                _price = value;
-                lbl_price.Text = "₫" + value.ToString("#,#");
-            }
-            get { return this._price; }
-        }
-
-        //int i = 0;
-        //FrmMain frmMain;
         private void button1_Click(object sender, EventArgs e)
         {
             //i++;
