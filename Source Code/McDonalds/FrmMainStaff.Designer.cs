@@ -90,6 +90,14 @@
             this.quanLyHoaDon = new System.Windows.Forms.TabPage();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.khoNguyenLieu.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -114,6 +122,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.quanLyNhanVien.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.quanLyHoaDon.SuspendLayout();
+            this.panel54.SuspendLayout();
             this.SuspendLayout();
             // 
             // khoNguyenLieu
@@ -391,7 +401,7 @@
             this.bgrd.Controls.Add(this.pictureBox11);
             this.bgrd.Controls.Add(this.panel1);
             this.bgrd.Controls.Add(this.btn_luu);
-            this.bgrd.Location = new System.Drawing.Point(45, 17);
+            this.bgrd.Location = new System.Drawing.Point(46, 37);
             this.bgrd.Name = "bgrd";
             this.bgrd.Size = new System.Drawing.Size(900, 400);
             this.bgrd.TabIndex = 14;
@@ -754,6 +764,14 @@
             // 
             // quanLyHoaDon
             // 
+            this.quanLyHoaDon.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.quanLyHoaDon.Controls.Add(this.listView1);
+            this.quanLyHoaDon.Controls.Add(this.panel54);
+            this.quanLyHoaDon.Controls.Add(this.label11);
+            this.quanLyHoaDon.Controls.Add(this.label10);
+            this.quanLyHoaDon.Controls.Add(this.label9);
+            this.quanLyHoaDon.Controls.Add(this.label8);
+            this.quanLyHoaDon.Controls.Add(this.label7);
             this.quanLyHoaDon.Font = new System.Drawing.Font("Roboto Cn", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.quanLyHoaDon.Location = new System.Drawing.Point(4, 24);
             this.quanLyHoaDon.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -762,13 +780,101 @@
             this.quanLyHoaDon.Size = new System.Drawing.Size(992, 474);
             this.quanLyHoaDon.TabIndex = 5;
             this.quanLyHoaDon.Text = "Quản Lý Hóa Đơn";
-            this.quanLyHoaDon.UseVisualStyleBackColor = true;
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Roboto Cn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Location = new System.Drawing.Point(8, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(159, 24);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Danh sách hóa đơn";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Linen;
+            this.label8.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.Location = new System.Drawing.Point(241, 7);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(71, 20);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Tổng tiền";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Linen;
+            this.label9.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(441, 7);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 20);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Tiền nhận";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Linen;
+            this.label10.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label10.Location = new System.Drawing.Point(649, 7);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 20);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Tiền thừa";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Linen;
+            this.label11.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.Location = new System.Drawing.Point(864, 7);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 20);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Ngày";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // panel54
+            // 
+            this.panel54.BackColor = System.Drawing.Color.SeaShell;
+            this.panel54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel54.Controls.Add(this.label24);
+            this.panel54.Location = new System.Drawing.Point(6, 422);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(980, 44);
+            this.panel54.TabIndex = 71;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Roboto Cn", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label24.Location = new System.Drawing.Point(5, 6);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(70, 28);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "TỔNG:";
+            // 
+            // listView1
+            // 
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(6, 33);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(980, 381);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
             // 
             // FrmMainStaff
             // 
@@ -813,6 +919,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.quanLyNhanVien.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.quanLyHoaDon.ResumeLayout(false);
+            this.quanLyHoaDon.PerformLayout();
+            this.panel54.ResumeLayout(false);
+            this.panel54.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -878,5 +988,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel54;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.ListView listView1;
     }
 }
