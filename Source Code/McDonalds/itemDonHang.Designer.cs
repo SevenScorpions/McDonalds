@@ -63,6 +63,7 @@
             this.Controls.Add(this.button1);
             this.Name = "itemDonHang";
             this.Size = new System.Drawing.Size(514, 116);
+            this.Load += new System.EventHandler(this.itemDonHang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

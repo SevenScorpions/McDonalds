@@ -22,19 +22,16 @@ namespace McDonalds
         private void Frm_Load(object sender, EventArgs e)
         {
             List<HoaDon> data = HoaDonDAO.Instance.getHoaDon();
-            var list = new itemDonHang[data.Count];
-            int i = 0;
-            
+
             foreach (HoaDon item in data)
             {
-                list[i] = new itemDonHang();
-                list[i].HoaDon = item;
+                //list[i] = new itemDonHang();
+                if(item.HoanTat != true) {
 
-                
-
-                i++;
+                    flowLayoutPanel1.Controls.Add(new itemDonHang(item));
+                }
             }
-            flowLayoutPanel1.Controls.AddRange(list);
+            
         }
     }
 
