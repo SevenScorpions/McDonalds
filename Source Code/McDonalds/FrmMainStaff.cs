@@ -20,5 +20,10 @@ namespace McDonalds
             this.taiKhoan = taiKhoan;
             InitializeComponent();
         }
+
+        private void FrmMainStaff_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
