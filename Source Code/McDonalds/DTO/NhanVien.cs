@@ -49,7 +49,7 @@ namespace McDonalds.DTO
             PhanLoaiNV = row["PHANLOAINV"].ToString();
             DiaChi = row["DIACHI"].ToString();
             ChucVu = row["CHUCVU"].ToString();
-            Password = row["Password"].ToString();
+            Password = row["MATKHAU"].ToString();
         }
     }
 }

@@ -93,7 +93,6 @@
     <Compile Include="DTO\Combo.cs" />
     <Compile Include="DTO\CTCombo.cs" />
     <Compile Include="DTO\CTMon.cs" />
-    <Compile Include="DTO\DonHang.cs" />
     <Compile Include="DTO\GiamGiaCombo.cs" />
     <Compile Include="DTO\GiamGiaMon.cs" />
     <Compile Include="DTO\HDCombo.cs" />
