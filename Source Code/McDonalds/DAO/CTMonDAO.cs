@@ -50,7 +50,8 @@ namespace McDonalds.DAO
         public List<CTMon> getCTMon()
         {
             List<CTMon> list = new List<CTMon>();
-            string query = @"Select * from CTMON";
+            string query = @"SELECT CTMON.IDCTMON, CTMON.TENCTM, (MON.GIAMON + CTMON.TIENTHEM) AS TIENTHEM, CTMON.TRANGTHAI, 
+                            CTMON.IDMON FROM MON, CTMON WHERE MON.IDMON = CTMON.IDMON";
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow row in data.Rows)
             {

@@ -46,8 +46,38 @@ namespace McDonalds
             }
             else
             {
-                lbWrongPassword.Text = "Your Username or Password is incorrect";
+                lbWrongPassword.Text = "Tên đăng nhập hoặc mật khẩu không chính xác";
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuest_Click(object sender, EventArgs e)
+        {
+            TaiKhoanKH taiKhoanKH = TaiKhoanKHDAO.Instance.getTaiKhoan("0000000000", "0000");
+            FrmMain frmMain = new FrmMain(taiKhoanKH);
+            this.Hide();
+            tbPassword.Text = "";
+            frmMain.ShowDialog();
+            this.Show();
         }
     }
 }

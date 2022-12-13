@@ -121,6 +121,7 @@
             this.bttnCounter.TabIndex = 2;
             this.bttnCounter.Text = "Counter";
             this.bttnCounter.UseVisualStyleBackColor = false;
+            this.bttnCounter.Click += new System.EventHandler(this.bttnCounter_Click);
             // 
             // bttnKitchen
             // 

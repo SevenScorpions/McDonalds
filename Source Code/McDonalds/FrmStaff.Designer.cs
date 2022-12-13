@@ -83,7 +83,7 @@
             this.bttnSignIn.BackColor = System.Drawing.Color.Firebrick;
             this.bttnSignIn.FlatAppearance.BorderSize = 0;
             this.bttnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnSignIn.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnSignIn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSignIn.ForeColor = System.Drawing.Color.White;
             this.bttnSignIn.Location = new System.Drawing.Point(531, 409);
             this.bttnSignIn.Name = "bttnSignIn";
