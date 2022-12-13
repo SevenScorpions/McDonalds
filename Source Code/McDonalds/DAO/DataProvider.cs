@@ -24,23 +24,36 @@ namespace McDonalds.DAO
         }
         public DataTable ExcuteQuery(string query)
         {
-
-            string connectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=MCDONALDS;Integrated Security=True";
             DataTable data = new DataTable();
-            using (SqlConnection connection = new SqlConnection(connectionStr))
+            try
             {
-                connection.Open();
-                SqlCommand command = new SqlCommand(query, connection);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(data);
-                connection.Close();
+                string connectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=MCDONALDS;Integrated Security=True";
+                
+                using (SqlConnection connection = new SqlConnection(connectionStr))
+                {
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(data);
+                    connection.Close();
+                }
+            }
+            catch
+            {
+                string connectionStr = @"Data Source=.\;Initial Catalog=MCDONALDS;Integrated Security=True";
+                using (SqlConnection connection = new SqlConnection(connectionStr))
+                {
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(data);
+                    connection.Close();
+                }
             }
             return data;
         }
         public void ExcuteNonQuery(string query)
         {
 
-            string connectionStr = @"Data Source=DESKTOP-ISC9GJP\SQLEXPRESS;Initial Catalog=MCDONALDS;Integrated Security=True";
+            string connectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=MCDONALDS;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionStr))
             {
                 connection.Open();
