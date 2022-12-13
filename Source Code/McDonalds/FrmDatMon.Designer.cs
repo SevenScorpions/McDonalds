@@ -67,6 +67,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmDatMon";
             this.Text = "Chi tiết món ăn";
+            this.Load += new System.EventHandler(this.FrmDatMon_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

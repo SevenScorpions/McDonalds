@@ -91,6 +91,7 @@
             this.Controls.Add(this.pic_food);
             this.Name = "Menu";
             this.Size = new System.Drawing.Size(425, 98);
+            this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_food)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
