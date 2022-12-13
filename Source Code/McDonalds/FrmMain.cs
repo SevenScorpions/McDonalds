@@ -32,14 +32,32 @@ namespace McDonalds
         {
 
         }
-
-        public List<Menu> menu;
-        public List<Menu> menuFilter;
         private void FrmMain_Load(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
             LoadMon();
             LoadCombo();
+            if (taiKhoanKH.SDT =="0000000000")
+            {
+                mainPanel.TabPages.Remove(tabProfile);
+            }
+            else
+            {
+                tbName.Text = taiKhoanKH.Ho;
+                textBox1.Text = taiKhoanKH.Ten;
+                tbAddress.Text = taiKhoanKH.DiaChi;
+                tbEmail.Text = taiKhoanKH.Email;
+                tbPhone.Text = taiKhoanKH.SDT;
+                if(taiKhoanKH.GioiTinh == "F")
+                {
+                    rbttnFemale.Checked = true;
+                }
+                else
+                {
+                    rbttnMale.Checked = true;
+                }
+                dtpBirthday.Value = taiKhoanKH.NgaySinh;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -79,6 +97,78 @@ namespace McDonalds
             foreach (Combo combo in combos)
             {
                 flowLayoutPanel1.Controls.Add(new Menu(combo));
+            }
+        }
+
+        private void tbAddress_TextChanged(object sender, EventArgs e)
+        {
+            if(tbAddress.Text != taiKhoanKH.DiaChi)
+            {
+                bttnSave.Enabled = true;
+            }
+            else
+            {
+                bttnSave.Enabled = false;
+            }
+        }
+
+        private void tbEmail_TextChanged(object sender, EventArgs e)
+        {
+            if(tbEmail.Text!=taiKhoanKH.Email)
+            {
+                bttnSave.Enabled = true;
+            }
+            else
+            {
+                bttnSave.Enabled = false;
+            }
+        }
+
+        private void tbName_TextChanged(object sender, EventArgs e)
+        {
+            if(tbName.Text!=taiKhoanKH.Ho)
+            {
+                bttnSave.Enabled = true;
+            }
+            else
+            {
+                bttnSave.Enabled = false;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if(textBox1.Text!=taiKhoanKH.Ho)
+            {
+                bttnSave.Enabled = true;
+            }
+            else
+            {
+                bttnSave.Enabled = false;
+            }
+        }
+
+        private void tbPhone_TextChanged(object sender, EventArgs e)
+        {
+            if(tbPhone.Text!=taiKhoanKH.SDT)
+            {
+                bttnSave.Enabled = true;
+            }
+            else
+            {
+                bttnSave.Enabled = false;
+            }
+        }
+
+        private void rbttnMale_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rbttnMale.Checked!=(taiKhoanKH.GioiTinh=="M"))
+            {
+                bttnSave.Enabled = true;
+            }
+            else
+            {
+                bttnSave.Enabled = false;
             }
         }
     }

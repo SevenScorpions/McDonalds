@@ -40,6 +40,7 @@ namespace McDonalds
             set
             {
                 obj = value;
+                bool enable = true;
                 if (obj is Mon)
                 {
                     Loai = "Mon";
@@ -51,6 +52,7 @@ namespace McDonalds
                     pic_food.BackgroundImage = image;
                     lbl_price.Text = "₫" + mon.GiaMon.ToString("#,#");
                     lbl_name.Text = mon.TenMon;
+                    enable = mon.TrangThai == "CÒN HÀNG";
                 }
                 else if (obj is Combo)
                 {
@@ -63,7 +65,9 @@ namespace McDonalds
                     pic_food.BackgroundImage = image;
                     lbl_price.Text = "₫" + combo.GiaCombo.ToString("#,#");
                     lbl_name.Text = combo.TenCombo;
+                    enable = combo.TrangThai == "CÒN HÀNG";
                 }
+                button1.Enabled = enable;
             }
         }
         private void button1_Click(object sender, EventArgs e)
