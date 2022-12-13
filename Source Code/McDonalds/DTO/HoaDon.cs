@@ -10,7 +10,7 @@ namespace McDonalds.DTO
     public class HoaDon
     {
         private string _idHd;
-        private DateTime _thoiGianLap;
+        private DateTime tgLap;
         private int _tongTien;
         private int _soBot;
         private int _stt;
@@ -24,10 +24,10 @@ namespace McDonalds.DTO
             get { return _idHd; }
             set { _idHd = value; }
         }
-        public DateTime ThoiGianLap
+        public DateTime TGLap
         {
-            get { return _thoiGianLap; }
-            set { _thoiGianLap = value; }
+            get { return tgLap; }
+            set { tgLap = value; }
         }
         public int TongTien
         {
@@ -65,10 +65,10 @@ namespace McDonalds.DTO
             get { return hoanTat; }
             set { hoanTat = value; }
         }
-        public HoaDon(string idHd, DateTime thoiGianLap, int tongTien, int soBot, int stt, int giaGoc, string idKH, bool thanhToan, bool hoanTat)
+        public HoaDon(string idHd, DateTime tgLap, int tongTien, int soBot, int stt, int giaGoc, string idKH, bool thanhToan, bool hoanTat)
         {
             IDHD = idHd;
-            ThoiGianLap = thoiGianLap;
+            TGLap = tgLap;
             TongTien = tongTien;
             SoBot = soBot;
             STT = stt;
@@ -80,14 +80,14 @@ namespace McDonalds.DTO
         public HoaDon(DataRow row)
         {
             IDHD = row["IDHD"].ToString();
-            ThoiGianLap = (DateTime)row["THOIGIANLAP"];
+            TGLap = (DateTime)row["TGLAP"];
             TongTien = (int)row["TONGTIEN"];
             SoBot = (int)row["SOBOT"];
             STT = (int)row["STT"];
             GiaGoc = (int)row["GIAGOC"];
             IDKH = row["IDKH"].ToString();
-            ThanhToan =  row["THANHTOAN"].ToString() == "TRUE";
-            HoanTat = row["HOANTAT"].ToString() == "TRUE";
+            ThanhToan = bool.Parse(row["THANHTOAN"].ToString());
+            HoanTat = bool.Parse(row["HOANTAT"].ToString());
         }
     }
 }

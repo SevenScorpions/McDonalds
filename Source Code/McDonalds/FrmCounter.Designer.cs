@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCounter));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpListHoaDon = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbTongTien = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.listViewDonHang = new System.Windows.Forms.ListView();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonXuatHoaDon = new System.Windows.Forms.Button();
             this.labelTienThua = new System.Windows.Forms.Label();
@@ -42,32 +41,34 @@
             this.textBoxTienNhan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // flpListHoaDon
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.flpListHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Beige;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(10, 13);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(293, 719);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flpListHoaDon.AutoScroll = true;
+            this.flpListHoaDon.BackColor = System.Drawing.Color.Beige;
+            this.flpListHoaDon.Location = new System.Drawing.Point(10, 13);
+            this.flpListHoaDon.Name = "flpListHoaDon";
+            this.flpListHoaDon.Size = new System.Drawing.Size(311, 719);
+            this.flpListHoaDon.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Beige;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lbTongTien);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.listViewDonHang);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(317, 13);
+            this.panel1.Location = new System.Drawing.Point(320, 13);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(834, 457);
+            this.panel1.Size = new System.Drawing.Size(824, 457);
             this.panel1.TabIndex = 1;
             // 
             // lbTongTien
@@ -76,7 +77,7 @@
             this.lbTongTien.AutoSize = true;
             this.lbTongTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbTongTien.Font = new System.Drawing.Font("Roboto Th", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTongTien.Location = new System.Drawing.Point(696, 415);
+            this.lbTongTien.Location = new System.Drawing.Point(686, 415);
             this.lbTongTien.Name = "lbTongTien";
             this.lbTongTien.Size = new System.Drawing.Size(135, 29);
             this.lbTongTien.TabIndex = 3;
@@ -87,7 +88,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto Th", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(565, 415);
+            this.label2.Location = new System.Drawing.Point(555, 415);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 27);
             this.label2.TabIndex = 2;
@@ -101,24 +102,9 @@
             this.listViewDonHang.HideSelection = false;
             this.listViewDonHang.Location = new System.Drawing.Point(10, 40);
             this.listViewDonHang.Name = "listViewDonHang";
-            this.listViewDonHang.Size = new System.Drawing.Size(814, 367);
+            this.listViewDonHang.Size = new System.Drawing.Size(804, 367);
             this.listViewDonHang.TabIndex = 1;
             this.listViewDonHang.UseCompatibleStateImageBehavior = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Roboto Th", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(294, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "THÔNG TIN ĐƠN HÀNG";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel2
             // 
@@ -131,9 +117,9 @@
             this.panel2.Controls.Add(this.textBoxTienNhan);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.textBoxMaNhanVien);
-            this.panel2.Location = new System.Drawing.Point(317, 476);
+            this.panel2.Location = new System.Drawing.Point(327, 476);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(833, 256);
+            this.panel2.Size = new System.Drawing.Size(823, 256);
             this.panel2.TabIndex = 2;
             // 
             // buttonXuatHoaDon
@@ -142,7 +128,7 @@
             this.buttonXuatHoaDon.BackColor = System.Drawing.Color.Firebrick;
             this.buttonXuatHoaDon.Font = new System.Drawing.Font("Roboto Th", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXuatHoaDon.ForeColor = System.Drawing.Color.Gold;
-            this.buttonXuatHoaDon.Location = new System.Drawing.Point(662, 202);
+            this.buttonXuatHoaDon.Location = new System.Drawing.Point(652, 202);
             this.buttonXuatHoaDon.Name = "buttonXuatHoaDon";
             this.buttonXuatHoaDon.Size = new System.Drawing.Size(170, 51);
             this.buttonXuatHoaDon.TabIndex = 5;
@@ -197,6 +183,21 @@
             this.textBoxMaNhanVien.TabIndex = 0;
             this.textBoxMaNhanVien.Text = "Mã nhân viên";
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Roboto Th", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(287, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(296, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "THÔNG TIN ĐƠN HÀNG";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // FrmCounter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -205,7 +206,7 @@
             this.ClientSize = new System.Drawing.Size(1163, 731);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flpListHoaDon);
             this.Font = new System.Drawing.Font("Roboto Th", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCounter";
@@ -221,11 +222,10 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpListHoaDon;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListView listViewDonHang;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbTongTien;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelTienThua;
@@ -234,5 +234,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxMaNhanVien;
         private System.Windows.Forms.Button buttonXuatHoaDon;
+        private System.Windows.Forms.Label label1;
     }
 }
