@@ -176,6 +176,12 @@
     <Compile Include="ItemChitiet.Designer.cs">
       <DependentUpon>ItemChitiet.cs</DependentUpon>
     </Compile>
+    <Compile Include="itemDonHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="itemDonHang.Designer.cs">
+      <DependentUpon>itemDonHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Menu.cs">
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ItemChitiet.resx">
       <DependentUpon>ItemChitiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemDonHang.resx">
+      <DependentUpon>itemDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

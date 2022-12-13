@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // label1
@@ -43,15 +44,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "HOÀN TẤT ĐƠN HÀNG";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 78);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1153, 571);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // FrmHoanTatDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1263, 652);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Roboto Th", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FrmHoanTatDonHang";
             this.Text = "Hoàn tất đơn hàng";
+            this.Load += new System.EventHandler(this.Frm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -60,5 +70,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
