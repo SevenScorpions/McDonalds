@@ -17,7 +17,6 @@ namespace McDonalds.DTO
         private string phanLoaiNV;
         private string diaChi;
         private string chucVu;
-        private string password;
         public string IDNV { get { return idNV; } set { idNV = value; } }
         public string Ho { get { return ho; } set { ho = value; } }
         public string Ten { get { return ten; } set { ten = value; } }
@@ -26,8 +25,7 @@ namespace McDonalds.DTO
         public string PhanLoaiNV { get { return phanLoaiNV; } set { phanLoaiNV = value; } }
         public string DiaChi { get { return diaChi; } set { diaChi = value; } }
         public string ChucVu { get { return chucVu; } set { chucVu = value; } }
-        public string Password { get { return password; } set { password = value; } }
-        public NhanVien(string idNV, string hoTen, string email, string sdt, string phanLoaiNV, string diaChi, string chucVu, string password)
+        public NhanVien(string idNV, string ho, string ten, string email, string sdt, string phanLoaiNV, string diaChi, string chucVu, string matKhau)
         {
             IDNV = idNV;
             Ho = ho;
@@ -37,7 +35,6 @@ namespace McDonalds.DTO
             PhanLoaiNV = phanLoaiNV;
             DiaChi = diaChi;
             ChucVu = chucVu;
-            Password = password;
         }
         public NhanVien(DataRow row)
         {
@@ -49,7 +46,6 @@ namespace McDonalds.DTO
             PhanLoaiNV = row["PHANLOAINV"].ToString();
             DiaChi = row["DIACHI"].ToString();
             ChucVu = row["CHUCVU"].ToString();
-            Password = row["MATKHAU"].ToString();
         }
     }
 }

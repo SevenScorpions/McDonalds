@@ -263,6 +263,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mcdonalds.ico" />
+    <None Include="Resources\notification.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\potato.png" />
+    <None Include="Resources\salad.png" />
+    <None Include="Resources\soda.png" />
+    <None Include="Resources\burger.png" />
+    <None Include="Resources\egg.png" />
+    <None Include="Resources\fish.png" />
+    <None Include="Resources\cow.png" />
+    <None Include="Resources\chicken-wings.png" />
+    <None Include="Resources\food.png" />
     <None Include="Resources\user.png" />
     <None Include="Resources\mcdonalds_cone.png" />
     <None Include="Resources\regular_world_famous_fries.png" />
