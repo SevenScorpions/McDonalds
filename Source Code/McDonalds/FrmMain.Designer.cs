@@ -32,12 +32,13 @@
             this.mainPanel = new System.Windows.Forms.TabControl();
             this.tabMenu = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabCart = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bttnOrder = new System.Windows.Forms.Button();
             this.tabProfile = new System.Windows.Forms.TabPage();
@@ -64,14 +65,13 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
-            this.menu1 = new McDonalds.Menu();
             this.mainPanel.SuspendLayout();
             this.tabMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabCart.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabProfile.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -80,7 +80,7 @@
             // mainPanel
             // 
             this.mainPanel.Controls.Add(this.tabMenu);
-            this.mainPanel.Controls.Add(this.tabPage1);
+            this.mainPanel.Controls.Add(this.tabCart);
             this.mainPanel.Controls.Add(this.tabProfile);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,7 +88,7 @@
             this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.SelectedIndex = 0;
-            this.mainPanel.Size = new System.Drawing.Size(1114, 746);
+            this.mainPanel.Size = new System.Drawing.Size(1242, 701);
             this.mainPanel.TabIndex = 2;
             // 
             // tabMenu
@@ -100,7 +100,7 @@
             this.tabMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabMenu.Size = new System.Drawing.Size(1106, 705);
+            this.tabMenu.Size = new System.Drawing.Size(1234, 660);
             this.tabMenu.TabIndex = 0;
             this.tabMenu.Text = "Thực đơn";
             this.tabMenu.UseVisualStyleBackColor = true;
@@ -111,12 +111,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.menu1);
+            this.panel2.Controls.Add(this.flowLayoutPanel1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(28, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1037, 619);
+            this.panel2.Size = new System.Drawing.Size(1165, 574);
             this.panel2.TabIndex = 5;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(223, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(942, 574);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel3
             // 
@@ -126,7 +135,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(177, 619);
+            this.panel3.Size = new System.Drawing.Size(177, 574);
             this.panel3.TabIndex = 0;
             // 
             // panel7
@@ -145,8 +154,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(204, 74);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Thực đơn phụ";
+            this.button3.Text = "Combo";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel6
             // 
@@ -164,22 +174,23 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(204, 74);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Thực đơn chính";
+            this.button2.Text = "Món ăn";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tabPage1
+            // tabCart
             // 
-            this.tabPage1.BackgroundImage = global::McDonalds.Properties.Resources.istockphoto_1176097155_612x612;
-            this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 37);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(1106, 705);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "Giỏ hàng";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabCart.BackgroundImage = global::McDonalds.Properties.Resources.istockphoto_1176097155_612x612;
+            this.tabCart.Controls.Add(this.panel1);
+            this.tabCart.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabCart.Location = new System.Drawing.Point(4, 37);
+            this.tabCart.Name = "tabCart";
+            this.tabCart.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCart.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tabCart.Size = new System.Drawing.Size(1234, 660);
+            this.tabCart.TabIndex = 3;
+            this.tabCart.Text = "Giỏ hàng";
+            this.tabCart.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -190,7 +201,7 @@
             this.panel1.Controls.Add(this.bttnOrder);
             this.panel1.Location = new System.Drawing.Point(28, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1051, 689);
+            this.panel1.Size = new System.Drawing.Size(946, 628);
             this.panel1.TabIndex = 5;
             // 
             // bttnOrder
@@ -200,7 +211,7 @@
             this.bttnOrder.FlatAppearance.BorderSize = 0;
             this.bttnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnOrder.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnOrder.Location = new System.Drawing.Point(910, 627);
+            this.bttnOrder.Location = new System.Drawing.Point(572, 550);
             this.bttnOrder.Name = "bttnOrder";
             this.bttnOrder.Size = new System.Drawing.Size(128, 49);
             this.bttnOrder.TabIndex = 0;
@@ -217,7 +228,7 @@
             this.tabProfile.Name = "tabProfile";
             this.tabProfile.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabProfile.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabProfile.Size = new System.Drawing.Size(1106, 705);
+            this.tabProfile.Size = new System.Drawing.Size(1234, 660);
             this.tabProfile.TabIndex = 4;
             this.tabProfile.Text = "Thông tin";
             this.tabProfile.UseVisualStyleBackColor = true;
@@ -248,9 +259,9 @@
             this.panel5.Controls.Add(this.tbEmail);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.tbPhone);
-            this.panel5.Location = new System.Drawing.Point(152, 25);
+            this.panel5.Location = new System.Drawing.Point(216, 25);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(801, 648);
+            this.panel5.Size = new System.Drawing.Size(801, 603);
             this.panel5.TabIndex = 4;
             // 
             // bttnSignOut
@@ -449,7 +460,7 @@
             this.tbAddress.Margin = new System.Windows.Forms.Padding(15);
             this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(361, 27);
+            this.tbAddress.Size = new System.Drawing.Size(361, 0);
             this.tbAddress.TabIndex = 35;
             // 
             // label4
@@ -528,19 +539,11 @@
             this.tbPhone.Size = new System.Drawing.Size(361, 30);
             this.tbPhone.TabIndex = 27;
             // 
-            // menu1
-            // 
-            this.menu1.Location = new System.Drawing.Point(299, 27);
-            this.menu1.Margin = new System.Windows.Forms.Padding(5);
-            this.menu1.Name = "menu1";
-            this.menu1.Size = new System.Drawing.Size(616, 180);
-            this.menu1.TabIndex = 3;
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1114, 746);
+            this.ClientSize = new System.Drawing.Size(1242, 701);
             this.Controls.Add(this.mainPanel);
             this.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -548,13 +551,14 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "McDonalds";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.mainPanel.ResumeLayout(false);
             this.tabMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.tabCart.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tabProfile.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -565,8 +569,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabControl mainPanel;
+        private System.Windows.Forms.TabPage tabCart;
         private System.Windows.Forms.TabPage tabMenu;
         private System.Windows.Forms.TabPage tabProfile;
         private System.Windows.Forms.Panel panel5;
@@ -600,6 +603,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button2;
-        private Menu menu1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        public System.Windows.Forms.TabControl mainPanel;
     }
 }
