@@ -23,28 +23,18 @@ namespace McDonalds
         }
 
         //load ảnh
-        public Task<Image> LoadImageFromFileAsync(string uri)
-        {
-            return Task.Run(() => {
-                return Image.FromFile(uri);
-            });
-        }
-
         public string _urimonan;
         public string uri_monan
         {
             set
             {
+                Object rm = McDonalds.Properties.Resources.ResourceManager.GetObject(value);
+                Bitmap myImage = (Bitmap)rm;
+                Image image = myImage;
                 this._urimonan = value;
+                pic_food.BackgroundImage = image;
             }
             get { return _urimonan; }
-        }
-
-        public async void LoadImageAsync()
-        {
-            var image = await LoadImageFromFileAsync(this.uri_monan);
-            pic_food.Image = image;
-
         }
 
         //load tên
@@ -77,6 +67,11 @@ namespace McDonalds
         {
             //i++;
             //frmMain.tabCart.Text = "hello";
+        }
+
+        private void lbl_price_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

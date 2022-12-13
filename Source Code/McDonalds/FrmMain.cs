@@ -36,24 +36,41 @@ namespace McDonalds
         public List<Menu> menuFilter;
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            List<CTMon> data = CTMonDAO.Instance.getCTMon();
+            List<Mon> data = MonDAO.Instance.getMon();
             var list = new Menu[data.Count];
             int i = 0;
             menu = new List<Menu>();
             menuFilter = new List<Menu>();
-            foreach (CTMon item in data)
+            foreach (Mon item in data)
             {
                 list[i] = new Menu();
-                //list[i].uri_monan = item.Img;
-                list[i].name = item.TenCTM;
-                list[i].price = item.TienThem;
-                //list[i].LoadImageAsync();
+                list[i].uri_monan = item.Img;
+                list[i].name = item.TenMon;
+                list[i].price = item.GiaMon;
                 menu.Add(list[i]);
                 menuFilter.Add(list[i]);
 
                 i++;
             }
+
+            List<Combo> data1 = ComboDAO.Instance.getCombo();
+            var list1 = new Menu[data.Count];
+            int j = 0;
+            menu = new List<Menu>();
+            menuFilter = new List<Menu>();
+            foreach (Combo item in data1)
+            {
+                list1[j] = new Menu();
+                list1[j].uri_monan = item.Img;
+                list1[j].name = item.TenCombo;
+                list1[j].price = item.GiaCombo;
+                menu.Add(list1[j]);
+                menuFilter.Add(list1[j]);
+
+                j++;
+            }
             flowLayoutPanel1.Controls.AddRange(list);
+            flowLayoutPanel1.Controls.AddRange(list1);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -69,12 +86,12 @@ namespace McDonalds
                 list[i].uri_monan = item.Img;
                 list[i].name = item.TenMon;
                 list[i].price = item.GiaMon;
-                list[i].LoadImageAsync();
                 menu.Add(list[i]);
                 menuFilter.Add(list[i]);
 
                 i++;
             }
+            //((Control)this.tabProfile).Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Controls.AddRange(list);
         }
@@ -92,14 +109,58 @@ namespace McDonalds
                 list[i].uri_monan = item.Img;
                 list[i].name = item.TenCombo;
                 list[i].price = item.GiaCombo;
-                list[i].LoadImageAsync();
                 menu.Add(list[i]);
                 menuFilter.Add(list[i]);
 
                 i++;
             }
+            //((Control)this.tabProfile).Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Controls.AddRange(list);
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            List<Mon> data = MonDAO.Instance.getMon();
+            var list = new Menu[data.Count];
+            int i = 0;
+            menu = new List<Menu>();
+            menuFilter = new List<Menu>();
+            foreach (Mon item in data)
+            {
+                list[i] = new Menu();
+                list[i].uri_monan = item.Img;
+                list[i].name = item.TenMon;
+                list[i].price = item.GiaMon;
+                menu.Add(list[i]);
+                menuFilter.Add(list[i]);
+
+                i++;
+            }
+
+            List<Combo> data1 = ComboDAO.Instance.getCombo();
+            var list1 = new Menu[data.Count];
+            int j = 0;
+            menu = new List<Menu>();
+            menuFilter = new List<Menu>();
+            foreach (Combo item in data1)
+            {
+                list1[j] = new Menu();
+                list1[j].uri_monan = item.Img;
+                list1[j].name = item.TenCombo;
+                list1[j].price = item.GiaCombo;
+                menu.Add(list1[j]);
+                menuFilter.Add(list1[j]);
+
+                j++;
+            }
+            flowLayoutPanel1.Controls.AddRange(list);
+            flowLayoutPanel1.Controls.AddRange(list1);
         }
     }
 }

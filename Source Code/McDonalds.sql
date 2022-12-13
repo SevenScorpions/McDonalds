@@ -73,6 +73,8 @@ CREATE TABLE HOADON(
 	TONGTIEN INT NOT NULL,
 	TIENNHAN INT,
 	TIENTRA INT,
+	THANHTOAN NVARCHAR(5),
+	HOANTAT NVARCHAR(5),
 	PRIMARY KEY(IDHD),
 	FOREIGN KEY(IDKH) REFERENCES TAIKHOANKH(IDKH)
 )
@@ -98,17 +100,17 @@ CREATE TABLE MON(
 GO
 
 --INSERT MÓN ĂN
-INSERT INTO MON VALUES('MN0000001', N'1 MIẾNG GÀ RÁN', 39000, 'https://mcdonalds.vn/uploads/2018/food/ga-ran/1-ga-ran.png', N'CÒN HÀNG')
-INSERT INTO MON VALUES('MN0000002', N'KHOAI TÂY CHIÊN', 19000, 'https://mcdonalds.vn/uploads/2018/food/ga-ran/regular_world_famous_fries.png', N'CÒN HÀNG')
-INSERT INTO MON VALUES('MN0000003', N'3 MIẾNG CÁNH GÀ MCWINGS', 69000, 'https://mcdonalds.vn/uploads/2018/food/ga-ran/3pcs_chicken_mcwings.png', N'CÒN HÀNG')
-INSERT INTO MON VALUES('MN0000004', N'PHẦN ĂN CƠM THỊT NƯỚNG', 46000, 'https://mcdonalds.vn/uploads/2018/food/rice/MEAL_porkrice.png', N'HẾT HÀNG')
-INSERT INTO MON VALUES('MN0000005', N'CƠM GÀ RÁN', 42000, 'https://mcdonalds.vn/uploads/2018/food-categories/com-ga.png', N'CÒN HÀNG')
-INSERT INTO MON VALUES('MN0000006', N'PHẦN ĂN CƠM THỊT NƯỚNG ỐP LA', 66000, 'https://mcdonalds.vn/uploads/2018/food/rice/MEAL_porkeggrice.png', N'HẾT HÀNG')
-INSERT INTO MON VALUES('MN0000007', N'BURGERS BÒ PHÔ MAI ĐẶT BIỆT', 49000, 'https://mcdonalds.vn/uploads/2018/food/burgers/cheese-burger-deluxe.png', N'CÒN HÀNG')
-INSERT INTO MON VALUES('MN0000008', N'BURGERS BIG MAC', 75000, 'https://mcdonalds.vn/uploads/2018/food/burgers/bigmac.png', N'CÒN HÀNG')
-INSERT INTO MON VALUES('MN0000009', N'COCA-COLA', 15000, 'https://mcdonalds.vn/uploads/2018/food/beverage/mcd-food-beverages-soft-drinks-coke.png', N'CÒN HÀNG')
-INSERT INTO MON VALUES('MN0000010', N'KEM ỐC QUẾ', 10000, 'https://mcdonalds.vn/uploads/2018/food/desserts/mcdonalds_cone.png', N'CÒN HÀNG')
-INSERT INTO MON VALUES('MN0000011', N'4 MIẾNG GÀ MCNUGGETS', 36000, 'https://mcdonalds.vn/uploads/2018/4nuggets.png', N'CÒN HÀNG')
+INSERT INTO MON VALUES('MN0000001', N'1 MIẾNG GÀ RÁN', 39000, '1-ga-ran', N'CÒN HÀNG')
+INSERT INTO MON VALUES('MN0000002', N'KHOAI TÂY CHIÊN', 19000, 'regular_world_famous_fries', N'CÒN HÀNG')
+INSERT INTO MON VALUES('MN0000003', N'3 MIẾNG CÁNH GÀ MCWINGS', 69000, '3pcs_chicken_mcwings', N'CÒN HÀNG')
+INSERT INTO MON VALUES('MN0000004', N'PHẦN ĂN CƠM THỊT NƯỚNG', 46000, 'MEAL_porkrice', N'HẾT HÀNG')
+INSERT INTO MON VALUES('MN0000005', N'CƠM GÀ RÁN', 42000, 'com-ga', N'CÒN HÀNG')
+INSERT INTO MON VALUES('MN0000006', N'PHẦN ĂN CƠM THỊT NƯỚNG ỐP LA', 66000, 'MEAL_porkeggrice', N'HẾT HÀNG')
+INSERT INTO MON VALUES('MN0000007', N'BURGERS BÒ PHÔ MAI ĐẶT BIỆT', 49000, 'cheese-burger-deluxe', N'CÒN HÀNG')
+INSERT INTO MON VALUES('MN0000008', N'BURGERS BIG MAC', 75000, 'bigmac', N'CÒN HÀNG')
+INSERT INTO MON VALUES('MN0000009', N'COCA-COLA', 15000, 'mcd-food-beverages-soft-drinks-coke', N'CÒN HÀNG')
+INSERT INTO MON VALUES('MN0000010', N'KEM ỐC QUẾ', 10000, 'mcdonalds_cone', N'CÒN HÀNG')
+INSERT INTO MON VALUES('MN0000011', N'4 MIẾNG GÀ MCNUGGETS', 36000, '4nuggets', N'CÒN HÀNG')
 GO
 
 CREATE TABLE CTMON(
@@ -156,12 +158,12 @@ CREATE TABLE COMBO(
 GO
 
 --INSERT COMBO
-INSERT INTO COMBO VALUES('CB0000001', N'COMBO 2A', 129000, 'https://mcdonalds.vn/uploads/2018/food/Combo/combo2A.png', N'CÒN HÀNG')
-INSERT INTO COMBO VALUES('CB0000002', N'COMBO 2B', 175000, 'https://mcdonalds.vn/uploads/2018/food/Combo/combo2B.png', N'CÒN HÀNG')
-INSERT INTO COMBO VALUES('CB0000003', N'COMBO 2C', 185000, 'https://mcdonalds.vn/uploads/2018/food/Combo/combo2C.png', N'CÒN HÀNG')
-INSERT INTO COMBO VALUES('CB0000004', N'COMBO 81K', 81000, 'https://mcdonalds.vn/uploads/2018/food/Combo/com79k.png', N'CÒN HÀNG')
-INSERT INTO COMBO VALUES('CB0000005', N'COMBO 3A', 279000, 'https://mcdonalds.vn/uploads/2018/food/Combo/combo3A.png', N'CÒN HÀNG')
-INSERT INTO COMBO VALUES('CB0000006', N'COMBO 3B', 289000, 'https://mcdonalds.vn/uploads/2018/food/Combo/combo3B.png', N'CÒN HÀNG')
+INSERT INTO COMBO VALUES('CB0000001', N'COMBO 2A', 129000, 'combo2A', N'CÒN HÀNG')
+INSERT INTO COMBO VALUES('CB0000002', N'COMBO 2B', 175000, 'combo2B', N'CÒN HÀNG')
+INSERT INTO COMBO VALUES('CB0000003', N'COMBO 2C', 185000, 'combo2C', N'CÒN HÀNG')
+INSERT INTO COMBO VALUES('CB0000004', N'COMBO 81K', 81000, 'com79k', N'CÒN HÀNG')
+INSERT INTO COMBO VALUES('CB0000005', N'COMBO 3A', 279000, 'combo3A', N'CÒN HÀNG')
+INSERT INTO COMBO VALUES('CB0000006', N'COMBO 3B', 289000, 'combo3B', N'CÒN HÀNG')
 GO
 
 CREATE TABLE CTCOMBO(

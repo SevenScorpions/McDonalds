@@ -63,9 +63,129 @@ namespace McDonalds.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_ga_ran {
+            get {
+                object obj = ResourceManager.GetObject("1-ga-ran", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1600px_COLOURBOX54593006 {
             get {
                 object obj = ResourceManager.GetObject("1600px_COLOURBOX54593006", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3pcs_chicken_mcwings {
+            get {
+                object obj = ResourceManager.GetObject("3pcs_chicken_mcwings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4nuggets {
+            get {
+                object obj = ResourceManager.GetObject("4nuggets", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bigmac {
+            get {
+                object obj = ResourceManager.GetObject("bigmac", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cheese_burger_deluxe {
+            get {
+                object obj = ResourceManager.GetObject("cheese-burger-deluxe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap com_ga {
+            get {
+                object obj = ResourceManager.GetObject("com-ga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap com79k {
+            get {
+                object obj = ResourceManager.GetObject("com79k", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap combo2A {
+            get {
+                object obj = ResourceManager.GetObject("combo2A", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap combo2B {
+            get {
+                object obj = ResourceManager.GetObject("combo2B", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap combo2C {
+            get {
+                object obj = ResourceManager.GetObject("combo2C", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap combo3A {
+            get {
+                object obj = ResourceManager.GetObject("combo3A", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap combo3B {
+            get {
+                object obj = ResourceManager.GetObject("combo3B", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -144,9 +264,29 @@ namespace McDonalds.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mcd_food_beverages_soft_drinks_coke {
+            get {
+                object obj = ResourceManager.GetObject("mcd-food-beverages-soft-drinks-coke", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap McDonald_s_Golden_Arches_svg {
             get {
                 object obj = ResourceManager.GetObject("McDonald\'s_Golden_Arches.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mcdonalds_cone {
+            get {
+                object obj = ResourceManager.GetObject("mcdonalds_cone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -164,9 +304,39 @@ namespace McDonalds.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MEAL_porkeggrice {
+            get {
+                object obj = ResourceManager.GetObject("MEAL_porkeggrice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MEAL_porkrice {
+            get {
+                object obj = ResourceManager.GetObject("MEAL_porkrice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_polina_tankilevitch_4109206 {
             get {
                 object obj = ResourceManager.GetObject("pexels-polina-tankilevitch-4109206", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regular_world_famous_fries {
+            get {
+                object obj = ResourceManager.GetObject("regular_world_famous_fries", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
