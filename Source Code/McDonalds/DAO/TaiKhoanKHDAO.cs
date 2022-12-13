@@ -63,5 +63,12 @@ namespace McDonalds.DAO
             }
             return null;
         }
+
+        public void taoTaiKhoan(string firstName, string lastName, string gioiTinh, string ngaySinh, string sdt, 
+                                string mk, string email, string diaChi)
+        {
+            string query = @"INSERT INTO TAIKHOANKH VALUES('KH" + sdt + "', N'" + firstName + "', N'" + lastName + "', '" + gioiTinh + "', '" + ngaySinh + "', '" + sdt + "', '" + mk + "', '" + email + "', N'" + diaChi + "', N'Đồng', 0)";
+            DataProvider.Instance.ExcuteQuery(query);
+        }
     }
 }
