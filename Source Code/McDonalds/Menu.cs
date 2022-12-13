@@ -23,7 +23,6 @@ namespace McDonalds
         {
 
         }
-        private string trangThai;
         private object obj;
         private string loai;
         private Mon mon;
@@ -52,7 +51,6 @@ namespace McDonalds
                     pic_food.BackgroundImage = image;
                     lbl_price.Text = "₫" + mon.GiaMon.ToString("#,#");
                     lbl_name.Text = mon.TenMon;
-                    button1.Enabled = mon.TrangThai == "Còn Hàng";
                 }
                 else if (obj is Combo)
                 {
@@ -65,7 +63,6 @@ namespace McDonalds
                     pic_food.BackgroundImage = image;
                     lbl_price.Text = "₫" + combo.GiaCombo.ToString("#,#");
                     lbl_name.Text = combo.TenCombo;
-                    button1.Enabled = combo.TrangThai == "Còn Hàng";
                 }
             }
         }

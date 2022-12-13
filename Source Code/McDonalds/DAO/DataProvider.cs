@@ -28,7 +28,7 @@ namespace McDonalds.DAO
             try
             {
                 string connectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=MCDONALDS;Integrated Security=True";
-                
+
                 using (SqlConnection connection = new SqlConnection(connectionStr))
                 {
                     SqlCommand command = new SqlCommand(query, connection);
@@ -53,7 +53,7 @@ namespace McDonalds.DAO
         public void ExcuteNonQuery(string query)
         {
 
-            string connectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=MCDONALDS;Integrated Security=True";
+            string connectionStr = @"Data Source=DESKTOP-ISC9GJP\SQLEXPRESS;Initial Catalog=MCDONALDS;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionStr))
             {
                 connection.Open();
