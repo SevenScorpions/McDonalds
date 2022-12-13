@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace McDonalds
 {
@@ -31,92 +32,23 @@ namespace McDonalds
         {
 
         }
-
-        public List<Menu> menu;
-        public List<Menu> menuFilter;
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            List<Mon> data = MonDAO.Instance.getMon();
-            var list = new Menu[data.Count];
-            int i = 0;
-            menu = new List<Menu>();
-            menuFilter = new List<Menu>();
-            foreach (Mon item in data)
-            {
-                list[i] = new Menu(item);
-                list[i].uri_monan = item.Img;
-                list[i].name = item.TenMon;
-                list[i].price = item.GiaMon;
-                menu.Add(list[i]);
-                menuFilter.Add(list[i]);
-
-                i++;
-            }
-
-            List<Combo> data1 = ComboDAO.Instance.getCombo();
-            var list1 = new Menu[data.Count];
-            int j = 0;
-            menu = new List<Menu>();
-            menuFilter = new List<Menu>();
-            foreach (Combo item in data1)
-            {
-                list1[j] = new Menu(item);
-                list1[j].uri_monan = item.Img;
-                list1[j].name = item.TenCombo;
-                list1[j].price = item.GiaCombo;
-                menu.Add(list1[j]);
-                menuFilter.Add(list1[j]);
-
-                j++;
-            }
-            flowLayoutPanel1.Controls.AddRange(list);
-            flowLayoutPanel1.Controls.AddRange(list1);
+            LoadMon();
+            LoadCombo();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            List<Mon> data = MonDAO.Instance.getMon();
-            var list = new Menu[data.Count];
-            int i = 0;
-            menu = new List<Menu>();
-            menuFilter = new List<Menu>();
-            foreach (Mon item in data)
-            {
-                list[i] = new Menu(item);
-                //list[i].uri_monan = item.Img;
-                list[i].name = item.TenMon;
-                list[i].price = item.GiaMon;
-                menu.Add(list[i]);
-                menuFilter.Add(list[i]);
-
-                i++;
-            }
-            ((Control)this.tabProfile).Enabled = false;
             flowLayoutPanel1.Controls.Clear();
-            flowLayoutPanel1.Controls.AddRange(list);
+            LoadMon();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            List<Combo> data = ComboDAO.Instance.getCombo();
-            var list = new Menu[data.Count];
-            int i = 0;
-            menu = new List<Menu>();
-            menuFilter = new List<Menu>();
-            foreach (Combo item in data)
-            {
-                list[i] = new Menu(item);
-                //list[i].uri_monan = item.Img;
-                list[i].name = item.TenCombo;
-                list[i].price = item.GiaCombo;
-                menu.Add(list[i]);
-                menuFilter.Add(list[i]);
-
-                i++;
-            }
-            ((Control)this.tabProfile).Enabled = false;
             flowLayoutPanel1.Controls.Clear();
-            flowLayoutPanel1.Controls.AddRange(list);
+            LoadCombo();
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -126,41 +58,23 @@ namespace McDonalds
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List<Mon> data = MonDAO.Instance.getMon();
-            var list = new Menu[data.Count];
-            int i = 0;
-            menu = new List<Menu>();
-            menuFilter = new List<Menu>();
-            foreach (Mon item in data)
+            
+        }
+        private void LoadMon()
+        {
+            List<Mon> mons = MonDAO.Instance.getMon();
+            foreach (Mon mon in mons)
             {
-                list[i] = new Menu(item);
-                list[i].uri_monan = item.Img;
-                list[i].name = item.TenMon;
-                list[i].price = item.GiaMon;
-                menu.Add(list[i]);
-                menuFilter.Add(list[i]);
-
-                i++;
+                flowLayoutPanel1.Controls.Add(new Menu(mon));
             }
-
-            List<Combo> data1 = ComboDAO.Instance.getCombo();
-            var list1 = new Menu[data.Count];
-            int j = 0;
-            menu = new List<Menu>();
-            menuFilter = new List<Menu>();
-            foreach (Combo item in data1)
+        }
+        private void LoadCombo()
+        {
+            List<Combo> combos = ComboDAO.Instance.getCombo();
+            foreach (Combo combo in combos)
             {
-                list1[j] = new Menu(item);
-                list1[j].uri_monan = item.Img;
-                list1[j].name = item.TenCombo;
-                list1[j].price = item.GiaCombo;
-                menu.Add(list1[j]);
-                menuFilter.Add(list1[j]);
-
-                j++;
+                flowLayoutPanel1.Controls.Add(new Menu(combo));
             }
-            flowLayoutPanel1.Controls.AddRange(list);
-            flowLayoutPanel1.Controls.AddRange(list1);
         }
     }
 }

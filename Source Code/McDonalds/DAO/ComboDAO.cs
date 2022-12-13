@@ -38,7 +38,7 @@ namespace McDonalds.DAO
         public List<Combo> getCombo()
         {
             List<Combo> list = new List<Combo>();
-            string query = string.Format(@"Select * from COMBO");
+            string query = string.Format(@"Select * from COMBO Where TRANGTHAI <> N'NGƯNG BÁN'");
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow row in data.Rows)
             {
