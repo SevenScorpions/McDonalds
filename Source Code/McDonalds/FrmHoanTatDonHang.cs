@@ -1,4 +1,6 @@
-﻿using System;
+﻿using McDonalds.DAO;
+using McDonalds.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +18,22 @@ namespace McDonalds
         {
             InitializeComponent();
         }
+
+        private void Frm_Load(object sender, EventArgs e)
+        {
+            List<HoaDon> data = HoaDonDAO.Instance.getHoaDon();
+
+            foreach (HoaDon item in data)
+            {
+                //list[i] = new itemDonHang();
+                if(item.HoanTat != true) {
+
+                    flowLayoutPanel1.Controls.Add(new itemDonHang(item));
+                }
+            }
+            
+        }
     }
+
+    
 }

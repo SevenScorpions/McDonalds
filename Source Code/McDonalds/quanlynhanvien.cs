@@ -40,7 +40,7 @@ namespace McDonalds
 
             set { 
                 nhanVien = value;
-                hoVaTen.Text = nhanVien.Ho.ToString() + nhanVien.Ten.ToString();
+                hoVaTen.Text = nhanVien.Ho.ToString() + " " + nhanVien.Ten.ToString();
                 chucVu.Text = nhanVien.ChucVu.ToString();
                 soDienThoai.Text = nhanVien.Sdt.ToString();
                 maNhanVien.Text = nhanVien.IDNV.ToString();
@@ -90,6 +90,11 @@ namespace McDonalds
         }
 
         private void soDienThoai_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_chiTiet_Click(object sender, EventArgs e)
         {
 
         }
