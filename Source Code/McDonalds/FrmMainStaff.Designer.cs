@@ -127,9 +127,9 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(34, 59);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 20);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(400, 80);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(950, 360);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // FrmMainStaff
@@ -157,8 +157,8 @@
         private System.Windows.Forms.TabPage quanLyNhanVien;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage quanLyHoaDon;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

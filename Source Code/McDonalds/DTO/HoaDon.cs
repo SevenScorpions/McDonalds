@@ -16,6 +16,8 @@ namespace McDonalds.DTO
         private int _stt;
         private int _giaGoc;
         private string _idKH;
+        private bool thanhToan;
+        private bool hoanTat;
 
         public string IDHD
         {
@@ -53,7 +55,17 @@ namespace McDonalds.DTO
             get { return _idKH; }
             set { _idKH = value; }
         }
-        public HoaDon(string idHd, DateTime thoiGianLap, int tongTien, int soBot, int stt, int giaGoc, string idKH)
+        public bool ThanhToan
+        {
+            get { return thanhToan; }
+            set { thanhToan = value; }
+        }
+        public bool HoanTat
+        {
+            get { return hoanTat; }
+            set { hoanTat = value; }
+        }
+        public HoaDon(string idHd, DateTime thoiGianLap, int tongTien, int soBot, int stt, int giaGoc, string idKH, bool thanhToan, bool hoanTat)
         {
             IDHD = idHd;
             ThoiGianLap = thoiGianLap;
@@ -62,6 +74,8 @@ namespace McDonalds.DTO
             STT = stt;
             GiaGoc = giaGoc;
             IDKH = idKH;
+            ThanhToan = thanhToan;
+            HoanTat = hoanTat;
         }
         public HoaDon(DataRow row)
         {
@@ -72,6 +86,8 @@ namespace McDonalds.DTO
             STT = (int)row["STT"];
             GiaGoc = (int)row["GIAGOC"];
             IDKH = row["IDKH"].ToString();
+            ThanhToan =  row["THANHTOAN"].ToString() == "TRUE";
+            HoanTat = row["HOANTAT"].ToString() == "TRUE";
         }
     }
 }
