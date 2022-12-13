@@ -185,6 +185,12 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="quanlynhanvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="quanlynhanvien.Designer.cs">
+      <DependentUpon>quanlynhanvien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChonCN.resx">
       <DependentUpon>ChonCN.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +237,9 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="quanlynhanvien.resx">
+      <DependentUpon>quanlynhanvien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -255,6 +264,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mcdonalds.ico" />
+    <None Include="Resources\user.png" />
     <None Include="Resources\mcdonalds_cone.png" />
     <None Include="Resources\regular_world_famous_fries.png" />
     <None Include="Resources\MEAL_porkrice.png" />

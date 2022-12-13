@@ -1,4 +1,5 @@
-﻿using McDonalds.DTO;
+﻿using McDonalds.DAO;
+using McDonalds.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace McDonalds
 {
@@ -21,9 +23,23 @@ namespace McDonalds
             InitializeComponent();
         }
 
+        public List<quanlynhanvien> listNhanvien;
         private void FrmMainStaff_Load(object sender, EventArgs e)
         {
+            List<NhanVien> data = NhanVienDAO.Instance.getNhanVien();
+            var list = new quanlynhanvien[data.Count];
+            int i = 0;
+            listNhanvien = new List<quanlynhanvien>();
+            foreach (NhanVien item in data)
+            {
+                list[i] = new quanlynhanvien();
+                list[i].NhanVien = item;
 
+                listNhanvien.Add(list[i]);
+
+                i++;
+            }
+            flowLayoutPanel1.Controls.AddRange(list);
         }
     }
 }
