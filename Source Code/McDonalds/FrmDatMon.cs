@@ -16,5 +16,10 @@ namespace McDonalds
         {
             InitializeComponent();
         }
+
+        private void FrmDatMon_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using McDonalds.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace McDonalds
 {
     public partial class Menu : UserControl
     {
-        public Menu()
+        public Menu(object Mon)
         {
             InitializeComponent();
         }
@@ -21,6 +22,19 @@ namespace McDonalds
         {
 
         }
+        private object obj;
+        public object Obj { get { return obj; } 
+            set { 
+                obj = value;
+                if(obj is Mon)
+                {
+
+                }
+            } 
+        }
+        private string loai;
+        private Mon mon;
+        private Combo combo;
 
         //load ảnh
         public string _urimonan;

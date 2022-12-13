@@ -1,4 +1,5 @@
-﻿using System;
+﻿using McDonalds.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,28 +13,25 @@ namespace McDonalds
 {
     public partial class ItemChitiet : UserControl
     {
-        public ItemChitiet()
+        public ItemChitiet(CTMon cTMon)
         {
             InitializeComponent();
+            CTMon = cTMon;
+            
         }
-
-        public string _lbltitle;
-
-        public string lblTitle
-        {
-            get { return _lbltitle; }
-            set { _lbltitle = value; }
-        }
-
-        private string _lblprice;
-
-        public string lblPrice
-        {
-            get { return _lblprice; }
+        private CTMon cTMon;
+        public CTMon CTMon { get { return cTMon; } 
             set { 
-                _lblprice = value;
-            }
+                cTMon = value;
+                lbl_title.Text = CTMon.TenCTM;
+                lbl_price.Text = "+ " + CTMon.TienThem.ToString();
+
+            } 
         }
 
+        private void ItemChitiet_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,7 +43,7 @@ namespace McDonalds
             menuFilter = new List<Menu>();
             foreach (Mon item in data)
             {
-                list[i] = new Menu();
+                list[i] = new Menu(item);
                 list[i].uri_monan = item.Img;
                 list[i].name = item.TenMon;
                 list[i].price = item.GiaMon;
@@ -60,7 +60,7 @@ namespace McDonalds
             menuFilter = new List<Menu>();
             foreach (Combo item in data1)
             {
-                list1[j] = new Menu();
+                list1[j] = new Menu(item);
                 list1[j].uri_monan = item.Img;
                 list1[j].name = item.TenCombo;
                 list1[j].price = item.GiaCombo;
@@ -82,20 +82,16 @@ namespace McDonalds
             menuFilter = new List<Menu>();
             foreach (Mon item in data)
             {
-                list[i] = new Menu();
+                list[i] = new Menu(item);
                 //list[i].uri_monan = item.Img;
                 list[i].name = item.TenMon;
                 list[i].price = item.GiaMon;
-<<<<<<< HEAD
-=======
-                //list[i].LoadImageAsync();
->>>>>>> 0fe906cca0a18008085d5bd48c76922cb1a31756
                 menu.Add(list[i]);
                 menuFilter.Add(list[i]);
 
                 i++;
             }
-            //((Control)this.tabProfile).Enabled = false;
+            ((Control)this.tabProfile).Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Controls.AddRange(list);
         }
@@ -109,20 +105,16 @@ namespace McDonalds
             menuFilter = new List<Menu>();
             foreach (Combo item in data)
             {
-                list[i] = new Menu();
+                list[i] = new Menu(item);
                 //list[i].uri_monan = item.Img;
                 list[i].name = item.TenCombo;
                 list[i].price = item.GiaCombo;
-<<<<<<< HEAD
-=======
-                //list[i].LoadImageAsync();
->>>>>>> 0fe906cca0a18008085d5bd48c76922cb1a31756
                 menu.Add(list[i]);
                 menuFilter.Add(list[i]);
 
                 i++;
             }
-            //((Control)this.tabProfile).Enabled = false;
+            ((Control)this.tabProfile).Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Controls.AddRange(list);
         }
@@ -141,7 +133,7 @@ namespace McDonalds
             menuFilter = new List<Menu>();
             foreach (Mon item in data)
             {
-                list[i] = new Menu();
+                list[i] = new Menu(item);
                 list[i].uri_monan = item.Img;
                 list[i].name = item.TenMon;
                 list[i].price = item.GiaMon;
@@ -158,7 +150,7 @@ namespace McDonalds
             menuFilter = new List<Menu>();
             foreach (Combo item in data1)
             {
-                list1[j] = new Menu();
+                list1[j] = new Menu(item);
                 list1[j].uri_monan = item.Img;
                 list1[j].name = item.TenCombo;
                 list1[j].price = item.GiaCombo;
