@@ -88,16 +88,16 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.quanLyHoaDon = new System.Windows.Forms.TabPage();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel54 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.khoNguyenLieu.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -141,11 +141,11 @@
             this.khoNguyenLieu.Controls.Add(this.button1);
             this.khoNguyenLieu.Controls.Add(this.button2);
             this.khoNguyenLieu.Font = new System.Drawing.Font("Roboto Cn", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.khoNguyenLieu.Location = new System.Drawing.Point(4, 24);
+            this.khoNguyenLieu.Location = new System.Drawing.Point(4, 37);
             this.khoNguyenLieu.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.khoNguyenLieu.Name = "khoNguyenLieu";
             this.khoNguyenLieu.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.khoNguyenLieu.Size = new System.Drawing.Size(992, 474);
+            this.khoNguyenLieu.Size = new System.Drawing.Size(992, 485);
             this.khoNguyenLieu.TabIndex = 4;
             this.khoNguyenLieu.Text = "Kho Nguyên Liệu";
             this.khoNguyenLieu.UseVisualStyleBackColor = true;
@@ -372,11 +372,11 @@
             // 
             this.chiTietDonNhap.Controls.Add(this.bgrd);
             this.chiTietDonNhap.Font = new System.Drawing.Font("Roboto Cn", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chiTietDonNhap.Location = new System.Drawing.Point(4, 24);
+            this.chiTietDonNhap.Location = new System.Drawing.Point(4, 37);
             this.chiTietDonNhap.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chiTietDonNhap.Name = "chiTietDonNhap";
             this.chiTietDonNhap.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.chiTietDonNhap.Size = new System.Drawing.Size(992, 474);
+            this.chiTietDonNhap.Size = new System.Drawing.Size(992, 485);
             this.chiTietDonNhap.TabIndex = 3;
             this.chiTietDonNhap.Text = "Chi Tiết Đơn Nhập";
             this.chiTietDonNhap.UseVisualStyleBackColor = true;
@@ -582,11 +582,11 @@
             this.quanLyDonNhap.Controls.Add(this.pictureBox2);
             this.quanLyDonNhap.Controls.Add(this.pictureBox1);
             this.quanLyDonNhap.Font = new System.Drawing.Font("Roboto Cn", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.quanLyDonNhap.Location = new System.Drawing.Point(4, 24);
+            this.quanLyDonNhap.Location = new System.Drawing.Point(4, 37);
             this.quanLyDonNhap.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.quanLyDonNhap.Name = "quanLyDonNhap";
             this.quanLyDonNhap.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.quanLyDonNhap.Size = new System.Drawing.Size(992, 474);
+            this.quanLyDonNhap.Size = new System.Drawing.Size(992, 485);
             this.quanLyDonNhap.TabIndex = 1;
             this.quanLyDonNhap.Text = "Quản Lý Đơn Nhập";
             this.quanLyDonNhap.UseVisualStyleBackColor = true;
@@ -728,11 +728,11 @@
             // 
             this.quanLyNhanVien.Controls.Add(this.flowLayoutPanel1);
             this.quanLyNhanVien.Font = new System.Drawing.Font("Roboto Cn", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.quanLyNhanVien.Location = new System.Drawing.Point(4, 24);
+            this.quanLyNhanVien.Location = new System.Drawing.Point(4, 37);
             this.quanLyNhanVien.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.quanLyNhanVien.Name = "quanLyNhanVien";
             this.quanLyNhanVien.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.quanLyNhanVien.Size = new System.Drawing.Size(992, 474);
+            this.quanLyNhanVien.Size = new System.Drawing.Size(992, 485);
             this.quanLyNhanVien.TabIndex = 0;
             this.quanLyNhanVien.Text = "Quản Lý Nhân Viên";
             this.quanLyNhanVien.UseVisualStyleBackColor = true;
@@ -744,7 +744,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 20);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(950, 360);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(950, 371);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // tabControl1
@@ -755,11 +755,12 @@
             this.tabControl1.Controls.Add(this.khoNguyenLieu);
             this.tabControl1.Controls.Add(this.quanLyHoaDon);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Roboto Cn", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1000, 502);
+            this.tabControl1.Size = new System.Drawing.Size(1000, 526);
             this.tabControl1.TabIndex = 0;
             // 
             // quanLyHoaDon
@@ -767,90 +768,42 @@
             this.quanLyHoaDon.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.quanLyHoaDon.Controls.Add(this.listView1);
             this.quanLyHoaDon.Controls.Add(this.panel54);
-            this.quanLyHoaDon.Controls.Add(this.label11);
-            this.quanLyHoaDon.Controls.Add(this.label10);
-            this.quanLyHoaDon.Controls.Add(this.label9);
-            this.quanLyHoaDon.Controls.Add(this.label8);
-            this.quanLyHoaDon.Controls.Add(this.label7);
             this.quanLyHoaDon.Font = new System.Drawing.Font("Roboto Cn", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.quanLyHoaDon.Location = new System.Drawing.Point(4, 24);
+            this.quanLyHoaDon.Location = new System.Drawing.Point(4, 37);
             this.quanLyHoaDon.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.quanLyHoaDon.Name = "quanLyHoaDon";
             this.quanLyHoaDon.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.quanLyHoaDon.Size = new System.Drawing.Size(992, 474);
+            this.quanLyHoaDon.Size = new System.Drawing.Size(992, 485);
             this.quanLyHoaDon.TabIndex = 5;
             this.quanLyHoaDon.Text = "Quản Lý Hóa Đơn";
             // 
-            // contextMenuStrip1
+            // listView1
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Roboto Cn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(8, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 24);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Danh sách hóa đơn";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Linen;
-            this.label8.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(241, 7);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 20);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Tổng tiền";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Linen;
-            this.label9.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(441, 7);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 20);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Tiền nhận";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Linen;
-            this.label10.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(649, 7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 20);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Tiền thừa";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Linen;
-            this.label11.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(864, 7);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 20);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Ngày";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
+            this.listView1.Font = new System.Drawing.Font("Roboto Cn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(6, 6);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(980, 396);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // panel54
             // 
             this.panel54.BackColor = System.Drawing.Color.SeaShell;
             this.panel54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel54.Controls.Add(this.label24);
-            this.panel54.Location = new System.Drawing.Point(6, 422);
+            this.panel54.Location = new System.Drawing.Point(6, 416);
             this.panel54.Name = "panel54";
             this.panel54.Size = new System.Drawing.Size(980, 44);
             this.panel54.TabIndex = 71;
@@ -865,22 +818,42 @@
             this.label24.TabIndex = 0;
             this.label24.Text = "TỔNG:";
             // 
-            // listView1
+            // contextMenuStrip1
             // 
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(6, 33);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(980, 381);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.List;
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Danh sách hóa đơn";
+            this.columnHeader1.Width = 179;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tổng tiền";
+            this.columnHeader2.Width = 155;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tiền nhận";
+            this.columnHeader3.Width = 140;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Tiền trả";
+            this.columnHeader4.Width = 121;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Ngày";
+            this.columnHeader5.Width = 119;
             // 
             // FrmMainStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 502);
+            this.ClientSize = new System.Drawing.Size(1000, 526);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Roboto Cn", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -920,7 +893,6 @@
             this.quanLyNhanVien.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.quanLyHoaDon.ResumeLayout(false);
-            this.quanLyHoaDon.PerformLayout();
             this.panel54.ResumeLayout(false);
             this.panel54.PerformLayout();
             this.ResumeLayout(false);
@@ -988,13 +960,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel54;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

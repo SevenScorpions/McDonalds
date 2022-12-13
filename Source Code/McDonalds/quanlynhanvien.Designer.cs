@@ -132,7 +132,7 @@
             this.Controls.Add(this.hoVaTen);
             this.Controls.Add(this.pictureBox1);
             this.Name = "quanlynhanvien";
-            this.Size = new System.Drawing.Size(682, 117);
+            this.Size = new System.Drawing.Size(700, 117);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
