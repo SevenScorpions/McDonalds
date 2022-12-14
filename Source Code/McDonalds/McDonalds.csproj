@@ -73,6 +73,7 @@
     <Compile Include="DAO\CTComboDAO.cs" />
     <Compile Include="DAO\CTMonDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DonHangDAO.cs" />
     <Compile Include="DAO\GiamGiaComboDAO.cs" />
     <Compile Include="DAO\GiamGiaMonDAO.cs" />
     <Compile Include="DAO\HDComboDAO.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="DTO\Combo.cs" />
     <Compile Include="DTO\CTCombo.cs" />
     <Compile Include="DTO\CTMon.cs" />
+    <Compile Include="DTO\DonHang.cs" />
     <Compile Include="DTO\GiamGiaCombo.cs" />
     <Compile Include="DTO\GiamGiaMon.cs" />
     <Compile Include="DTO\HDCombo.cs" />
