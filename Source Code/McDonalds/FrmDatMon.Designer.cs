@@ -56,6 +56,7 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.AutoScroll = true;
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.Wheat;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(237, 12);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";

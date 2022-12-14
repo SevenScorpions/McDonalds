@@ -46,7 +46,7 @@ namespace McDonalds.DAO
             }
             return list;
         }
-        public void createHD(string id, int tongtien)
+        //public void createHD(string id, int tongtien);
         public void updateTinhTrangThanhToan(string idDH)
         {
             string query1 = @"UPDATE HOADON SET THANHTOAN = 'true' Where IDHD = '" + idDH + "'";
