@@ -46,6 +46,7 @@
             this.textBoxTienNhan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
+            this.labelTienNhanTrong = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -158,6 +159,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.labelTienNhanTrong);
             this.panel2.Controls.Add(this.buttonXuatHoaDon);
             this.panel2.Controls.Add(this.labelTienThua);
             this.panel2.Controls.Add(this.label5);
@@ -235,6 +237,16 @@
             this.textBoxMaNhanVien.Click += new System.EventHandler(this.textBoxMaNhanVien_Click);
             this.textBoxMaNhanVien.TextChanged += new System.EventHandler(this.textBoxMaNhanVien_TextChanged);
             // 
+            // labelTienNhanTrong
+            // 
+            this.labelTienNhanTrong.AutoSize = true;
+            this.labelTienNhanTrong.Font = new System.Drawing.Font("Roboto Th", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTienNhanTrong.ForeColor = System.Drawing.Color.Firebrick;
+            this.labelTienNhanTrong.Location = new System.Drawing.Point(486, 81);
+            this.labelTienNhanTrong.Name = "labelTienNhanTrong";
+            this.labelTienNhanTrong.Size = new System.Drawing.Size(0, 17);
+            this.labelTienNhanTrong.TabIndex = 6;
+            // 
             // FrmCounter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -276,5 +288,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Label labelTienNhanTrong;
     }
 }

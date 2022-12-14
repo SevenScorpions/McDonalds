@@ -41,10 +41,10 @@
             // hoVaTen
             // 
             this.hoVaTen.AutoSize = true;
-            this.hoVaTen.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.hoVaTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.hoVaTen.Location = new System.Drawing.Point(131, 20);
             this.hoVaTen.Name = "hoVaTen";
-            this.hoVaTen.Size = new System.Drawing.Size(50, 20);
+            this.hoVaTen.Size = new System.Drawing.Size(53, 20);
             this.hoVaTen.TabIndex = 1;
             this.hoVaTen.Text = "label1";
             this.hoVaTen.Click += new System.EventHandler(this.label1_Click);
@@ -52,20 +52,20 @@
             // chucVu
             // 
             this.chucVu.AutoSize = true;
-            this.chucVu.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.chucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.chucVu.Location = new System.Drawing.Point(321, 79);
             this.chucVu.Name = "chucVu";
-            this.chucVu.Size = new System.Drawing.Size(50, 20);
+            this.chucVu.Size = new System.Drawing.Size(53, 20);
             this.chucVu.TabIndex = 2;
             this.chucVu.Text = "label2";
             // 
             // soDienThoai
             // 
             this.soDienThoai.AutoSize = true;
-            this.soDienThoai.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.soDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.soDienThoai.Location = new System.Drawing.Point(131, 79);
             this.soDienThoai.Name = "soDienThoai";
-            this.soDienThoai.Size = new System.Drawing.Size(50, 20);
+            this.soDienThoai.Size = new System.Drawing.Size(53, 20);
             this.soDienThoai.TabIndex = 3;
             this.soDienThoai.Text = "label3";
             this.soDienThoai.Click += new System.EventHandler(this.soDienThoai_Click);
@@ -73,18 +73,18 @@
             // maNhanVien
             // 
             this.maNhanVien.AutoSize = true;
-            this.maNhanVien.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.maNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.maNhanVien.Location = new System.Drawing.Point(321, 20);
             this.maNhanVien.Name = "maNhanVien";
-            this.maNhanVien.Size = new System.Drawing.Size(50, 20);
+            this.maNhanVien.Size = new System.Drawing.Size(53, 20);
             this.maNhanVien.TabIndex = 4;
             this.maNhanVien.Text = "label4";
             this.maNhanVien.Click += new System.EventHandler(this.maNhanVien_Click);
             // 
             // btn_xoa
             // 
-            this.btn_xoa.BackColor = System.Drawing.Color.Silver;
-            this.btn_xoa.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_xoa.BackColor = System.Drawing.Color.Gray;
+            this.btn_xoa.Font = new System.Drawing.Font("Roboto Th", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_xoa.ForeColor = System.Drawing.Color.Gold;
             this.btn_xoa.Location = new System.Drawing.Point(550, 72);
             this.btn_xoa.Name = "btn_xoa";
@@ -96,8 +96,8 @@
             // 
             // btn_chiTiet
             // 
-            this.btn_chiTiet.BackColor = System.Drawing.Color.Silver;
-            this.btn_chiTiet.Font = new System.Drawing.Font("Roboto Cn", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_chiTiet.BackColor = System.Drawing.Color.Gray;
+            this.btn_chiTiet.Font = new System.Drawing.Font("Roboto Th", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_chiTiet.ForeColor = System.Drawing.Color.Gold;
             this.btn_chiTiet.Location = new System.Drawing.Point(550, 13);
             this.btn_chiTiet.Name = "btn_chiTiet";

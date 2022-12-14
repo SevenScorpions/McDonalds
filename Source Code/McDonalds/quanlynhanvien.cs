@@ -96,7 +96,10 @@ namespace McDonalds
 
         private void btn_chiTiet_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Họ và tên: " + nhanVien.Ho.ToString() + " " + nhanVien.Ten.ToString() + "\nMã nhân viên: " 
+                + nhanVien.IDNV.ToString() + "\nSố điện thoại: " + nhanVien.Sdt.ToString() + "\nChức vụ: " + nhanVien.DiaChi.ToString()
+                + "\nEmail: " + nhanVien.Email.ToString() + "\nĐịa chỉ: " + nhanVien.ChucVu.ToString()
+                +"\nNhân viên " + nhanVien.PhanLoaiNV.ToString());
         }
     }
 }

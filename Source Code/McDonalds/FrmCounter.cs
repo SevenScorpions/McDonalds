@@ -100,15 +100,30 @@ namespace McDonalds
         private void label5_Click(object sender, EventArgs e)
         {
             string tien = textBoxTienNhan.Text;
-            int tienNhan = int.Parse(tien);
-            int tienThua = tienNhan - tongTien;
-            labelTienThua.Text = tienThua.ToString() + " VND";
+
+
+            if(tien != "")
+            {
+                int tienNhan = int.Parse(tien);
+                int tienThua = tienNhan - tongTien;
+                if (tienNhan < tongTien)
+                {
+                    labelTienNhanTrong.Text = "Tiền nhận phải lớn hơn tổng tiền";
+                    tienThua = 0;
+                }
+                labelTienThua.Text = tienThua.ToString() + " VND";
+            }
+            else
+            {
+                labelTienNhanTrong.Text = "Tiền nhận không được để trống";
+            }
         }
 
         private void buttonXuatHoaDon_Click(object sender, EventArgs e)
         {
             string idHD = buttonXuatHoaDon.Tag.ToString();
             HoaDonDAO.Instance.updateTinhTrangThanhToan(idHD);
+            listViewDonHang.Items.Clear();
             loadHoaDon();
         }
     }

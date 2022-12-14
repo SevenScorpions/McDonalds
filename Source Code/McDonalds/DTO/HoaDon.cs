@@ -16,6 +16,8 @@ namespace McDonalds.DTO
         private int _stt;
         private int _giaGoc;
         private string _idKH;
+        private int tienNhan;
+        private int tienTra;
         private bool thanhToan;
         private bool hoanTat;
 
@@ -33,6 +35,16 @@ namespace McDonalds.DTO
         {
             get { return _tongTien; }
             set { _tongTien = value; }
+        }
+        public int TienNhan
+        {
+            get { return tienNhan; }
+            set { tienNhan = value; }
+        }
+        public int TienTra
+        {
+            get { return tienTra; }
+            set { tienTra = value; }
         }
         public int SoBot
         {
@@ -86,6 +98,8 @@ namespace McDonalds.DTO
             STT = (int)row["STT"];
             GiaGoc = (int)row["GIAGOC"];
             IDKH = row["IDKH"].ToString();
+            TienNhan = (int)row["TIENNHAN"];
+            TienTra = (int)row["TIENTRA"];
             ThanhToan = bool.Parse(row["THANHTOAN"].ToString());
             HoanTat = bool.Parse(row["HOANTAT"].ToString());
         }
