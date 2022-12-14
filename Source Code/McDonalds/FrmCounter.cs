@@ -100,9 +100,8 @@ namespace McDonalds
         private void label5_Click(object sender, EventArgs e)
         {
             string tien = textBoxTienNhan.Text;
-
-
-            if(tien != "")
+           
+            if (tien != "")
             {
                 int tienNhan = int.Parse(tien);
                 int tienThua = tienNhan - tongTien;
@@ -125,6 +124,11 @@ namespace McDonalds
             HoaDonDAO.Instance.updateTinhTrangThanhToan(idHD);
             listViewDonHang.Items.Clear();
             loadHoaDon();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

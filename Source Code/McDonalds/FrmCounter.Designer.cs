@@ -40,13 +40,13 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.labelTienNhanTrong = new System.Windows.Forms.Label();
             this.buttonXuatHoaDon = new System.Windows.Forms.Button();
             this.labelTienThua = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxTienNhan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
-            this.labelTienNhanTrong = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -170,6 +170,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(823, 256);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // labelTienNhanTrong
+            // 
+            this.labelTienNhanTrong.AutoSize = true;
+            this.labelTienNhanTrong.Font = new System.Drawing.Font("Roboto Th", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTienNhanTrong.ForeColor = System.Drawing.Color.Firebrick;
+            this.labelTienNhanTrong.Location = new System.Drawing.Point(486, 81);
+            this.labelTienNhanTrong.Name = "labelTienNhanTrong";
+            this.labelTienNhanTrong.Size = new System.Drawing.Size(0, 17);
+            this.labelTienNhanTrong.TabIndex = 6;
             // 
             // buttonXuatHoaDon
             // 
@@ -236,16 +247,6 @@
             this.textBoxMaNhanVien.Text = "Mã nhân viên";
             this.textBoxMaNhanVien.Click += new System.EventHandler(this.textBoxMaNhanVien_Click);
             this.textBoxMaNhanVien.TextChanged += new System.EventHandler(this.textBoxMaNhanVien_TextChanged);
-            // 
-            // labelTienNhanTrong
-            // 
-            this.labelTienNhanTrong.AutoSize = true;
-            this.labelTienNhanTrong.Font = new System.Drawing.Font("Roboto Th", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTienNhanTrong.ForeColor = System.Drawing.Color.Firebrick;
-            this.labelTienNhanTrong.Location = new System.Drawing.Point(486, 81);
-            this.labelTienNhanTrong.Name = "labelTienNhanTrong";
-            this.labelTienNhanTrong.Size = new System.Drawing.Size(0, 17);
-            this.labelTienNhanTrong.TabIndex = 6;
             // 
             // FrmCounter
             // 
