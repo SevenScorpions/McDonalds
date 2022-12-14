@@ -7,9 +7,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace McDonalds
 {
@@ -170,6 +172,29 @@ namespace McDonalds
             {
                 bttnSave.Enabled = false;
             }
+        }
+
+        private void bttnSave_Click(object sender, EventArgs e)
+        {
+            if(tbRePassword.Text==taiKhoanKH.MatKhau)
+            {
+                string gender;
+                if(rbttnFemale.Enabled)
+                {
+                    gender = "F";
+                }
+                else
+                {
+                    gender = "M";
+                }
+                TaiKhoanKHDAO.Instance.updateTaiKhoanKH(taiKhoanKH.IDKH, tbName.Text, textBox1.Text, gender, dtpBirthday.Value.ToString(), tbPhone.Text, tbEmail.Text, tbAddress.Text);
+                MessageBox.Show("Cập nhật thông tin thành công");
+            }
+            else
+            {
+                MessageBox.Show("Nhập sai mật khẩu");
+            }
+            taiKhoanKH = TaiKhoanKHDAO.Instance.getTaiKhoanKH(taiKhoanKH.IDKH)[0];
         }
     }
 }
