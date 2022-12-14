@@ -48,7 +48,7 @@ namespace McDonalds
 
         private void bttnKitchen_Click(object sender, EventArgs e)
         {
-            FrmBep frmBep = new FrmBep();
+            FrmNhaBep frmBep = new FrmNhaBep();
             this.Hide();
             frmBep.ShowDialog();
             this.Show();
