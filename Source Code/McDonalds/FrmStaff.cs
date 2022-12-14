@@ -43,7 +43,7 @@ namespace McDonalds
             }
             else
             {
-                lbWrongPassword.Text = "Your Username or Password is incorrect";
+                lbWrongPassword.Text = "Tên đăng nhập hoặc mật khẩu không chính xác";
             }
         }
 
