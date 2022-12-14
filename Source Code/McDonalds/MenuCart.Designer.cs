@@ -1,6 +1,6 @@
 ﻿namespace McDonalds
 {
-    partial class Menu
+    partial class MenuCart
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,8 +30,8 @@
         {
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_price = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.pic_food = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_food)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,19 +56,6 @@
             this.lbl_price.Text = "Giá";
             this.lbl_price.Click += new System.EventHandler(this.lbl_price_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Font = new System.Drawing.Font("Roboto Th", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(398, 82);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 33);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Đặt món";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // pic_food
             // 
             this.pic_food.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -80,18 +67,29 @@
             this.pic_food.TabStop = false;
             this.pic_food.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Menu
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.IndianRed;
+            this.button2.Location = new System.Drawing.Point(387, 83);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 27);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Xóa";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // MenuCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.lbl_price);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.pic_food);
-            this.Name = "Menu";
+            this.Name = "MenuCart";
             this.Size = new System.Drawing.Size(494, 118);
-            this.Load += new System.EventHandler(this.Menu_Load);
+            this.Load += new System.EventHandler(this.MenuCart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_food)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -103,6 +101,6 @@
         private System.Windows.Forms.PictureBox pic_food;
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Label lbl_price;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
