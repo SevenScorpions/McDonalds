@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace McDonalds
 {
-    public partial class Menu : UserControl
+    public partial class MenuCart : UserControl
     {
-        public Menu(object Mon,EventHandler e, EventHandler eve1)
+        public MenuCart(object Mon,EventHandler e)
         {
             InitializeComponent();
+            button2.Tag= Mon;
             Obj = Mon;
             eve = e;
-            this.eve1 = eve1;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -26,7 +26,6 @@ namespace McDonalds
 
         }
         public EventHandler eve;
-        public EventHandler eve1;
         private object obj;
         private string loai;
         private Mon mon;
@@ -44,7 +43,6 @@ namespace McDonalds
             set
             {
                 obj = value;
-                bool enable = true;
                 if (obj is Mon)
                 {
                     Loai = "Mon";
@@ -56,7 +54,6 @@ namespace McDonalds
                     pic_food.BackgroundImage = image;
                     lbl_price.Text = "₫" + mon.GiaMon.ToString("#,#");
                     lbl_name.Text = mon.TenMon;
-                    enable = mon.TrangThai == "CÒN HÀNG";
                 }
                 else if (obj is Combo)
                 {
@@ -69,29 +66,22 @@ namespace McDonalds
                     pic_food.BackgroundImage = image;
                     lbl_price.Text = "₫" + combo.GiaCombo.ToString("#,#");
                     lbl_name.Text = combo.TenCombo;
-                    enable = combo.TrangThai == "CÒN HÀNG";
                 }
-                button1.Enabled = enable;
             }
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FrmDatMon frmDatMon = new FrmDatMon(obj,eve,eve1);
-            frmDatMon.ShowDialog();
-        }
-
         private void lbl_price_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Menu_Load(object sender, EventArgs e)
+        private void MenuCart_Load(object sender, EventArgs e)
         {
 
         }
-        private void cartLoad(object sender, EventArgs e)
-        {
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            eve(sender, e);
         }
     }
 }

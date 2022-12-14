@@ -14,13 +14,20 @@ namespace McDonalds
 {
     public partial class FrmDatMon : Form
     {
-        public FrmDatMon(object obj)
+        public FrmDatMon(object obj,EventHandler eve,EventHandler eve1)
         {
             InitializeComponent();
             Obj = obj;
             ctmons = new List<CTMon>();
+            choose = new List<CTMon>();
+            loadTongtien();
+            button2.Click += eve;
+            button3.Click += eve1;
+            button3.Tag = obj;
         }
         public List<CTMon> ctmons;
+        public List<CTMon> choose;
+        private Button selectedButton;
         private object obj;
         public object Obj { get { return obj; } set { obj = value; } }
         private void FrmDatMon_Load(object sender, EventArgs e)
@@ -31,7 +38,7 @@ namespace McDonalds
                 ctmons = CTMonDAO.Instance.getCTMonByIdMon(mon.IDMon);
                 foreach(CTMon ctmon in ctmons)
                 {
-                    flowLayoutPanel2.Controls.Add(new ItemChitiet(ctmon, mon.Img));
+                    flowLayoutPanel2.Controls.Add(new ItemChitiet(ctmon, mon.Img,clickChoose));
                 }
             }
             if(obj is Combo)
@@ -51,18 +58,22 @@ namespace McDonalds
                 foreach(Mon mon in mons)
                 {
                     Button btn = new Button();
-                    btn.Font = new Font("Roboto", 13);
+                    btn.Font = new Font("Roboto", 10);
                     btn.Height = 30;
-                    btn.Width = 130;
+                    btn.Width = 155;
                     btn.ForeColor = Color.Firebrick;
                     btn.FlatStyle = FlatStyle.Flat;
-                    btn.FlatAppearance.BorderColor = Color.Black;
+                    btn.FlatAppearance.BorderColor = Color.White;
+                    btn.BackColor=Color.White;
                     btn.Tag = mon;
-                    btn.Text = "Món " + i;
+                    btn.Text = mon.TenMon;
                     btn.Click += new System.EventHandler(btn_Click);
                     flowLayoutPanel1.Controls.Add(btn);
-
-                    i++;
+                    if(i==1)
+                    {
+                        btn.PerformClick();
+                        i++;
+                    }    
                 }
             }
             
@@ -71,14 +82,22 @@ namespace McDonalds
         {
             flowLayoutPanel2.Controls.Clear();
             Button button = sender as Button;
+            selectedButton= button;
             Mon mon = ((Mon)button.Tag);
             foreach (CTMon ctmon in ctmons)
             {
                 if(ctmon.IDMon==mon.IDMon)
                 {
-                    flowLayoutPanel2.Controls.Add(new ItemChitiet(ctmon, mon.Img));
+                    flowLayoutPanel2.Controls.Add(new ItemChitiet(ctmon, mon.Img,clickChoose));
                 }
             }
+        }
+        public void clickChoose(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            CTMon ctmon = ((CTMon)btn.Tag);
+            choose.Add(ctmon);
+            loadTongtien();
         }
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -92,7 +111,34 @@ namespace McDonalds
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("Thêm vào giỏ hàng thành công");
+            button3.PerformClick();
+            this.Close();
+        }
+
+        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        void loadTongtien()
+        {
+            int sum = 0;
+            foreach(CTMon ctmon in choose)
+            {
+                sum += ctmon.TienThem;
+            }
+            button2.Tag = choose;
+            label2.Text ="+ "+ sum.ToString()+"đ";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

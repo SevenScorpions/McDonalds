@@ -40,6 +40,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.tabCart = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.bttnOrder = new System.Windows.Forms.Button();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -201,12 +202,26 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.flowLayoutPanel2);
             this.panel1.Controls.Add(this.bttnOrder);
-            this.panel1.Location = new System.Drawing.Point(28, 28);
+            this.panel1.Location = new System.Drawing.Point(8, 14);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(946, 685);
+            this.panel1.Size = new System.Drawing.Size(1218, 695);
             this.panel1.TabIndex = 5;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(15, 15);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1187, 611);
+            this.flowLayoutPanel2.TabIndex = 1;
+            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
             // bttnOrder
             // 
@@ -215,12 +230,13 @@
             this.bttnOrder.FlatAppearance.BorderSize = 0;
             this.bttnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnOrder.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnOrder.Location = new System.Drawing.Point(572, 607);
+            this.bttnOrder.Location = new System.Drawing.Point(1074, 632);
             this.bttnOrder.Name = "bttnOrder";
             this.bttnOrder.Size = new System.Drawing.Size(128, 49);
             this.bttnOrder.TabIndex = 0;
             this.bttnOrder.Text = "Đặt hàng";
             this.bttnOrder.UseVisualStyleBackColor = false;
+            this.bttnOrder.Click += new System.EventHandler(this.bttnOrder_Click);
             // 
             // tabProfile
             // 
@@ -614,5 +630,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }

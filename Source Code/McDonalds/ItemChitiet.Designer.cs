@@ -62,9 +62,9 @@
             this.button1.BackColor = System.Drawing.Color.Firebrick;
             this.button1.Font = new System.Drawing.Font("Roboto Th", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(186, 222);
+            this.button1.Location = new System.Drawing.Point(149, 222);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 38);
+            this.button1.Size = new System.Drawing.Size(112, 38);
             this.button1.TabIndex = 3;
             this.button1.Tag = "Mon";
             this.button1.Text = "Chọn";
@@ -85,13 +85,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_price);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.pic_Food);
             this.Name = "ItemChitiet";
-            this.Size = new System.Drawing.Size(285, 276);
+            this.Size = new System.Drawing.Size(287, 278);
             this.Load += new System.EventHandler(this.ItemChitiet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Food)).EndInit();
             this.ResumeLayout(false);

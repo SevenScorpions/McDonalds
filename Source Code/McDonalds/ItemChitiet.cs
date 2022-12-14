@@ -13,7 +13,7 @@ namespace McDonalds
 {
     public partial class ItemChitiet : UserControl
     {
-        public ItemChitiet(CTMon cTMon,string img)
+        public ItemChitiet(CTMon cTMon,string img, EventHandler eve)
         {
             InitializeComponent();
             CTMon = cTMon;
@@ -21,8 +21,10 @@ namespace McDonalds
             Bitmap myImage = (Bitmap)rm;
             Image image = myImage;
             pic_Food.BackgroundImage = image;
+            button1.Tag = CTMon;
+            button1.Click += eve;
         }
-        private string img;
+        public bool check=false;
         private CTMon cTMon;
         public CTMon CTMon { get { return cTMon; } 
             set { 
@@ -44,8 +46,10 @@ namespace McDonalds
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            
+            button1.Text= "Đã Chọn";
+            button1.Enabled= false;
+            button1.BackColor= Color.White;
+            this.check= true;
         }
 
         private void lbl_price_Click(object sender, EventArgs e)
