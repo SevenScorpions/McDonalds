@@ -36,5 +36,10 @@ namespace McDonalds.DAO
             }
             return list;
         }
+        public void insertHDCombo(string idhd, string idcombo, int soluong)
+        {
+            string query = @"INSERT INTO Hdcombo VALUES('" + idhd + "','" + idcombo + "'," + soluong + ")";
+            DataProvider.Instance.ExcuteQuery(query);
+        }
     }
 }
