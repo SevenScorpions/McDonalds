@@ -46,6 +46,16 @@ namespace McDonalds.DAO
             }
             return list;
         }
+        public void updateTinhTrangThanhToan(string idDH)
+        {
+            string query1 = @"UPDATE HOADON SET THANHTOAN = 'true' Where IDHD = '" + idDH + "'";
+            DataProvider.Instance.ExcuteQuery(query1);
+        }
+        public void updateTinhTrangHoanTat(string idDH)
+        {
+            string query1 = @"UPDATE HOADON SET HOANTAT = 'true' Where IDHD = '" + idDH + "'";
+            DataProvider.Instance.ExcuteQuery(query1);
+        }
 
     }
 }

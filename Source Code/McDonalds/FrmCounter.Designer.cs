@@ -95,10 +95,10 @@
             this.lbTongTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTongTien.AutoSize = true;
             this.lbTongTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbTongTien.Font = new System.Drawing.Font("Roboto Th", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongTien.Font = new System.Drawing.Font("Roboto Th", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTongTien.Location = new System.Drawing.Point(686, 415);
             this.lbTongTien.Name = "lbTongTien";
-            this.lbTongTien.Size = new System.Drawing.Size(135, 29);
+            this.lbTongTien.Size = new System.Drawing.Size(145, 29);
             this.lbTongTien.TabIndex = 3;
             this.lbTongTien.Text = "000000 VND";
             // 
@@ -181,6 +181,7 @@
             this.buttonXuatHoaDon.TabIndex = 5;
             this.buttonXuatHoaDon.Text = "Xuất hóa đơn";
             this.buttonXuatHoaDon.UseVisualStyleBackColor = false;
+            this.buttonXuatHoaDon.Click += new System.EventHandler(this.buttonXuatHoaDon_Click);
             // 
             // labelTienThua
             // 
@@ -201,6 +202,7 @@
             this.label5.Size = new System.Drawing.Size(110, 27);
             this.label5.TabIndex = 3;
             this.label5.Text = "Tiền thừa";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBoxTienNhan
             // 
@@ -209,6 +211,7 @@
             this.textBoxTienNhan.Name = "textBoxTienNhan";
             this.textBoxTienNhan.Size = new System.Drawing.Size(216, 34);
             this.textBoxTienNhan.TabIndex = 2;
+            this.textBoxTienNhan.Enter += new System.EventHandler(this.textBoxTienNhan_Enter);
             // 
             // label4
             // 
@@ -222,13 +225,15 @@
             // 
             // textBoxMaNhanVien
             // 
-            this.textBoxMaNhanVien.Font = new System.Drawing.Font("Roboto Th", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMaNhanVien.Font = new System.Drawing.Font("Roboto Th", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMaNhanVien.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxMaNhanVien.Location = new System.Drawing.Point(18, 18);
             this.textBoxMaNhanVien.Name = "textBoxMaNhanVien";
             this.textBoxMaNhanVien.Size = new System.Drawing.Size(451, 34);
             this.textBoxMaNhanVien.TabIndex = 0;
             this.textBoxMaNhanVien.Text = "Mã nhân viên";
+            this.textBoxMaNhanVien.Click += new System.EventHandler(this.textBoxMaNhanVien_Click);
+            this.textBoxMaNhanVien.TextChanged += new System.EventHandler(this.textBoxMaNhanVien_TextChanged);
             // 
             // FrmCounter
             // 

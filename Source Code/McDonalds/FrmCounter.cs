@@ -18,9 +18,11 @@ namespace McDonalds
         {
             InitializeComponent();
             loadHoaDon();
+            buttonXuatHoaDon.Enabled = false;
         }
         void loadHoaDon()
         {
+            flpListHoaDon.Controls.Clear();
             List<HoaDon> hoadonList = HoaDonDAO.Instance.getHoaDon();
             foreach(HoaDon hoaDon in hoadonList)
             {
@@ -44,8 +46,11 @@ namespace McDonalds
                 }
             }
         }
+
+        public int tongTien;
         void showHoaDon(string idHD) 
         {
+            tongTien = 0;
             listViewDonHang.Items.Clear();
             List<DonHang> listDonHang = DonHangDAO.Instance.getListDonHangByMaHD(idHD);
             foreach(DonHang donHang in listDonHang)
@@ -54,13 +59,19 @@ namespace McDonalds
                 listViewItem.SubItems.Add(donHang.SoLuong.ToString());
                 listViewItem.SubItems.Add(donHang.GiaMon.ToString());
                 listViewItem.SubItems.Add(donHang.ThanhTien.ToString());
-
-                listViewDonHang.Items.Add(listViewItem);            }
+                tongTien = tongTien + donHang.ThanhTien;
+                listViewDonHang.Items.Add(listViewItem);
+            }
+                lbTongTien.Text = tongTien.ToString() + " VND";
         }
+        
         void btn_Click(object sender, EventArgs e)
         {
             string idHD = ((sender as Button).Tag as HoaDon).IDHD;
+            buttonXuatHoaDon.Tag = idHD;
             showHoaDon(idHD);
+            buttonXuatHoaDon.Enabled = true;
+            
         }
         private void FrmCounter_Load(object sender, EventArgs e)
         {
@@ -70,6 +81,35 @@ namespace McDonalds
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBoxMaNhanVien_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBoxMaNhanVien_Click(object sender, EventArgs e)
+        {
+            textBoxMaNhanVien.Text = "";
+        }
+
+        private void textBoxTienNhan_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            string tien = textBoxTienNhan.Text;
+            int tienNhan = int.Parse(tien);
+            int tienThua = tienNhan - tongTien;
+            labelTienThua.Text = tienThua.ToString() + " VND";
+        }
+
+        private void buttonXuatHoaDon_Click(object sender, EventArgs e)
+        {
+            string idHD = buttonXuatHoaDon.Tag.ToString();
+            HoaDonDAO.Instance.updateTinhTrangThanhToan(idHD);
+            loadHoaDon();
         }
     }
 }
