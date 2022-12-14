@@ -17,6 +17,9 @@ namespace McDonalds
 {
     public partial class FrmMain : Form
     {
+        public List<Combo> Combos = new List<Combo>();
+        public List<Mon> Mons= new List<Mon>();
+        public List<CTMon> CTMons= new List<CTMon>();
         private TaiKhoanKH taiKhoanKH;
         public TaiKhoanKH TaiKhoanKH { get { return taiKhoanKH; } set { taiKhoanKH = value; } }
         public FrmMain(TaiKhoanKH taiKhoanKH)
@@ -90,7 +93,7 @@ namespace McDonalds
             List<Mon> mons = MonDAO.Instance.getMon();
             foreach (Mon mon in mons)
             {
-                flowLayoutPanel1.Controls.Add(new Menu(mon));
+                flowLayoutPanel1.Controls.Add(new Menu(mon,btnOrder_Click, btnOrder_ClickMon));
             }
         }
         private void LoadCombo()
@@ -98,7 +101,7 @@ namespace McDonalds
             List<Combo> combos = ComboDAO.Instance.getCombo();
             foreach (Combo combo in combos)
             {
-                flowLayoutPanel1.Controls.Add(new Menu(combo));
+                flowLayoutPanel1.Controls.Add(new Menu(combo, btnOrder_Click,btnOrder_ClickMon));
             }
         }
 
@@ -173,7 +176,30 @@ namespace McDonalds
                 bttnSave.Enabled = false;
             }
         }
-
+        public void btnOrder_Click(object sender, EventArgs e)
+        {
+            List<CTMon> ctms = new List<CTMon>();
+            Button button = sender as Button;
+            ctms = button.Tag as List<CTMon>;
+            foreach(CTMon ctm in ctms)
+            {
+                CTMons.Add(ctm);
+            }
+            loadCart();
+        }
+        public void btnOrder_ClickMon(object sender, EventArgs e)
+        {
+            object mon = ((sender as Button).Tag);
+            if (mon is Mon)
+            { 
+                Mons.Add((Mon)mon);
+            }
+            if (mon is Combo)
+            {
+                Combos.Add((Combo)mon);
+            }
+            loadCart();
+        }
         private void bttnSave_Click(object sender, EventArgs e)
         {
             if(tbRePassword.Text==taiKhoanKH.MatKhau)
@@ -195,6 +221,61 @@ namespace McDonalds
                 MessageBox.Show("Nhập sai mật khẩu");
             }
             taiKhoanKH = TaiKhoanKHDAO.Instance.getTaiKhoanKH(taiKhoanKH.IDKH)[0];
+        }
+        private void bttnXoaMon(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            object obj = button.Tag;
+            foreach(Control control in flowLayoutPanel2.Controls)
+            {
+                if(((MenuCart)control).Obj==obj)
+                {
+                    flowLayoutPanel2.Controls.Remove(control);
+                    break;
+                }
+            }    
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+        public void loadCart()
+        {
+            flowLayoutPanel2.Controls.Clear();
+            foreach (Mon mon in Mons)
+            {
+                flowLayoutPanel2.Controls.Add(new MenuCart(mon, bttnXoaMon));
+            }
+            foreach (Combo combo in Combos)
+            {
+                flowLayoutPanel2.Controls.Add(new MenuCart(combo, bttnXoaMon));
+            }
+        }
+
+        private void bttnOrder_Click(object sender, EventArgs e)
+        {
+            int sum = 0;
+            foreach (Mon mon in Mons)
+            {
+                sum += mon.GiaMon;
+            }
+            foreach (Combo combo in Combos)
+            {
+                sum += combo.GiaCombo;
+            }
+            foreach (CTMon cTMon in CTMons)
+            {
+                sum += cTMon.TienThem;
+            }
+            int count = HoaDonDAO.Instance.getHoaDon().Count;
+            string id = "HD" + count.ToString("D7");
+            HoaDon hd = new HoaDon(id, DateTime.Now, sum, 1, 7, sum, taiKhoanKH.IDKH, false, false);
+            foreach (Mon mon in Mons)
+            {
+                
+            }
+
         }
     }
 }

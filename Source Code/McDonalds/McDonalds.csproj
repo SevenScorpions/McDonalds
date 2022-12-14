@@ -190,6 +190,12 @@
     <Compile Include="itemDonHang.Designer.cs">
       <DependentUpon>itemDonHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuCart.Designer.cs">
+      <DependentUpon>MenuCart.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuBep.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="itemDonHang.resx">
       <DependentUpon>itemDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCart.resx">
+      <DependentUpon>MenuCart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuBep.resx">
       <DependentUpon>MenuBep.cs</DependentUpon>
