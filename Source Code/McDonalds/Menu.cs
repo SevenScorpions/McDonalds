@@ -72,8 +72,8 @@ namespace McDonalds
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //i++;
-            //frmMain.tabCart.Text = "hello";
+            FrmDatMon frmDatMon = new FrmDatMon(obj);
+            frmDatMon.ShowDialog();
         }
 
         private void lbl_price_Click(object sender, EventArgs e)

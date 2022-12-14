@@ -31,9 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCounter));
             this.flpListHoaDon = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lbTongTien = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.listViewDonHang = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonXuatHoaDon = new System.Windows.Forms.Button();
             this.labelTienThua = new System.Windows.Forms.Label();
@@ -41,7 +46,6 @@
             this.textBoxTienNhan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +75,21 @@
             this.panel1.Size = new System.Drawing.Size(824, 457);
             this.panel1.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Roboto Th", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(287, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(296, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "THÔNG TIN ĐƠN HÀNG";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // lbTongTien
             // 
             this.lbTongTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -99,12 +118,40 @@
             // 
             this.listViewDonHang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listViewDonHang.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listViewDonHang.Font = new System.Drawing.Font("Roboto Th", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewDonHang.GridLines = true;
             this.listViewDonHang.HideSelection = false;
             this.listViewDonHang.Location = new System.Drawing.Point(10, 40);
             this.listViewDonHang.Name = "listViewDonHang";
             this.listViewDonHang.Size = new System.Drawing.Size(804, 367);
             this.listViewDonHang.TabIndex = 1;
             this.listViewDonHang.UseCompatibleStateImageBehavior = false;
+            this.listViewDonHang.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên";
+            this.columnHeader1.Width = 500;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số lượng";
+            this.columnHeader2.Width = 100;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn giá";
+            this.columnHeader3.Width = 100;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành tiền";
+            this.columnHeader4.Width = 100;
             // 
             // panel2
             // 
@@ -183,21 +230,6 @@
             this.textBoxMaNhanVien.TabIndex = 0;
             this.textBoxMaNhanVien.Text = "Mã nhân viên";
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Roboto Th", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(287, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "THÔNG TIN ĐƠN HÀNG";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // FrmCounter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -235,5 +267,9 @@
         private System.Windows.Forms.TextBox textBoxMaNhanVien;
         private System.Windows.Forms.Button buttonXuatHoaDon;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

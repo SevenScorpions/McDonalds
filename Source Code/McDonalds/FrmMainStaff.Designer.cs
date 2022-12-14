@@ -89,15 +89,15 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.quanLyHoaDon = new System.Windows.Forms.TabPage();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.panel54 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.khoNguyenLieu.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -128,6 +128,7 @@
             // 
             // khoNguyenLieu
             // 
+            this.khoNguyenLieu.BackColor = System.Drawing.Color.Linen;
             this.khoNguyenLieu.Controls.Add(this.button6);
             this.khoNguyenLieu.Controls.Add(this.panel4);
             this.khoNguyenLieu.Controls.Add(this.panel5);
@@ -148,7 +149,6 @@
             this.khoNguyenLieu.Size = new System.Drawing.Size(992, 485);
             this.khoNguyenLieu.TabIndex = 4;
             this.khoNguyenLieu.Text = "Kho Nguyên Liệu";
-            this.khoNguyenLieu.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -370,6 +370,7 @@
             // 
             // chiTietDonNhap
             // 
+            this.chiTietDonNhap.BackColor = System.Drawing.Color.Transparent;
             this.chiTietDonNhap.Controls.Add(this.bgrd);
             this.chiTietDonNhap.Font = new System.Drawing.Font("Roboto Cn", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.chiTietDonNhap.Location = new System.Drawing.Point(4, 37);
@@ -379,7 +380,6 @@
             this.chiTietDonNhap.Size = new System.Drawing.Size(992, 485);
             this.chiTietDonNhap.TabIndex = 3;
             this.chiTietDonNhap.Text = "Chi Tiết Đơn Nhập";
-            this.chiTietDonNhap.UseVisualStyleBackColor = true;
             // 
             // bgrd
             // 
@@ -569,6 +569,7 @@
             // 
             // quanLyDonNhap
             // 
+            this.quanLyDonNhap.BackColor = System.Drawing.Color.Transparent;
             this.quanLyDonNhap.Controls.Add(this.btn_search);
             this.quanLyDonNhap.Controls.Add(this.btn_them);
             this.quanLyDonNhap.Controls.Add(this.pictureBox6);
@@ -589,7 +590,6 @@
             this.quanLyDonNhap.Size = new System.Drawing.Size(992, 485);
             this.quanLyDonNhap.TabIndex = 1;
             this.quanLyDonNhap.Text = "Quản Lý Đơn Nhập";
-            this.quanLyDonNhap.UseVisualStyleBackColor = true;
             // 
             // btn_search
             // 
@@ -798,6 +798,31 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Danh sách hóa đơn";
+            this.columnHeader1.Width = 179;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tổng tiền";
+            this.columnHeader2.Width = 155;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tiền nhận";
+            this.columnHeader3.Width = 140;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Tiền trả";
+            this.columnHeader4.Width = 121;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Ngày";
+            this.columnHeader5.Width = 119;
+            // 
             // panel54
             // 
             this.panel54.BackColor = System.Drawing.Color.SeaShell;
@@ -823,31 +848,6 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Danh sách hóa đơn";
-            this.columnHeader1.Width = 179;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Tổng tiền";
-            this.columnHeader2.Width = 155;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Tiền nhận";
-            this.columnHeader3.Width = 140;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Tiền trả";
-            this.columnHeader4.Width = 121;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Ngày";
-            this.columnHeader5.Width = 119;
             // 
             // FrmMainStaff
             // 

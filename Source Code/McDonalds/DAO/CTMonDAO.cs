@@ -46,7 +46,17 @@ namespace McDonalds.DAO
             }
             return list;
         }
-
+        public List<CTMon> getCTMonByIdCombo(string idCombo)
+        {
+            List<CTMon> list = new List<CTMon>();
+            string query = @"Select CTMON.IDCTMON,CTMON.TIENTHEM,CTMON.TRANGTHAI,CTMON.TENCTM,CTMON.IDMON from CTMON,COMBO,CTCOMBO WHERE COMBO.IDCOMBO = '" + idCombo + "' AND COMBO.IDCOMBO=CTCOMBO.IDCOMBO AND CTCOMBO.IDCTMON=CTMON.IDCTMON";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new CTMon(row));
+            }
+            return list;
+        }
         public List<CTMon> getCTMon()
         {
             List<CTMon> list = new List<CTMon>();
