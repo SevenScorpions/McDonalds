@@ -47,16 +47,22 @@ namespace McDonalds
                         mons.Add(mon);
                     }
                 }
+                int i = 1;
                 foreach(Mon mon in mons)
                 {
                     Button btn = new Button();
                     btn.Font = new Font("Roboto", 13);
+                    btn.Height = 30;
+                    btn.Width = 130;
                     btn.ForeColor = Color.Firebrick;
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderColor = Color.Black;
                     btn.Tag = mon;
+                    btn.Text = "Món " + i;
                     btn.Click += new System.EventHandler(btn_Click);
                     flowLayoutPanel1.Controls.Add(btn);
+
+                    i++;
                 }
             }
             
@@ -77,6 +83,16 @@ namespace McDonalds
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

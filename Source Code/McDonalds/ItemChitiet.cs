@@ -28,7 +28,7 @@ namespace McDonalds
             set { 
                 cTMon = value;
                 lbl_title.Text = CTMon.TenCTM;
-                lbl_price.Text = "+ " + CTMon.TienThem.ToString();
+                lbl_price.Text = "+ " + CTMon.TienThem.ToString() + " ₫";
             } 
         }
 
@@ -38,6 +38,22 @@ namespace McDonalds
         }
 
         private void pic_Food_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void lbl_price_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_title_Click(object sender, EventArgs e)
         {
 
         }
