@@ -63,7 +63,6 @@ namespace McDonalds
                 listViewDonHang.Items.Add(listViewItem);
             }
                 lbTongTien.Text = tongTien.ToString() + " VND";
-            
         }
         
         void btn_Click(object sender, EventArgs e)
