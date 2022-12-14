@@ -27,7 +27,6 @@ namespace McDonalds
             {
                 //list[i] = new itemDonHang();
                 if(item.HoanTat != true) {
-
                     flowLayoutPanel1.Controls.Add(new itemDonHang(item));
                 }
             }

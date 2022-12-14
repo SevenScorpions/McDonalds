@@ -27,6 +27,7 @@ namespace McDonalds
             set { 
                 hoaDon = value; 
                 label1.Text = "Đơn hàng số " + hoaDon.STT.ToString();
+
             } 
         }
 
