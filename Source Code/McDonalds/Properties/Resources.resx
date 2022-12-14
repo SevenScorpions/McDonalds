@@ -130,17 +130,17 @@
   <data name="wp1919509" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wp1919509.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="seamless-background-fast-food-red-68378235" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seamless-background-fast-food-red-68378235.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="McDonald's_Golden_Arches.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\McDonald's_Golden_Arches.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chicken-wings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chicken-wings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mcd-food-beverages-soft-drinks-coke" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mcd-food-beverages-soft-drinks-coke.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3pcs_chicken_mcwings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3pcs_chicken_mcwings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="combo2C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\combo2C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,6 +151,9 @@
   <data name="1-ga-ran" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1-ga-ran.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="istockphoto-1176097155-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-1176097155-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,11 +163,20 @@
   <data name="fast-food-banner-juicy-meat-burgers-with-beef-tomato-cheese-onion-cucumber-lettuce-yellow-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fast-food-banner-juicy-meat-burgers-with-beef-tomato-cheese-onion-cucumber-lettuce-yellow-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="istockphoto-165907430-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-165907430-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="regular_world_famous_fries" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\regular_world_famous_fries.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mau1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mau1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +184,11 @@
   <data name="istockphoto-165907430-612x6121" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-165907430-612x6121.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="com-ga" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\com-ga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="McDonald's_Golden_Arches.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\McDonald's_Golden_Arches.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="potato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\potato.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mcdonalds_cone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mcdonalds_cone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,11 +196,23 @@
   <data name="combo2B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\combo2B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salad1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="combo3B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\combo3B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="com79k" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\com79k.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\egg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="combo2A" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\combo2A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,8 +220,17 @@
   <data name="pexels-polina-tankilevitch-4109206" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pexels-polina-tankilevitch-4109206.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="soda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bigmac" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bigmac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="com-ga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\com-ga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1600px_COLOURBOX54593006" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1600px_COLOURBOX54593006.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,13 +238,19 @@
   <data name="mau" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="plus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seamless-background-fast-food-red-68378235" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seamless-background-fast-food-red-68378235.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MEAL_porkrice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MEAL_porkrice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mcdonalds-franchisees-call-chicken-with-chick-fil-a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mcdonalds-franchisees-call-chicken-with-chick-fil-a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
