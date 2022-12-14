@@ -35,5 +35,10 @@ namespace McDonalds.DAO
             }
             return list;
         }
+        public void insertHDCTMon(string idhd, string idctmon, int soluong)
+        {
+            string query = @"INSERT INTO HDCTMON VALUES('" + idhd + "','" + idctmon + "'," + soluong + ")";
+            DataProvider.Instance.ExcuteQuery(query);
+        }
     }
 }

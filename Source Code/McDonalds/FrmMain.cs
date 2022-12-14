@@ -268,14 +268,60 @@ namespace McDonalds
             {
                 sum += cTMon.TienThem;
             }
-            int count = HoaDonDAO.Instance.getHoaDon().Count;
+            int count = HoaDonDAO.Instance.getHoaDon().Count+1;
             string id = "HD" + count.ToString("D7");
-            HoaDon hd = new HoaDon(id, DateTime.Now, sum, 1, 7, sum, taiKhoanKH.IDKH, false, false);
+            HoaDonDAO.Instance.createHD(id, DateTime.Now, 1, 7, sum, taiKhoanKH.IDKH, sum, 0, 0);
+            List<Mon> list = new List<Mon>();
             foreach (Mon mon in Mons)
             {
-                
+                if(!list.Contains(mon))
+                {
+                    int count1 = 0;
+                    foreach(Mon mon2 in Mons)
+                    {
+                        if(mon2.IDMon==mon.IDMon)
+                        {
+                            count1++;
+                        }
+                    }
+                    HDMonDAO.Instance.insertHDMon(id, mon.IDMon,count1);
+                    list.Add(mon);
+                }
             }
-
+            List<Combo> list1 = new List<Combo>();
+            foreach (Combo combo in Combos)
+            {
+                if (!list1.Contains(combo))
+                {
+                    int count1 = 0;
+                    foreach (Combo combo2 in Combos)
+                    {
+                        if (combo2.IDCombo == combo.IDCombo)
+                        {
+                            count1++;
+                        }
+                    }
+                    HDComboDAO.Instance.insertHDCombo(id, combo.IDCombo, count1);
+                    list1.Add(combo);
+                }
+            }
+            List<CTMon> list2 = new List<CTMon>();
+            foreach (CTMon ctmon in CTMons)
+            {
+                if (!list2.Contains(ctmon))
+                {
+                    int count1 = 0;
+                    foreach (CTMon ctmon2 in CTMons)
+                    {
+                        if (ctmon2.IDCTMon == ctmon2.IDCTMon)
+                        {
+                            count1++;
+                        }
+                    }
+                    HDCTMonDAO.Instance.insertHDCTMon(id, ctmon.IDCTMon, count1);
+                    list2.Add(ctmon);
+                }
+            }
         }
     }
 }
