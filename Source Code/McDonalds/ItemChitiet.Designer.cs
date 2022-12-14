@@ -91,7 +91,7 @@
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.pic_Food);
             this.Name = "ItemChitiet";
-            this.Size = new System.Drawing.Size(318, 276);
+            this.Size = new System.Drawing.Size(285, 276);
             this.Load += new System.EventHandler(this.ItemChitiet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Food)).EndInit();
             this.ResumeLayout(false);
