@@ -94,11 +94,11 @@
             this.tabMenu.BackgroundImage = global::McDonalds.Properties.Resources._1600px_COLOURBOX54593006;
             this.tabMenu.Controls.Add(this.panel2);
             this.tabMenu.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabMenu.Location = new System.Drawing.Point(4, 32);
+            this.tabMenu.Location = new System.Drawing.Point(4, 37);
             this.tabMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabMenu.Size = new System.Drawing.Size(1234, 722);
+            this.tabMenu.Size = new System.Drawing.Size(1234, 717);
             this.tabMenu.TabIndex = 0;
             this.tabMenu.Text = "Thực đơn";
             this.tabMenu.UseVisualStyleBackColor = true;
@@ -187,11 +187,11 @@
             this.tabCart.BackgroundImage = global::McDonalds.Properties.Resources.istockphoto_1176097155_612x612;
             this.tabCart.Controls.Add(this.panel1);
             this.tabCart.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabCart.Location = new System.Drawing.Point(4, 32);
+            this.tabCart.Location = new System.Drawing.Point(4, 37);
             this.tabCart.Name = "tabCart";
             this.tabCart.Padding = new System.Windows.Forms.Padding(3);
             this.tabCart.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabCart.Size = new System.Drawing.Size(1234, 722);
+            this.tabCart.Size = new System.Drawing.Size(1234, 717);
             this.tabCart.TabIndex = 3;
             this.tabCart.Text = "Giỏ hàng";
             this.tabCart.UseVisualStyleBackColor = true;
@@ -227,12 +227,12 @@
             this.tabProfile.BackgroundImage = global::McDonalds.Properties.Resources.istockphoto_1182393436_612x612;
             this.tabProfile.Controls.Add(this.panel5);
             this.tabProfile.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabProfile.Location = new System.Drawing.Point(4, 32);
+            this.tabProfile.Location = new System.Drawing.Point(4, 37);
             this.tabProfile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabProfile.Name = "tabProfile";
             this.tabProfile.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabProfile.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabProfile.Size = new System.Drawing.Size(1234, 722);
+            this.tabProfile.Size = new System.Drawing.Size(1234, 717);
             this.tabProfile.TabIndex = 4;
             this.tabProfile.Text = "Thông tin";
             this.tabProfile.UseVisualStyleBackColor = true;
@@ -300,7 +300,7 @@
             this.textBox1.Location = new System.Drawing.Point(515, 117);
             this.textBox1.Margin = new System.Windows.Forms.Padding(15);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 25);
+            this.textBox1.Size = new System.Drawing.Size(202, 31);
             this.textBox1.TabIndex = 48;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -312,7 +312,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label11.Location = new System.Drawing.Point(511, 95);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(39, 20);
+            this.label11.Size = new System.Drawing.Size(48, 25);
             this.label11.TabIndex = 47;
             this.label11.Text = "Tên";
             // 
@@ -324,7 +324,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label10.Location = new System.Drawing.Point(307, 95);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 20);
+            this.label10.Size = new System.Drawing.Size(39, 25);
             this.label10.TabIndex = 46;
             this.label10.Text = "Họ";
             // 
@@ -336,20 +336,22 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(216, 29);
+            this.label3.Size = new System.Drawing.Size(263, 37);
             this.label3.TabIndex = 45;
             this.label3.Text = "Thông tin cá nhân";
             // 
             // bttnSave
             // 
             this.bttnSave.BackColor = System.Drawing.Color.Tan;
-            this.bttnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnSave.FlatAppearance.BorderSize = 0;
+            this.bttnSave.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSave.Location = new System.Drawing.Point(655, 600);
             this.bttnSave.Name = "bttnSave";
             this.bttnSave.Size = new System.Drawing.Size(129, 45);
             this.bttnSave.TabIndex = 44;
             this.bttnSave.Text = "Lưu";
             this.bttnSave.UseVisualStyleBackColor = false;
+            this.bttnSave.Click += new System.EventHandler(this.bttnSave_Click);
             // 
             // dtpBirthday
             // 
@@ -359,7 +361,7 @@
             this.dtpBirthday.Location = new System.Drawing.Point(311, 291);
             this.dtpBirthday.Margin = new System.Windows.Forms.Padding(15);
             this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(406, 32);
+            this.dtpBirthday.Size = new System.Drawing.Size(406, 38);
             this.dtpBirthday.TabIndex = 43;
             // 
             // label9
@@ -370,7 +372,7 @@
             this.label9.ForeColor = System.Drawing.Color.Gold;
             this.label9.Location = new System.Drawing.Point(29, 531);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(249, 20);
+            this.label9.Size = new System.Drawing.Size(306, 25);
             this.label9.TabIndex = 42;
             this.label9.Text = "Nhập mật khẩu để lưu thay đổi";
             // 
@@ -385,7 +387,7 @@
             this.tbRePassword.Margin = new System.Windows.Forms.Padding(15);
             this.tbRePassword.Name = "tbRePassword";
             this.tbRePassword.PasswordChar = '.';
-            this.tbRePassword.Size = new System.Drawing.Size(407, 25);
+            this.tbRePassword.Size = new System.Drawing.Size(407, 31);
             this.tbRePassword.TabIndex = 41;
             // 
             // label8
@@ -396,7 +398,7 @@
             this.label8.ForeColor = System.Drawing.Color.Gold;
             this.label8.Location = new System.Drawing.Point(165, 241);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 20);
+            this.label8.Size = new System.Drawing.Size(91, 25);
             this.label8.TabIndex = 40;
             this.label8.Text = "Giới tính";
             // 
@@ -409,7 +411,7 @@
             this.rbttnFemale.Location = new System.Drawing.Point(515, 235);
             this.rbttnFemale.Margin = new System.Windows.Forms.Padding(15);
             this.rbttnFemale.Name = "rbttnFemale";
-            this.rbttnFemale.Size = new System.Drawing.Size(57, 29);
+            this.rbttnFemale.Size = new System.Drawing.Size(70, 36);
             this.rbttnFemale.TabIndex = 39;
             this.rbttnFemale.TabStop = true;
             this.rbttnFemale.Text = "Nữ";
@@ -424,7 +426,7 @@
             this.rbttnMale.Location = new System.Drawing.Point(311, 235);
             this.rbttnMale.Margin = new System.Windows.Forms.Padding(15);
             this.rbttnMale.Name = "rbttnMale";
-            this.rbttnMale.Size = new System.Drawing.Size(71, 29);
+            this.rbttnMale.Size = new System.Drawing.Size(88, 36);
             this.rbttnMale.TabIndex = 38;
             this.rbttnMale.TabStop = true;
             this.rbttnMale.Text = "Nam";
@@ -439,7 +441,7 @@
             this.label6.ForeColor = System.Drawing.Color.Gold;
             this.label6.Location = new System.Drawing.Point(165, 301);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 20);
+            this.label6.Size = new System.Drawing.Size(108, 25);
             this.label6.TabIndex = 37;
             this.label6.Text = "Ngày sinh";
             // 
@@ -451,7 +453,7 @@
             this.label7.ForeColor = System.Drawing.Color.Gold;
             this.label7.Location = new System.Drawing.Point(165, 421);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 20);
+            this.label7.Size = new System.Drawing.Size(77, 25);
             this.label7.TabIndex = 36;
             this.label7.Text = "Địa chỉ";
             // 
@@ -478,7 +480,7 @@
             this.label4.ForeColor = System.Drawing.Color.Gold;
             this.label4.Location = new System.Drawing.Point(165, 361);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.Size = new System.Drawing.Size(65, 25);
             this.label4.TabIndex = 34;
             this.label4.Text = "Email";
             // 
@@ -490,7 +492,7 @@
             this.label5.ForeColor = System.Drawing.Color.Gold;
             this.label5.Location = new System.Drawing.Point(165, 121);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 20);
+            this.label5.Size = new System.Drawing.Size(104, 25);
             this.label5.TabIndex = 33;
             this.label5.Text = "Họ và tên";
             // 
@@ -504,7 +506,7 @@
             this.tbName.Location = new System.Drawing.Point(311, 117);
             this.tbName.Margin = new System.Windows.Forms.Padding(15);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(199, 25);
+            this.tbName.Size = new System.Drawing.Size(199, 31);
             this.tbName.TabIndex = 31;
             this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
@@ -518,8 +520,7 @@
             this.tbEmail.Location = new System.Drawing.Point(310, 354);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(15);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.PasswordChar = '.';
-            this.tbEmail.Size = new System.Drawing.Size(407, 25);
+            this.tbEmail.Size = new System.Drawing.Size(407, 31);
             this.tbEmail.TabIndex = 32;
             this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
@@ -531,7 +532,7 @@
             this.label1.ForeColor = System.Drawing.Color.Gold;
             this.label1.Location = new System.Drawing.Point(165, 181);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 20);
+            this.label1.Size = new System.Drawing.Size(137, 25);
             this.label1.TabIndex = 29;
             this.label1.Text = "Số điện thoại";
             // 
@@ -545,13 +546,13 @@
             this.tbPhone.Location = new System.Drawing.Point(310, 177);
             this.tbPhone.Margin = new System.Windows.Forms.Padding(15);
             this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(407, 25);
+            this.tbPhone.Size = new System.Drawing.Size(407, 31);
             this.tbPhone.TabIndex = 27;
             this.tbPhone.TextChanged += new System.EventHandler(this.tbPhone_TextChanged);
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1242, 758);
             this.Controls.Add(this.mainPanel);

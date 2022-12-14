@@ -69,11 +69,13 @@
             // 
             // pic_Food
             // 
+            this.pic_Food.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pic_Food.Location = new System.Drawing.Point(18, 14);
             this.pic_Food.Name = "pic_Food";
             this.pic_Food.Size = new System.Drawing.Size(218, 146);
             this.pic_Food.TabIndex = 0;
             this.pic_Food.TabStop = false;
+            this.pic_Food.Click += new System.EventHandler(this.pic_Food_Click);
             // 
             // ItemChitiet
             // 

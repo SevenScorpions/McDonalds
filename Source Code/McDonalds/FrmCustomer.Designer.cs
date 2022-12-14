@@ -142,6 +142,7 @@
             // 
             this.bttnSignIn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bttnSignIn.BackColor = System.Drawing.Color.Firebrick;
+            this.bttnSignIn.FlatAppearance.BorderSize = 0;
             this.bttnSignIn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSignIn.ForeColor = System.Drawing.Color.White;
             this.bttnSignIn.Location = new System.Drawing.Point(544, 355);
