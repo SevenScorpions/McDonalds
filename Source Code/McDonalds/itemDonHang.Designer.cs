@@ -35,7 +35,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(400, 25);
             this.button1.Name = "button1";
@@ -43,14 +43,15 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Hoàn Tất";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(24, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 30);
+            this.label1.Size = new System.Drawing.Size(285, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Đơn Hàng HD0000001";
             // 

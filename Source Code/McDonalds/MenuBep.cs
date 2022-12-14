@@ -1,4 +1,5 @@
-﻿using McDonalds.DTO;
+﻿using McDonalds.DAO;
+using McDonalds.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,9 +12,9 @@ using System.Windows.Forms;
 
 namespace McDonalds
 {
-    public partial class Menu : UserControl
+    public partial class MenuBep : UserControl
     {
-        public Menu(object Mon)
+        public MenuBep(object Mon)
         {
             InitializeComponent();
             Obj = Mon;
@@ -40,7 +41,6 @@ namespace McDonalds
             set
             {
                 obj = value;
-                bool enable = true;
                 if (obj is Mon)
                 {
                     Loai = "Mon";
@@ -52,7 +52,7 @@ namespace McDonalds
                     pic_food.BackgroundImage = image;
                     lbl_price.Text = "₫" + mon.GiaMon.ToString("#,#");
                     lbl_name.Text = mon.TenMon;
-                    enable = mon.TrangThai == "CÒN HÀNG";
+                    button1.Text = mon.TrangThai;
                 }
                 else if (obj is Combo)
                 {
@@ -65,15 +65,47 @@ namespace McDonalds
                     pic_food.BackgroundImage = image;
                     lbl_price.Text = "₫" + combo.GiaCombo.ToString("#,#");
                     lbl_name.Text = combo.TenCombo;
-                    enable = combo.TrangThai == "CÒN HÀNG";
+                    button1.Text=combo.TrangThai;
                 }
-                button1.Enabled = enable;
             }
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmDatMon frmDatMon = new FrmDatMon(obj);
-            frmDatMon.ShowDialog();
+            if (loai == "Mon")
+            {
+                if (button1.Text == "CÒN HÀNG")
+                {
+                    MonDAO.Instance.changeState(Mon.IDMon, "HẾT HÀNG");
+                    button1.Text = "HẾT HÀNG";
+                }
+                else if(button1.Text == "HẾT HÀNG")
+                {
+                    MonDAO.Instance.changeState(Mon.IDMon, "NGƯNG BÁN");
+                    button1.Text = "NGƯNG BÁN";
+                }
+                else
+                {
+                    MonDAO.Instance.changeState(Mon.IDMon, "CÒN HÀNG");
+                    button1.Text = "CÒN HÀNG";
+                }
+            }else{
+                if (button1.Text == "CÒN HÀNG")
+                {
+                    ComboDAO.Instance.changeState(Combo.IDCombo, "HẾT HÀNG");
+                    button1.Text = "HẾT HÀNG";
+                }
+                else if (button1.Text == "HẾT HÀNG")
+                {
+                    ComboDAO.Instance.changeState(Combo.IDCombo, "NGƯNG BÁN");
+                    button1.Text = "NGƯNG BÁN";
+                }
+                else
+                {
+                    ComboDAO.Instance.changeState(Combo.IDCombo, "CÒN HÀNG");
+                    button1.Text = "CÒN HÀNG";
+                }
+            }
+
         }
 
         private void lbl_price_Click(object sender, EventArgs e)

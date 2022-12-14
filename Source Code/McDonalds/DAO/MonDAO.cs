@@ -45,5 +45,10 @@ namespace McDonalds.DAO
             }
             return list;
         }
+        public void changeState(string id,string state)
+        {
+            string query = string.Format(@"UPDATE MON SET TRANGTHAI = N'{0}' WHERE IDMON = '{1}'",id,state);
+            DataProvider.Instance.ExcuteQuery(query);
+        }
     }
 }

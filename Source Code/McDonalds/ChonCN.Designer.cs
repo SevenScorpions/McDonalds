@@ -60,12 +60,12 @@
             // bttnExit
             // 
             this.bttnExit.BackColor = System.Drawing.Color.IndianRed;
-            this.bttnExit.Font = new System.Drawing.Font("Gugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnExit.Location = new System.Drawing.Point(708, 462);
+            this.bttnExit.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnExit.Location = new System.Drawing.Point(687, 462);
             this.bttnExit.Name = "bttnExit";
-            this.bttnExit.Size = new System.Drawing.Size(77, 38);
+            this.bttnExit.Size = new System.Drawing.Size(98, 38);
             this.bttnExit.TabIndex = 5;
-            this.bttnExit.Text = "Exit";
+            this.bttnExit.Text = "Thoát";
             this.bttnExit.UseVisualStyleBackColor = false;
             this.bttnExit.Click += new System.EventHandler(this.bttnExit_Click);
             // 
@@ -90,12 +90,13 @@
             // 
             this.bttnDelivery.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bttnDelivery.BackColor = System.Drawing.Color.IndianRed;
+            this.bttnDelivery.Font = new System.Drawing.Font("Roboto", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnDelivery.Location = new System.Drawing.Point(625, 183);
             this.bttnDelivery.Margin = new System.Windows.Forms.Padding(20, 25, 20, 25);
             this.bttnDelivery.Name = "bttnDelivery";
             this.bttnDelivery.Size = new System.Drawing.Size(100, 100);
             this.bttnDelivery.TabIndex = 4;
-            this.bttnDelivery.Text = "Delivery";
+            this.bttnDelivery.Text = "Hoàn tất đơn hàng";
             this.bttnDelivery.UseVisualStyleBackColor = false;
             this.bttnDelivery.Click += new System.EventHandler(this.bttnDelivery_Click);
             // 
@@ -114,12 +115,13 @@
             this.bttnCounter.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bttnCounter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bttnCounter.BackColor = System.Drawing.Color.IndianRed;
+            this.bttnCounter.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCounter.Location = new System.Drawing.Point(345, 183);
             this.bttnCounter.Margin = new System.Windows.Forms.Padding(20, 25, 20, 25);
             this.bttnCounter.Name = "bttnCounter";
             this.bttnCounter.Size = new System.Drawing.Size(100, 100);
             this.bttnCounter.TabIndex = 2;
-            this.bttnCounter.Text = "Counter";
+            this.bttnCounter.Text = "Thu ngân";
             this.bttnCounter.UseVisualStyleBackColor = false;
             this.bttnCounter.Click += new System.EventHandler(this.bttnCounter_Click);
             // 
@@ -127,12 +129,13 @@
             // 
             this.bttnKitchen.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bttnKitchen.BackColor = System.Drawing.Color.IndianRed;
+            this.bttnKitchen.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnKitchen.Location = new System.Drawing.Point(485, 183);
             this.bttnKitchen.Margin = new System.Windows.Forms.Padding(20, 25, 20, 25);
             this.bttnKitchen.Name = "bttnKitchen";
             this.bttnKitchen.Size = new System.Drawing.Size(100, 100);
             this.bttnKitchen.TabIndex = 3;
-            this.bttnKitchen.Text = "Kitchen";
+            this.bttnKitchen.Text = "Bếp";
             this.bttnKitchen.UseVisualStyleBackColor = false;
             this.bttnKitchen.Click += new System.EventHandler(this.bttnKitchen_Click);
             // 
@@ -140,12 +143,13 @@
             // 
             this.bttnStaff.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bttnStaff.BackColor = System.Drawing.Color.IndianRed;
+            this.bttnStaff.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnStaff.Location = new System.Drawing.Point(65, 183);
             this.bttnStaff.Margin = new System.Windows.Forms.Padding(20, 25, 20, 25);
             this.bttnStaff.Name = "bttnStaff";
             this.bttnStaff.Size = new System.Drawing.Size(100, 100);
             this.bttnStaff.TabIndex = 0;
-            this.bttnStaff.Text = "Staff";
+            this.bttnStaff.Text = "Nhân viên";
             this.bttnStaff.UseVisualStyleBackColor = false;
             this.bttnStaff.Click += new System.EventHandler(this.bttnDangNhapNV_Click);
             // 
@@ -153,13 +157,13 @@
             // 
             this.bttnCustomer.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bttnCustomer.BackColor = System.Drawing.Color.IndianRed;
-            this.bttnCustomer.Font = new System.Drawing.Font("Gugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnCustomer.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCustomer.Location = new System.Drawing.Point(205, 183);
             this.bttnCustomer.Margin = new System.Windows.Forms.Padding(20, 25, 20, 25);
             this.bttnCustomer.Name = "bttnCustomer";
             this.bttnCustomer.Size = new System.Drawing.Size(100, 100);
             this.bttnCustomer.TabIndex = 1;
-            this.bttnCustomer.Text = "Customer";
+            this.bttnCustomer.Text = "Khách hàng";
             this.bttnCustomer.UseVisualStyleBackColor = false;
             this.bttnCustomer.Click += new System.EventHandler(this.bttnCustomer_Click);
             // 
