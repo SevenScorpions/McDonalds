@@ -21,6 +21,7 @@ namespace McDonalds
         public List<Mon> Mons= new List<Mon>();
         public List<CTMon> CTMons= new List<CTMon>();
         private TaiKhoanKH taiKhoanKH;
+        int sum = 0;
         public TaiKhoanKH TaiKhoanKH { get { return taiKhoanKH; } set { taiKhoanKH = value; } }
         public FrmMain(TaiKhoanKH taiKhoanKH)
         {
@@ -243,6 +244,7 @@ namespace McDonalds
         public void loadCart()
         {
             flowLayoutPanel2.Controls.Clear();
+            sum = 0;
             foreach (Mon mon in Mons)
             {
                 flowLayoutPanel2.Controls.Add(new MenuCart(mon, bttnXoaMon));
@@ -251,11 +253,6 @@ namespace McDonalds
             {
                 flowLayoutPanel2.Controls.Add(new MenuCart(combo, bttnXoaMon));
             }
-        }
-
-        private void bttnOrder_Click(object sender, EventArgs e)
-        {
-            int sum = 0;
             foreach (Mon mon in Mons)
             {
                 sum += mon.GiaMon;
@@ -268,13 +265,20 @@ namespace McDonalds
             {
                 sum += cTMon.TienThem;
             }
+            label2.Text ="Tổng tiền: "+ sum.ToString()+" VNĐ";
+        }
+
+        private void bttnOrder_Click(object sender, EventArgs e)
+        {
+            
             int count = HoaDonDAO.Instance.getHoaDon().Count+1;
             string id = "HD" + count.ToString("D7");
-            HoaDonDAO.Instance.createHD(id, DateTime.Now, 1, 7, sum, taiKhoanKH.IDKH, sum, 0, 0);
-            List<Mon> list = new List<Mon>();
+            int stt = count % 100;
+            HoaDonDAO.Instance.createHD(id, DateTime.Now, 1, stt, sum, taiKhoanKH.IDKH, sum, 0, 0);
+            List<string> list = new List<string>();
             foreach (Mon mon in Mons)
             {
-                if(!list.Contains(mon))
+                if(!list.Contains(mon.IDMon))
                 {
                     int count1 = 0;
                     foreach(Mon mon2 in Mons)
@@ -285,13 +289,12 @@ namespace McDonalds
                         }
                     }
                     HDMonDAO.Instance.insertHDMon(id, mon.IDMon,count1);
-                    list.Add(mon);
+                    list.Add(mon.IDMon);
                 }
             }
-            List<Combo> list1 = new List<Combo>();
             foreach (Combo combo in Combos)
             {
-                if (!list1.Contains(combo))
+                if (!list.Contains(combo.IDCombo))
                 {
                     int count1 = 0;
                     foreach (Combo combo2 in Combos)
@@ -302,13 +305,12 @@ namespace McDonalds
                         }
                     }
                     HDComboDAO.Instance.insertHDCombo(id, combo.IDCombo, count1);
-                    list1.Add(combo);
+                    list.Add(combo.IDCombo);
                 }
             }
-            List<CTMon> list2 = new List<CTMon>();
             foreach (CTMon ctmon in CTMons)
             {
-                if (!list2.Contains(ctmon))
+                if (!list.Contains(ctmon.IDCTMon))
                 {
                     int count1 = 0;
                     foreach (CTMon ctmon2 in CTMons)
@@ -319,9 +321,14 @@ namespace McDonalds
                         }
                     }
                     HDCTMonDAO.Instance.insertHDCTMon(id, ctmon.IDCTMon, count1);
-                    list2.Add(ctmon);
+                    list.Add(ctmon.IDMon);
                 }
             }
+            flowLayoutPanel2.Controls.Clear();
+            CTMons.Clear();
+            Mons.Clear();
+            Combos.Clear();
+            MessageBox.Show("Đặt hàng thành công");
         }
     }
 }

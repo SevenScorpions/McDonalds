@@ -66,6 +66,8 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.mainPanel.SuspendLayout();
             this.tabMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -203,6 +205,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.flowLayoutPanel2);
             this.panel1.Controls.Add(this.bttnOrder);
             this.panel1.Location = new System.Drawing.Point(8, 14);
@@ -566,6 +570,27 @@
             this.tbPhone.TabIndex = 27;
             this.tbPhone.TextChanged += new System.EventHandler(this.tbPhone_TextChanged);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 647);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 28);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "label2";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Tiền mặt",
+            "Momo",
+            "Zalopay"});
+            this.comboBox1.Location = new System.Drawing.Point(640, 639);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(370, 36);
+            this.comboBox1.TabIndex = 3;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
@@ -585,6 +610,7 @@
             this.panel3.ResumeLayout(false);
             this.tabCart.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tabProfile.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -631,5 +657,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

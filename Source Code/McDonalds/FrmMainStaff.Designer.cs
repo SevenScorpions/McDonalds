@@ -95,13 +95,13 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel54 = new System.Windows.Forms.Panel();
+            this.lblNgay = new System.Windows.Forms.Label();
+            this.lblTongHD = new System.Windows.Forms.Label();
+            this.lblTienTra = new System.Windows.Forms.Label();
+            this.lblTienNhan = new System.Windows.Forms.Label();
+            this.lblTongTien = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.lblTongTien = new System.Windows.Forms.Label();
-            this.lblTienNhan = new System.Windows.Forms.Label();
-            this.lblTienTra = new System.Windows.Forms.Label();
-            this.lblTongHD = new System.Windows.Forms.Label();
-            this.lblNgay = new System.Windows.Forms.Label();
             this.khoNguyenLieu.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -387,6 +387,7 @@
             // 
             // bgrd
             // 
+            this.bgrd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.bgrd.BackColor = System.Drawing.Color.Gainsboro;
             this.bgrd.Controls.Add(this.textBox5);
             this.bgrd.Controls.Add(this.lbl_nvNhan);
@@ -412,6 +413,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.textBox5.Location = new System.Drawing.Point(383, 338);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(394, 22);
@@ -419,6 +421,7 @@
             // 
             // lbl_nvNhan
             // 
+            this.lbl_nvNhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_nvNhan.AutoSize = true;
             this.lbl_nvNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_nvNhan.Location = new System.Drawing.Point(241, 337);
@@ -429,6 +432,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.textBox6.Location = new System.Drawing.Point(383, 300);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(394, 22);
@@ -436,6 +440,7 @@
             // 
             // lbl_nhaCungCap
             // 
+            this.lbl_nhaCungCap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_nhaCungCap.AutoSize = true;
             this.lbl_nhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_nhaCungCap.Location = new System.Drawing.Point(241, 299);
@@ -446,6 +451,7 @@
             // 
             // textBox7
             // 
+            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.textBox7.Location = new System.Drawing.Point(383, 261);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(394, 22);
@@ -453,6 +459,7 @@
             // 
             // lbl_hanSD
             // 
+            this.lbl_hanSD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_hanSD.AutoSize = true;
             this.lbl_hanSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_hanSD.Location = new System.Drawing.Point(241, 260);
@@ -463,6 +470,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.textBox3.Location = new System.Drawing.Point(383, 220);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(394, 22);
@@ -470,6 +478,7 @@
             // 
             // lbl_donViTinh
             // 
+            this.lbl_donViTinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_donViTinh.AutoSize = true;
             this.lbl_donViTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_donViTinh.Location = new System.Drawing.Point(241, 219);
@@ -480,6 +489,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.textBox4.Location = new System.Drawing.Point(383, 182);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(394, 22);
@@ -487,6 +497,7 @@
             // 
             // lbl_soLuong
             // 
+            this.lbl_soLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_soLuong.AutoSize = true;
             this.lbl_soLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_soLuong.Location = new System.Drawing.Point(241, 181);
@@ -497,6 +508,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.textBox2.Location = new System.Drawing.Point(383, 146);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(394, 22);
@@ -504,6 +516,7 @@
             // 
             // lbl_thoiGian
             // 
+            this.lbl_thoiGian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_thoiGian.AutoSize = true;
             this.lbl_thoiGian.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_thoiGian.Location = new System.Drawing.Point(241, 142);
@@ -514,6 +527,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.textBox1.Location = new System.Drawing.Point(383, 105);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(394, 22);
@@ -521,6 +535,7 @@
             // 
             // lbl_soLo
             // 
+            this.lbl_soLo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_soLo.AutoSize = true;
             this.lbl_soLo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_soLo.Location = new System.Drawing.Point(241, 104);
@@ -561,6 +576,7 @@
             // 
             // btn_luu
             // 
+            this.btn_luu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_luu.BackColor = System.Drawing.Color.Silver;
             this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_luu.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -829,8 +845,7 @@
             // 
             // panel54
             // 
-            this.panel54.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel54.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel54.BackColor = System.Drawing.Color.SeaShell;
             this.panel54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel54.Controls.Add(this.lblNgay);
@@ -843,47 +858,16 @@
             this.panel54.Size = new System.Drawing.Size(1082, 89);
             this.panel54.TabIndex = 71;
             // 
-            // contextMenuStrip1
+            // lblNgay
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // lblTongTien
-            // 
-            this.lblTongTien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTongTien.AutoSize = true;
-            this.lblTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblTongTien.Location = new System.Drawing.Point(48, 51);
-            this.lblTongTien.Name = "lblTongTien";
-            this.lblTongTien.Size = new System.Drawing.Size(115, 29);
-            this.lblTongTien.TabIndex = 1;
-            this.lblTongTien.Text = "Tổng tiền";
-            // 
-            // lblTienNhan
-            // 
-            this.lblTienNhan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTienNhan.AutoSize = true;
-            this.lblTienNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblTienNhan.Location = new System.Drawing.Point(439, 10);
-            this.lblTienNhan.Name = "lblTienNhan";
-            this.lblTienNhan.Size = new System.Drawing.Size(173, 29);
-            this.lblTienNhan.TabIndex = 2;
-            this.lblTienNhan.Text = "Tổng tiền nhận";
-            // 
-            // lblTienTra
-            // 
-            this.lblTienTra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTienTra.AutoSize = true;
-            this.lblTienTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblTienTra.Location = new System.Drawing.Point(464, 51);
-            this.lblTienTra.Name = "lblTienTra";
-            this.lblTienTra.Size = new System.Drawing.Size(148, 29);
-            this.lblTienTra.TabIndex = 3;
-            this.lblTienTra.Text = "Tổng tiền trả";
+            this.lblNgay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNgay.AutoSize = true;
+            this.lblNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblNgay.Location = new System.Drawing.Point(756, 10);
+            this.lblNgay.Name = "lblNgay";
+            this.lblNgay.Size = new System.Drawing.Size(153, 29);
+            this.lblNgay.TabIndex = 5;
+            this.lblNgay.Text = "Thời gian lập";
             // 
             // lblTongHD
             // 
@@ -897,17 +881,45 @@
             this.lblTongHD.TabIndex = 4;
             this.lblTongHD.Text = "Tổng hóa đơn";
             // 
-            // lblNgay
+            // lblTienTra
             // 
-            this.lblNgay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblTienTra.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblTienTra.AutoSize = true;
+            this.lblTienTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblTienTra.Location = new System.Drawing.Point(439, 51);
+            this.lblTienTra.Name = "lblTienTra";
+            this.lblTienTra.Size = new System.Drawing.Size(148, 29);
+            this.lblTienTra.TabIndex = 3;
+            this.lblTienTra.Text = "Tổng tiền trả";
+            // 
+            // lblTienNhan
+            // 
+            this.lblTienNhan.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblTienNhan.AutoSize = true;
+            this.lblTienNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblTienNhan.Location = new System.Drawing.Point(439, 10);
+            this.lblTienNhan.Name = "lblTienNhan";
+            this.lblTienNhan.Size = new System.Drawing.Size(173, 29);
+            this.lblTienNhan.TabIndex = 2;
+            this.lblTienNhan.Text = "Tổng tiền nhận";
+            // 
+            // lblTongTien
+            // 
+            this.lblTongTien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNgay.AutoSize = true;
-            this.lblNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblNgay.Location = new System.Drawing.Point(760, 25);
-            this.lblNgay.Name = "lblNgay";
-            this.lblNgay.Size = new System.Drawing.Size(153, 29);
-            this.lblNgay.TabIndex = 5;
-            this.lblNgay.Text = "Thời gian lập";
+            this.lblTongTien.AutoSize = true;
+            this.lblTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblTongTien.Location = new System.Drawing.Point(3, 51);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(115, 29);
+            this.lblTongTien.TabIndex = 1;
+            this.lblTongTien.Text = "Tổng tiền";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // FrmMainStaff
             // 

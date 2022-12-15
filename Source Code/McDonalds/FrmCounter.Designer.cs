@@ -224,6 +224,7 @@
             this.textBoxTienNhan.Name = "textBoxTienNhan";
             this.textBoxTienNhan.Size = new System.Drawing.Size(216, 34);
             this.textBoxTienNhan.TabIndex = 2;
+            this.textBoxTienNhan.TextChanged += new System.EventHandler(this.textBoxTienNhan_TextChanged);
             this.textBoxTienNhan.Enter += new System.EventHandler(this.textBoxTienNhan_Enter);
             // 
             // label4
