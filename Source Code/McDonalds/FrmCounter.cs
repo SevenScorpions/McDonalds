@@ -20,6 +20,7 @@ namespace McDonalds
             loadHoaDon();
             buttonXuatHoaDon.Enabled = false;
         }
+        int sum = 0;
         void loadHoaDon()
         {
             flpListHoaDon.Controls.Clear();
@@ -45,6 +46,7 @@ namespace McDonalds
                     flpListHoaDon.Controls.Add(btn);
                 }
             }
+
         }
 
         public int tongTien;
@@ -124,11 +126,30 @@ namespace McDonalds
             HoaDonDAO.Instance.updateTinhTrangThanhToan(idHD);
             listViewDonHang.Items.Clear();
             loadHoaDon();
+            textBoxTienNhan.Text = "";
+            labelTienNhanTrong.Text = "Thanh toán thành công!";
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void textBoxTienNhan_TextChanged(object sender, EventArgs e)
+        {
+            string tien = textBoxTienNhan.Text;
+            labelTienNhanTrong.Text = "";
+            if (tien != "")
+            {
+                int tienNhan = int.Parse(tien);
+                int tienThua = tienNhan - tongTien;
+                if (tienNhan < tongTien)
+                {
+                    labelTienNhanTrong.Text = "Tiền nhận phải lớn hơn tổng tiền";
+                    tienThua = 0;
+                }
+                labelTienThua.Text = tienThua.ToString() + " VND";
+            }
         }
     }
 }

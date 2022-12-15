@@ -40,12 +40,13 @@
             this.button4 = new System.Windows.Forms.Button();
             this.tabCart = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.bttnOrder = new System.Windows.Forms.Button();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.bttnSignOut = new System.Windows.Forms.Button();
-            this.bttnChangePassword = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -203,12 +204,35 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.flowLayoutPanel2);
             this.panel1.Controls.Add(this.bttnOrder);
             this.panel1.Location = new System.Drawing.Point(8, 14);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1218, 695);
             this.panel1.TabIndex = 5;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Tiền mặt",
+            "Momo",
+            "Zalopay"});
+            this.comboBox1.Location = new System.Drawing.Point(640, 639);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(370, 36);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 647);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 28);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Tổng tiền";
             // 
             // flowLayoutPanel2
             // 
@@ -258,7 +282,6 @@
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel5.BackColor = System.Drawing.Color.Firebrick;
             this.panel5.Controls.Add(this.bttnSignOut);
-            this.panel5.Controls.Add(this.bttnChangePassword);
             this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label10);
@@ -288,23 +311,12 @@
             // 
             this.bttnSignOut.BackColor = System.Drawing.Color.DarkGray;
             this.bttnSignOut.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnSignOut.Location = new System.Drawing.Point(231, 600);
+            this.bttnSignOut.Location = new System.Drawing.Point(30, 600);
             this.bttnSignOut.Name = "bttnSignOut";
             this.bttnSignOut.Size = new System.Drawing.Size(129, 45);
             this.bttnSignOut.TabIndex = 50;
             this.bttnSignOut.Text = "Đăng xuất";
             this.bttnSignOut.UseVisualStyleBackColor = false;
-            // 
-            // bttnChangePassword
-            // 
-            this.bttnChangePassword.BackColor = System.Drawing.Color.Tan;
-            this.bttnChangePassword.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnChangePassword.Location = new System.Drawing.Point(29, 600);
-            this.bttnChangePassword.Name = "bttnChangePassword";
-            this.bttnChangePassword.Size = new System.Drawing.Size(196, 45);
-            this.bttnChangePassword.TabIndex = 49;
-            this.bttnChangePassword.Text = "Đổi mật khẩu";
-            this.bttnChangePassword.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -585,6 +597,7 @@
             this.panel3.ResumeLayout(false);
             this.tabCart.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tabProfile.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -620,7 +633,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button bttnChangePassword;
         private System.Windows.Forms.Button bttnSignOut;
         private System.Windows.Forms.Button bttnOrder;
         private System.Windows.Forms.Panel panel3;
@@ -631,5 +643,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
