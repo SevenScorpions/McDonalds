@@ -101,55 +101,65 @@ namespace McDonalds
 
         private void label5_Click(object sender, EventArgs e)
         {
-            string tien = textBoxTienNhan.Text;
-           
-            if (tien != "")
-            {
-                int tienNhan = int.Parse(tien);
-                int tienThua = tienNhan - tongTien;
-                if (tienNhan < tongTien)
-                {
-                    labelTienNhanTrong.Text = "Tiền nhận phải lớn hơn tổng tiền";
-                    tienThua = 0;
-                }
-                labelTienThua.Text = tienThua.ToString() + " VND";
-            }
-            else
-            {
-                labelTienNhanTrong.Text = "Tiền nhận không được để trống";
-            }
+            
         }
 
         private void buttonXuatHoaDon_Click(object sender, EventArgs e)
         {
-            string idHD = buttonXuatHoaDon.Tag.ToString();
-            HoaDonDAO.Instance.updateTinhTrangThanhToan(idHD);
-            listViewDonHang.Items.Clear();
-            loadHoaDon();
-            textBoxTienNhan.Text = "";
-            labelTienNhanTrong.Text = "Thanh toán thành công!";
+            if (valid)
+            {
+                string idHD = buttonXuatHoaDon.Tag.ToString();
+                HoaDonDAO.Instance.updateTinhTrangThanhToan(idHD,int.Parse(textBoxTienNhan.Text),int.Parse(labelTienThua.Text));
+                listViewDonHang.Items.Clear();
+                loadHoaDon();
+                textBoxTienNhan.Text = "";
+                labelTienNhanTrong.Text = "Thanh toán thành công!";
+                labelTienThua.Text = "";
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
+        private bool valid = false;
         private void textBoxTienNhan_TextChanged(object sender, EventArgs e)
         {
             string tien = textBoxTienNhan.Text;
-            labelTienNhanTrong.Text = "";
-            if (tien != "")
+            try
             {
-                int tienNhan = int.Parse(tien);
-                int tienThua = tienNhan - tongTien;
-                if (tienNhan < tongTien)
+
+                if (tien != "")
                 {
-                    labelTienNhanTrong.Text = "Tiền nhận phải lớn hơn tổng tiền";
-                    tienThua = 0;
+                    int tienNhan = int.Parse(tien);
+                    int tienThua = tienNhan - tongTien;
+                    if (tienNhan < tongTien)
+                    {
+                        labelTienNhanTrong.Text = "Tiền nhận phải lớn hơn tổng tiền";
+                        tienThua = 0;
+                        valid = false;
+                    }
+                    else
+                    {
+                        valid = true;
+                    }
+                    labelTienThua.Text = tienThua.ToString();
                 }
-                labelTienThua.Text = tienThua.ToString() + " VND";
+                else
+                {
+                    labelTienNhanTrong.Text = "Tiền nhận không được để trống";
+                }
             }
+            catch
+            {
+                MessageBox.Show("Số tiền không hợp lệ");
+                valid= false;
+            }
+        }
+
+        private void listViewDonHang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

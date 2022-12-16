@@ -63,6 +63,7 @@ namespace McDonalds
                     rbttnMale.Checked = true;
                 }
                 dtpBirthday.Value = taiKhoanKH.NgaySinh;
+                label12.Text = "Điểm thưởng: " + taiKhoanKH.DiemThuong; 
             }
         }
 
@@ -203,23 +204,37 @@ namespace McDonalds
         }
         private void bttnSave_Click(object sender, EventArgs e)
         {
-            if(tbRePassword.Text==taiKhoanKH.MatKhau)
+            bool valid = true;
+            if(tbRePassword.Text!=taiKhoanKH.MatKhau)
             {
-                string gender;
-                if(rbttnFemale.Enabled)
-                {
-                    gender = "F";
-                }
-                else
-                {
-                    gender = "M";
-                }
-                TaiKhoanKHDAO.Instance.updateTaiKhoanKH(taiKhoanKH.IDKH, tbName.Text, textBox1.Text, gender, dtpBirthday.Value.ToString(), tbPhone.Text, tbEmail.Text, tbAddress.Text);
-                MessageBox.Show("Cập nhật thông tin thành công");
+                valid = false;
+            }
+            string gender;
+            if (rbttnFemale.Enabled)
+            {
+                gender = "F";
             }
             else
             {
-                MessageBox.Show("Nhập sai mật khẩu");
+                gender = "M";
+            }
+
+            if (!tbEmail.Text.Contains("@"))
+            {
+                valid = false;
+            }
+            if (-dtpBirthday.Value.Year + DateTime.Now.Year < 13)
+            {
+                valid = false;
+            }
+            if (valid)
+            {
+                TaiKhoanKHDAO.Instance.updateTaiKhoanKH(taiKhoanKH.IDKH, tbName.Text, textBox1.Text, gender, dtpBirthday.Value.ToString(), tbPhone.Text, tbEmail.Text, tbAddress.Text);
+                MessageBox.Show("Cập nhật thông tin thành công");
+            }
+            if (!valid)
+            {
+                MessageBox.Show("Nhập sai mật khẩu hoặc sai thông tin chỉnh sửa");
             }
             taiKhoanKH = TaiKhoanKHDAO.Instance.getTaiKhoanKH(taiKhoanKH.IDKH)[0];
         }
@@ -274,7 +289,19 @@ namespace McDonalds
             int count = HoaDonDAO.Instance.getHoaDon().Count+1;
             string id = "HD" + count.ToString("D7");
             int stt = count % 100;
-            HoaDonDAO.Instance.createHD(id, DateTime.Now, 1, stt, sum, taiKhoanKH.IDKH, sum, 0, 0);
+            if(comboBox1.Text=="")
+            {
+                MessageBox.Show("Chưa chọn phương thức thanh toán");
+                return;
+            }
+            else if(comboBox1.Text=="Tiền mặt")
+            {
+                HoaDonDAO.Instance.createHD(id, DateTime.Now, 1, stt, sum, taiKhoanKH.IDKH, sum, 0, 0,comboBox1.Text);
+            }
+            else
+            {
+                HoaDonDAO.Instance.createHDDATHANHTOAN(id, DateTime.Now, 1, stt, sum, taiKhoanKH.IDKH, sum, sum, sum, comboBox1.Text);
+            }    
             List<string> list = new List<string>();
             foreach (Mon mon in Mons)
             {
@@ -315,20 +342,48 @@ namespace McDonalds
                     int count1 = 0;
                     foreach (CTMon ctmon2 in CTMons)
                     {
-                        if (ctmon2.IDCTMon == ctmon2.IDCTMon)
+                        if (ctmon.IDCTMon == ctmon2.IDCTMon)
                         {
                             count1++;
                         }
                     }
                     HDCTMonDAO.Instance.insertHDCTMon(id, ctmon.IDCTMon, count1);
-                    list.Add(ctmon.IDMon);
+                    list.Add(ctmon.IDCTMon);
                 }
             }
             flowLayoutPanel2.Controls.Clear();
             CTMons.Clear();
             Mons.Clear();
             Combos.Clear();
+            label2.Text = "Tổng tiền: ";
+            if (!(taiKhoanKH.IDKH == "KH0000000000"))
+            {
+                taiKhoanKH.DiemThuong = taiKhoanKH.DiemThuong + sum / 1000;
+                TaiKhoanKHDAO.Instance.updateDiemThuong(taiKhoanKH.IDKH, taiKhoanKH.DiemThuong);
+                label12.Text = "Điểm thưởng: " + taiKhoanKH.DiemThuong;
+            } 
+                
             MessageBox.Show("Đặt hàng thành công");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dtpBirthday_ValueChanged(object sender, EventArgs e)
+        {
+            if(dtpBirthday.Value!=taiKhoanKH.NgaySinh)
+            {
+                bttnSave.Enabled = true;
+            }
+            else
+            { bttnSave.Enabled = false; }
         }
     }
 }

@@ -72,7 +72,12 @@ namespace McDonalds.DAO
         }
         public void updateTaiKhoanKH(string id,string firstName, string lastName, string gioiTinh, string ngaySinh, string sdt, string email, string diaChi)
         {
-            string query = String.Format(@"UPDATE TAIKHOANKH SET SDT = N'{0}',TEN = N'{1}',HO = N'{2}',NGAYSINH=N'{3}',EMAIL=N'{4}',DIACHI=N'{5}',gioitinh='{6}' WHERE IDKH = '{6}'",sdt,firstName,lastName,ngaySinh,email,diaChi,gioiTinh,id);
+            string query = String.Format(@"UPDATE TAIKHOANKH SET SDT = N'{0}',TEN = N'{1}',HO = N'{2}',NGAYSINH=N'{3}',EMAIL=N'{4}',DIACHI=N'{5}',gioitinh='{6}' WHERE IDKH = '{7}'",sdt,firstName,lastName,ngaySinh,email,diaChi,gioiTinh,id);
+            DataProvider.Instance.ExcuteQuery(query);
+        }
+        public void updateDiemThuong(string id,int diemthuong)
+        {
+            string query = String.Format(@"UPDATE TAIKHOANKH SET DIEMTHUONG = {0} WHERE IDKH = '{1}'", diemthuong, id);
             DataProvider.Instance.ExcuteQuery(query);
         }
     }

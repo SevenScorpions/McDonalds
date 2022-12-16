@@ -46,14 +46,52 @@ namespace McDonalds.DAO
             }
             return list;
         }
-        public void createHD(string id, DateTime tglap, int sobot, int stt, int giagoc, string idkh, int tongtien, int tiennhan, int tientra)
+        public List<HoaDon> getHoaDonByMonth(int nam,int thang)
         {
-            string query1 =String.Format(@"INSERT INTO HOADON VALUES(N'{0}','{1}',{2},{3},{4},N'{5}',{6},{7},{8},'FALSE','FALSE')",id,tglap.ToString(),sobot,stt,giagoc,idkh,tongtien,tiennhan,tientra);
+            List<HoaDon> list = new List<HoaDon>();
+            string query = @"SELECT * FROM HOADON WHERE THANHTOAN='TRUE' AND YEAR(TGLAP)="+nam+"AND MONTH(TGLAP)="+thang;
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            foreach (DataRow dr in data.Rows)
+            {
+                list.Add(new HoaDon(dr));
+            }
+            return list;
+        }
+        public List<HoaDon> getHoaDonByDay(int nam, int thang,int ngay)
+        {
+            List<HoaDon> list = new List<HoaDon>();
+            string query = @"SELECT * FROM HOADON WHERE THANHTOAN='TRUE' AND YEAR(TGLAP)=" + nam + "AND MONTH(TGLAP)=" + thang + "AND DAY(TGLAP)="+ngay;
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            foreach (DataRow dr in data.Rows)
+            {
+                list.Add(new HoaDon(dr));
+            }
+            return list;
+        }
+        public List<HoaDon> getHoaDonByYear(int nam)
+        {
+            List<HoaDon> list = new List<HoaDon>();
+            string query = @"SELECT * FROM HOADON WHERE THANHTOAN='TRUE' AND YEAR(TGLAP)=" +nam;
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            foreach (DataRow dr in data.Rows)
+            {
+                list.Add(new HoaDon(dr));
+            }
+            return list;
+        }
+        public void createHD(string id, DateTime tglap, int sobot, int stt, int giagoc, string idkh, int tongtien, int tiennhan, int tientra,string PTTT)
+        {
+            string query1 =String.Format(@"INSERT INTO HOADON VALUES(N'{0}','{1}',{2},{3},{4},N'{5}',{6},{7},{8},'FALSE','FALSE',N'{9}')",id,tglap.ToString(),sobot,stt,giagoc,idkh,tongtien,tiennhan,tientra,PTTT);
             DataProvider.Instance.ExcuteQuery(query1);
         }
-        public void updateTinhTrangThanhToan(string idDH)
+        public void createHDDATHANHTOAN(string id, DateTime tglap, int sobot, int stt, int giagoc, string idkh, int tongtien, int tiennhan, int tientra, string PTTT)
         {
-            string query1 = @"UPDATE HOADON SET THANHTOAN = 'true' Where IDHD = '" + idDH + "'";
+            string query1 = String.Format(@"INSERT INTO HOADON VALUES(N'{0}','{1}',{2},{3},{4},N'{5}',{6},{7},{8},'TRUE','FALSE',N'{9}')", id, tglap.ToString(), sobot, stt, giagoc, idkh, tongtien, tiennhan, tientra, PTTT);
+            DataProvider.Instance.ExcuteQuery(query1);
+        }
+        public void updateTinhTrangThanhToan(string idDH,int tiennhan,int tientra)
+        {
+            string query1 = @"UPDATE HOADON SET THANHTOAN = 'true', TIENNHAN="+tiennhan+",TIENTRA="+tientra+" Where IDHD = '" + idDH + "'";
             DataProvider.Instance.ExcuteQuery(query1);
         }
         public void updateTinhTrangHoanTat(string idDH)

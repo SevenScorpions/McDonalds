@@ -46,6 +46,7 @@
             this.bttnOrder = new System.Windows.Forms.Button();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.bttnSignOut = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -215,6 +216,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Tiền mặt",
@@ -227,12 +229,14 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(10, 647);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 28);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tổng tiền";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -281,6 +285,7 @@
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel5.BackColor = System.Drawing.Color.Firebrick;
+            this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.bttnSignOut);
             this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.label11);
@@ -306,6 +311,19 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(801, 660);
             this.panel5.TabIndex = 4;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Roboto Th", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(538, 26);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(162, 29);
+            this.label12.TabIndex = 51;
+            this.label12.Text = "Điểm thưởng:";
             // 
             // bttnSignOut
             // 
@@ -391,6 +409,7 @@
             this.dtpBirthday.Name = "dtpBirthday";
             this.dtpBirthday.Size = new System.Drawing.Size(406, 38);
             this.dtpBirthday.TabIndex = 43;
+            this.dtpBirthday.ValueChanged += new System.EventHandler(this.dtpBirthday_ValueChanged);
             // 
             // label9
             // 
@@ -645,5 +664,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label12;
     }
 }
