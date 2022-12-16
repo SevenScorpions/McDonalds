@@ -84,7 +84,7 @@ namespace McDonalds
             }
 
             //kiểm tra email
-            if (email == "" || email.Contains("@") == false)
+            if (email == "" || email.Contains("@gmail.com") == false)
             {
                 valid = false;
                 lbWrongEmail.Text = "Email không hợp lệ";

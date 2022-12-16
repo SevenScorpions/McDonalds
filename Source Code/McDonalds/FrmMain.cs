@@ -229,7 +229,7 @@ namespace McDonalds
                 gender = "M";
             }
 
-            if (!tbEmail.Text.Contains("@"))
+            if (!tbEmail.Text.Contains("@gmail.com"))
             {
                 valid = false;
             }
