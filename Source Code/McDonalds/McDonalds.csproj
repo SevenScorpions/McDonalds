@@ -186,11 +186,11 @@
     <Compile Include="ItemChitiet.Designer.cs">
       <DependentUpon>ItemChitiet.cs</DependentUpon>
     </Compile>
-    <Compile Include="itemDonHang.cs">
+    <Compile Include="ItemDonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="itemDonHang.Designer.cs">
-      <DependentUpon>itemDonHang.cs</DependentUpon>
+    <Compile Include="ItemDonHang.Designer.cs">
+      <DependentUpon>ItemDonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuCart.cs">
       <SubType>UserControl</SubType>
@@ -254,8 +254,8 @@
     <EmbeddedResource Include="ItemChitiet.resx">
       <DependentUpon>ItemChitiet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="itemDonHang.resx">
-      <DependentUpon>itemDonHang.cs</DependentUpon>
+    <EmbeddedResource Include="ItemDonHang.resx">
+      <DependentUpon>ItemDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuCart.resx">
       <DependentUpon>MenuCart.cs</DependentUpon>

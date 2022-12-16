@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace McDonalds
 {
-    public partial class itemDonHang : UserControl
+    public partial class ItemDonHang : UserControl
     {
-        public itemDonHang(HoaDon hoaDon, EventHandler e)
+        public ItemDonHang(HoaDon hoaDon, EventHandler e)
         {
             InitializeComponent();
             HoaDon=hoaDon;

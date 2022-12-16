@@ -1,6 +1,6 @@
 ﻿namespace McDonalds
 {
-    partial class itemDonHang
+    partial class ItemDonHang
     {
         /// <summary> 
         /// Required designer variable.

@@ -46,10 +46,25 @@ namespace McDonalds
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button1.Text= "Đã Chọn";
-            button1.Enabled= false;
-            button1.BackColor= Color.White;
-            this.check= true;
+            
+        }
+        public bool Check { get { return check; } 
+            set {
+                if (value == true)
+                {
+                    check = true;
+                    button1.Text = "Đã Chọn";
+                    button1.Enabled = false;
+                    button1.BackColor = Color.White;
+                }
+                else
+                {
+                    check= false;
+                    button1.Text = "Chọn";
+                    button1.Enabled = true;
+                    button1.BackColor = Color.Firebrick;
+                }
+            } 
         }
 
         private void lbl_price_Click(object sender, EventArgs e)

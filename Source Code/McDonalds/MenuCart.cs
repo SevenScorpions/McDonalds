@@ -13,14 +13,55 @@ namespace McDonalds
 {
     public partial class MenuCart : UserControl
     {
-        public MenuCart(object Mon,EventHandler e)
+        public MenuCart(object Mon,List<CTMon> ctmons,EventHandler e,int index)
         {
             InitializeComponent();
             button2.Tag= Mon;
+            this.ctmons=new List<CTMon>(ctmons);
             Obj = Mon;
-            eve = e;
+            button2.Click+=e;
+            Index = index;
+            button2.Tag= index;
+            int i = 0;
+            foreach(CTMon ctmon in CTMons)
+            {
+                if(i==0)
+                {
+                    lbMoTa.Text += ctmon.TenCTM;
+                    i++;
+                }
+                else if(i<2)
+                {
+                    lbMoTa.Text += ", "+ ctmon.TenCTM;
+                    i++;
+                }
+                else
+                {
+                    lbMoTa.Text += ",...";
+                    break;
+                }
+            }
+            int sum = 0;
+            if(loai=="Món")
+            {
+                sum = sum + mon.GiaMon;
+                foreach (CTMon ctmon in CTMons)
+                {
+                    sum += ctmon.TienThem;
+                }
+            }
+            else
+            {
+                sum = sum + combo.GiaCombo;
+                foreach (CTMon ctmon in CTMons)
+                {
+                    sum += ctmon.TienThem;
+                }
+            }
+            lbl_price.Text = "₫" + sum.ToString("#,#");
         }
-
+        private int index;
+        public int Index { get { return index; } set { index = value; } }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -28,6 +69,8 @@ namespace McDonalds
         public EventHandler eve;
         private object obj;
         private string loai;
+        private List<CTMon> ctmons;
+        public List<CTMon> CTMons { get { return ctmons; } }    
         private Mon mon;
         private Combo combo;
         public Combo Combo { get { return combo; } set { combo = value; } }
@@ -45,14 +88,13 @@ namespace McDonalds
                 obj = value;
                 if (obj is Mon)
                 {
-                    Loai = "Mon";
+                    Loai = "Món";
                     Mon mon = (Mon)obj;
                     this.mon = mon;
                     Object rm = McDonalds.Properties.Resources.ResourceManager.GetObject(mon.Img);
                     Bitmap myImage = (Bitmap)rm;
                     Image image = myImage;
                     pic_food.BackgroundImage = image;
-                    lbl_price.Text = "₫" + mon.GiaMon.ToString("#,#");
                     lbl_name.Text = mon.TenMon;
                 }
                 else if (obj is Combo)
@@ -64,7 +106,7 @@ namespace McDonalds
                     Bitmap myImage = (Bitmap)rm;
                     Image image = myImage;
                     pic_food.BackgroundImage = image;
-                    lbl_price.Text = "₫" + combo.GiaCombo.ToString("#,#");
+                    
                     lbl_name.Text = combo.TenCombo;
                 }
             }
@@ -81,7 +123,6 @@ namespace McDonalds
 
         private void button2_Click(object sender, EventArgs e)
         {
-            eve(sender, e);
         }
     }
 }

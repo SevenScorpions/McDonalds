@@ -180,14 +180,25 @@ namespace McDonalds
         }
         public void btnOrder_Click(object sender, EventArgs e)
         {
-            List<CTMon> ctms = new List<CTMon>();
+            List<object> objs = new List<object>();
             Button button = sender as Button;
-            ctms = button.Tag as List<CTMon>;
-            foreach(CTMon ctm in ctms)
+            objs = button.Tag as List<object>;
+            object mon = e;
+            List<CTMon> ctms = new List<CTMon>();
+            foreach(object obj in objs)
             {
-                CTMons.Add(ctm);
+                if(obj is CTMon)
+                {
+                    CTMon ctmon = (CTMon)obj;
+                    CTMons.Add(ctmon);
+                    ctms.Add(ctmon);
+                }
+                else
+                {
+                    mon = obj; 
+                }
             }
-            loadCart();
+            addCart(mon,ctms);
         }
         public void btnOrder_ClickMon(object sender, EventArgs e)
         {
@@ -200,7 +211,6 @@ namespace McDonalds
             {
                 Combos.Add((Combo)mon);
             }
-            loadCart();
         }
         private void bttnSave_Click(object sender, EventArgs e)
         {
@@ -241,33 +251,69 @@ namespace McDonalds
         private void bttnXoaMon(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            object obj = button.Tag;
+            int index = (int) button.Tag;
+            object obj = e;
+            List<CTMon> ctms = new List<CTMon>();
             foreach(Control control in flowLayoutPanel2.Controls)
             {
-                if(((MenuCart)control).Obj==obj)
+                if(((MenuCart)control).Index==index)
                 {
+                    MenuCart menuCart = (MenuCart)control;
+                    ctms = menuCart.CTMons;
+                    obj = menuCart.Obj;
                     flowLayoutPanel2.Controls.Remove(control);
                     break;
                 }
+            }
+            foreach(CTMon cTMon in ctms)
+            {
+                foreach(CTMon ctmon in CTMons)
+                {
+                    if(cTMon.IDCTMon==ctmon.IDCTMon)
+                    {
+                        CTMons.Remove(ctmon);
+                        break;
+                    }
+                }
             }    
+            if(obj is Mon)
+            {
+                foreach(Mon mon in Mons)
+                {
+                    if(mon.IDMon==((Mon)obj).IDMon)
+                    {
+                        Mons.Remove(mon);
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                foreach (Combo combo in Combos)
+                {
+                    if (combo.IDCombo == ((Combo)obj).IDCombo)
+                    {
+                        Combos.Remove(combo);
+                        break;
+                    }
+                }
+            }
+            loadTT();
         }
 
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
             
         }
-        public void loadCart()
+        public void addCart(object obj,List<CTMon> cTMons)
         {
-            flowLayoutPanel2.Controls.Clear();
+            flowLayoutPanel2.Controls.Add(new MenuCart(obj,cTMons,bttnXoaMon,flowLayoutPanel2.Controls.Count));
             sum = 0;
-            foreach (Mon mon in Mons)
-            {
-                flowLayoutPanel2.Controls.Add(new MenuCart(mon, bttnXoaMon));
-            }
-            foreach (Combo combo in Combos)
-            {
-                flowLayoutPanel2.Controls.Add(new MenuCart(combo, bttnXoaMon));
-            }
+            loadTT();
+        }
+        void loadTT()
+        {
+            sum = 0;
             foreach (Mon mon in Mons)
             {
                 sum += mon.GiaMon;
@@ -280,12 +326,16 @@ namespace McDonalds
             {
                 sum += cTMon.TienThem;
             }
-            label2.Text ="Tổng tiền: "+ sum.ToString()+" VNĐ";
+            label2.Text = "Tổng tiền: " + sum.ToString() + " VNĐ";
         }
-
         private void bttnOrder_Click(object sender, EventArgs e)
         {
-            
+            if(CTMons.Count==0)
+            {
+                MessageBox.Show("Giỏ hàng trống");
+                return;
+            }
+
             int count = HoaDonDAO.Instance.getHoaDon().Count+1;
             string id = "HD" + count.ToString("D7");
             int stt = count % 100;
@@ -361,8 +411,8 @@ namespace McDonalds
                 taiKhoanKH.DiemThuong = taiKhoanKH.DiemThuong + sum / 1000;
                 TaiKhoanKHDAO.Instance.updateDiemThuong(taiKhoanKH.IDKH, taiKhoanKH.DiemThuong);
                 label12.Text = "Điểm thưởng: " + taiKhoanKH.DiemThuong;
-            } 
-                
+            }
+            loadTT();    
             MessageBox.Show("Đặt hàng thành công");
         }
 

@@ -30,12 +30,15 @@ namespace McDonalds
         private Button selectedButton;
         private object obj;
         public object Obj { get { return obj; } set { obj = value; } }
+        private List<Mon> mons;
         private void FrmDatMon_Load(object sender, EventArgs e)
         {
-            if(obj is Mon)
+            mons = new List<Mon>();
+            if (obj is Mon)
             {
                 Mon mon = (Mon)obj;
                 ctmons = CTMonDAO.Instance.getCTMonByIdMon(mon.IDMon);
+                mons.Add(mon);
                 foreach(CTMon ctmon in ctmons)
                 {
                     flowLayoutPanel2.Controls.Add(new ItemChitiet(ctmon, mon.Img,clickChoose));
@@ -45,7 +48,7 @@ namespace McDonalds
             {
                 Combo combo = (Combo)obj;
                 ctmons = CTMonDAO.Instance.getCTMonByIdCombo(combo.IDCombo);
-                List<Mon> mons = new List<Mon>();
+                
                 foreach(CTMon ctmon in ctmons)
                 {
                     Mon mon = MonDAO.Instance.getMon(ctmon.IDMon)[0];
@@ -94,8 +97,23 @@ namespace McDonalds
         }
         public void clickChoose(object sender, EventArgs e)
         {
+            
             Button btn = sender as Button;
             CTMon ctmon = ((CTMon)btn.Tag);
+            foreach (Control control in flowLayoutPanel2.Controls)
+            {
+                ItemChitiet itemChitiet = control as ItemChitiet;
+                if (itemChitiet.CTMon.IDCTMon != ctmon.IDCTMon)
+                {
+                    CTMon ctm = itemChitiet.CTMon;
+                    choose.Remove(ctm);
+                    itemChitiet.Check = false;
+                }
+                else
+                {
+                    itemChitiet.Check = true;
+                }
+            }
             choose.Add(ctmon);
             loadTongtien();
         }
@@ -111,9 +129,16 @@ namespace McDonalds
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thêm vào giỏ hàng thành công");
-            button3.PerformClick();
-            this.Close();
+            if(mons.Count==choose.Count)
+            {
+                MessageBox.Show("Thêm vào giỏ hàng thành công");
+                button3.PerformClick();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn toàn bộ chi tiết món");
+            }
         }
 
         private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
@@ -127,12 +152,15 @@ namespace McDonalds
         }
         void loadTongtien()
         {
+            List<object> objs = new List<object>();
             int sum = 0;
             foreach(CTMon ctmon in choose)
             {
                 sum += ctmon.TienThem;
+                objs.Add(ctmon);
             }
-            button2.Tag = choose;
+            objs.Add(obj);
+            button2.Tag = objs;
             label2.Text ="+ "+ sum.ToString()+"đ";
         }
 

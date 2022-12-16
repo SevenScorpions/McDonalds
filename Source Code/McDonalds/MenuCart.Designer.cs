@@ -32,6 +32,7 @@
             this.lbl_price = new System.Windows.Forms.Label();
             this.pic_food = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.lbMoTa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_food)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,11 +79,21 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // lbMoTa
+            // 
+            this.lbMoTa.AutoSize = true;
+            this.lbMoTa.Font = new System.Drawing.Font("Roboto Th", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMoTa.Location = new System.Drawing.Point(117, 35);
+            this.lbMoTa.Name = "lbMoTa";
+            this.lbMoTa.Size = new System.Drawing.Size(0, 22);
+            this.lbMoTa.TabIndex = 5;
+            // 
             // MenuCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.lbMoTa);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lbl_price);
             this.Controls.Add(this.lbl_name);
@@ -102,5 +113,6 @@
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Label lbl_price;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbMoTa;
     }
 }
