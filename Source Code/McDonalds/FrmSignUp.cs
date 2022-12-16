@@ -20,6 +20,7 @@ namespace McDonalds
             InitializeComponent();
         }
 
+
         public bool isNumber(string s)
         {
             return Regex.IsMatch(s, @"^\d+$");
@@ -49,7 +50,7 @@ namespace McDonalds
                 valid = false;
                 lbWrongName.Text = "Tên không hợp lệ";
             }
-            else { valid = true; lbWrongName.Text = ""; }
+            else { lbWrongName.Text = ""; }
 
             //kiểm tra số điện thoại
             if (phone == "" || phone.Length != 10 || !isNumber(phone))
@@ -59,7 +60,6 @@ namespace McDonalds
             }
             else
             {
-                valid = true;
                 lbWrongPhone.Text = "";
             }
 
@@ -69,7 +69,7 @@ namespace McDonalds
                 valid = false;
                 lbWrongPassword.Text= "Mật khẩu chứa ít nhất 8 ký tự";
             }
-            else { valid= true; lbWrongPassword.Text = ""; }
+            else { lbWrongPassword.Text = ""; }
 
             //kiểm tra nhập lại mật khẩu
             if (rePassword != password || rePassword == "")
@@ -79,7 +79,6 @@ namespace McDonalds
             }
             else
             {
-                valid = true;
                 lbWrongRePassword.Text = "";
             }
 
@@ -91,7 +90,6 @@ namespace McDonalds
             }
             else
             {
-                valid = true;
                 lbWrongEmail.Text = "";
             }
 
@@ -103,7 +101,6 @@ namespace McDonalds
             }
             else
             {
-                valid = true;
                 lbWrongAddress.Text = "";
             }
 
@@ -122,6 +119,16 @@ namespace McDonalds
             {
                 gioiTinh = "M";
                 lbWrongGender.Text = "";
+            }
+            // kiểm tra ngày sinh
+            if (-dtpBirthday.Value.Year + DateTime.Now.Year < 13)
+            {
+                valid = false;
+                lbWrongBD.Text = "Ngày sinh không hợp lệ";
+            }
+            else
+            {
+                lbWrongBD.Text = "";
             }
 
             List<TaiKhoanKH> taiKhoanKHs = TaiKhoanKHDAO.Instance.getTaiKhoanKH();

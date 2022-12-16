@@ -61,6 +61,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
+            this.lbWrongBD = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -68,6 +69,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.lbWrongBD);
             this.panel2.Controls.Add(this.lbWrongAddress);
             this.panel2.Controls.Add(this.lbWrongEmail);
             this.panel2.Controls.Add(this.lbWrongBirthday);
@@ -100,7 +102,7 @@
             this.panel2.Controls.Add(this.tbPhone);
             this.panel2.Controls.Add(this.tbPassword);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.ForeColor = System.Drawing.Color.Firebrick;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -111,88 +113,88 @@
             // 
             this.lbWrongAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongAddress.AutoSize = true;
-            this.lbWrongAddress.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrongAddress.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongAddress.Location = new System.Drawing.Point(780, 475);
             this.lbWrongAddress.Name = "lbWrongAddress";
-            this.lbWrongAddress.Size = new System.Drawing.Size(0, 15);
+            this.lbWrongAddress.Size = new System.Drawing.Size(0, 16);
             this.lbWrongAddress.TabIndex = 38;
             // 
             // lbWrongEmail
             // 
             this.lbWrongEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongEmail.AutoSize = true;
-            this.lbWrongEmail.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrongEmail.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongEmail.Location = new System.Drawing.Point(780, 331);
             this.lbWrongEmail.Name = "lbWrongEmail";
-            this.lbWrongEmail.Size = new System.Drawing.Size(0, 15);
+            this.lbWrongEmail.Size = new System.Drawing.Size(0, 16);
             this.lbWrongEmail.TabIndex = 36;
             // 
             // lbWrongBirthday
             // 
             this.lbWrongBirthday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongBirthday.AutoSize = true;
-            this.lbWrongBirthday.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrongBirthday.ForeColor = System.Drawing.Color.Firebrick;
-            this.lbWrongBirthday.Location = new System.Drawing.Point(781, 261);
+            this.lbWrongBirthday.Location = new System.Drawing.Point(773, 261);
             this.lbWrongBirthday.Name = "lbWrongBirthday";
-            this.lbWrongBirthday.Size = new System.Drawing.Size(0, 15);
+            this.lbWrongBirthday.Size = new System.Drawing.Size(0, 16);
             this.lbWrongBirthday.TabIndex = 35;
             // 
             // lbWrongGender
             // 
             this.lbWrongGender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongGender.AutoSize = true;
-            this.lbWrongGender.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrongGender.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongGender.Location = new System.Drawing.Point(214, 541);
             this.lbWrongGender.Name = "lbWrongGender";
-            this.lbWrongGender.Size = new System.Drawing.Size(0, 15);
+            this.lbWrongGender.Size = new System.Drawing.Size(0, 16);
             this.lbWrongGender.TabIndex = 34;
             // 
             // lbWrongRePassword
             // 
             this.lbWrongRePassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongRePassword.AutoSize = true;
-            this.lbWrongRePassword.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongRePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrongRePassword.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongRePassword.Location = new System.Drawing.Point(209, 475);
             this.lbWrongRePassword.Name = "lbWrongRePassword";
-            this.lbWrongRePassword.Size = new System.Drawing.Size(0, 15);
+            this.lbWrongRePassword.Size = new System.Drawing.Size(0, 16);
             this.lbWrongRePassword.TabIndex = 33;
             // 
             // lbWrongPassword
             // 
             this.lbWrongPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongPassword.AutoSize = true;
-            this.lbWrongPassword.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrongPassword.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongPassword.Location = new System.Drawing.Point(209, 402);
             this.lbWrongPassword.Name = "lbWrongPassword";
-            this.lbWrongPassword.Size = new System.Drawing.Size(0, 15);
+            this.lbWrongPassword.Size = new System.Drawing.Size(0, 16);
             this.lbWrongPassword.TabIndex = 32;
             // 
             // lbWrongPhone
             // 
             this.lbWrongPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongPhone.AutoSize = true;
-            this.lbWrongPhone.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrongPhone.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongPhone.Location = new System.Drawing.Point(209, 331);
             this.lbWrongPhone.Name = "lbWrongPhone";
-            this.lbWrongPhone.Size = new System.Drawing.Size(0, 15);
+            this.lbWrongPhone.Size = new System.Drawing.Size(0, 16);
             this.lbWrongPhone.TabIndex = 31;
             // 
             // lbWrongName
             // 
             this.lbWrongName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbWrongName.AutoSize = true;
-            this.lbWrongName.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWrongName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWrongName.ForeColor = System.Drawing.Color.Firebrick;
             this.lbWrongName.Location = new System.Drawing.Point(210, 261);
             this.lbWrongName.Name = "lbWrongName";
-            this.lbWrongName.Size = new System.Drawing.Size(0, 15);
+            this.lbWrongName.Size = new System.Drawing.Size(0, 16);
             this.lbWrongName.TabIndex = 30;
             // 
             // label11
@@ -224,12 +226,12 @@
             this.tbLastName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbLastName.BackColor = System.Drawing.Color.Gainsboro;
             this.tbLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbLastName.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLastName.Font = new System.Drawing.Font("Roboto Th", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLastName.ForeColor = System.Drawing.Color.Black;
-            this.tbLastName.Location = new System.Drawing.Point(434, 213);
+            this.tbLastName.Location = new System.Drawing.Point(434, 220);
             this.tbLastName.Margin = new System.Windows.Forms.Padding(15);
             this.tbLastName.Name = "tbLastName";
-            this.tbLastName.Size = new System.Drawing.Size(191, 41);
+            this.tbLastName.Size = new System.Drawing.Size(191, 33);
             this.tbLastName.TabIndex = 1;
             // 
             // dtpBirthday
@@ -238,7 +240,7 @@
             this.dtpBirthday.CalendarFont = new System.Drawing.Font("Roboto Th", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBirthday.CustomFormat = "dd/mm/yyyy";
             this.dtpBirthday.Font = new System.Drawing.Font("Roboto Th", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBirthday.Location = new System.Drawing.Point(784, 220);
+            this.dtpBirthday.Location = new System.Drawing.Point(784, 216);
             this.dtpBirthday.Name = "dtpBirthday";
             this.dtpBirthday.Size = new System.Drawing.Size(351, 35);
             this.dtpBirthday.TabIndex = 7;
@@ -260,13 +262,13 @@
             this.tbRePassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbRePassword.BackColor = System.Drawing.Color.Gainsboro;
             this.tbRePassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbRePassword.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRePassword.Font = new System.Drawing.Font("Roboto Th", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbRePassword.ForeColor = System.Drawing.Color.Black;
-            this.tbRePassword.Location = new System.Drawing.Point(213, 427);
+            this.tbRePassword.Location = new System.Drawing.Point(213, 434);
             this.tbRePassword.Margin = new System.Windows.Forms.Padding(15);
             this.tbRePassword.Name = "tbRePassword";
             this.tbRePassword.PasswordChar = '.';
-            this.tbRePassword.Size = new System.Drawing.Size(412, 41);
+            this.tbRePassword.Size = new System.Drawing.Size(412, 33);
             this.tbRePassword.TabIndex = 4;
             // 
             // label8
@@ -340,9 +342,9 @@
             this.tbAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbAddress.BackColor = System.Drawing.Color.Gainsboro;
             this.tbAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbAddress.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAddress.Font = new System.Drawing.Font("Roboto Th", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAddress.ForeColor = System.Drawing.Color.Black;
-            this.tbAddress.Location = new System.Drawing.Point(784, 355);
+            this.tbAddress.Location = new System.Drawing.Point(783, 359);
             this.tbAddress.Margin = new System.Windows.Forms.Padding(15);
             this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
@@ -378,12 +380,12 @@
             this.tbFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbFirstName.BackColor = System.Drawing.Color.Gainsboro;
             this.tbFirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbFirstName.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFirstName.Font = new System.Drawing.Font("Roboto Th", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFirstName.ForeColor = System.Drawing.Color.Black;
-            this.tbFirstName.Location = new System.Drawing.Point(213, 213);
+            this.tbFirstName.Location = new System.Drawing.Point(213, 220);
             this.tbFirstName.Margin = new System.Windows.Forms.Padding(15);
             this.tbFirstName.Name = "tbFirstName";
-            this.tbFirstName.Size = new System.Drawing.Size(214, 41);
+            this.tbFirstName.Size = new System.Drawing.Size(214, 33);
             this.tbFirstName.TabIndex = 0;
             // 
             // tbEmail
@@ -391,12 +393,12 @@
             this.tbEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbEmail.BackColor = System.Drawing.Color.Gainsboro;
             this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbEmail.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.Font = new System.Drawing.Font("Roboto Th", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.ForeColor = System.Drawing.Color.Black;
-            this.tbEmail.Location = new System.Drawing.Point(784, 284);
+            this.tbEmail.Location = new System.Drawing.Point(783, 288);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(15);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(351, 41);
+            this.tbEmail.Size = new System.Drawing.Size(351, 33);
             this.tbEmail.TabIndex = 8;
             this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
@@ -467,12 +469,12 @@
             this.tbPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbPhone.BackColor = System.Drawing.Color.Gainsboro;
             this.tbPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbPhone.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPhone.Font = new System.Drawing.Font("Roboto Th", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPhone.ForeColor = System.Drawing.Color.Black;
-            this.tbPhone.Location = new System.Drawing.Point(213, 284);
+            this.tbPhone.Location = new System.Drawing.Point(213, 291);
             this.tbPhone.Margin = new System.Windows.Forms.Padding(15);
             this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(412, 41);
+            this.tbPhone.Size = new System.Drawing.Size(412, 33);
             this.tbPhone.TabIndex = 2;
             // 
             // tbPassword
@@ -480,14 +482,23 @@
             this.tbPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbPassword.BackColor = System.Drawing.Color.Gainsboro;
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbPassword.Font = new System.Drawing.Font("Tw Cen MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.Font = new System.Drawing.Font("Roboto Th", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.ForeColor = System.Drawing.Color.Black;
-            this.tbPassword.Location = new System.Drawing.Point(213, 355);
+            this.tbPassword.Location = new System.Drawing.Point(213, 362);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(15);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '.';
-            this.tbPassword.Size = new System.Drawing.Size(412, 41);
+            this.tbPassword.Size = new System.Drawing.Size(412, 33);
             this.tbPassword.TabIndex = 3;
+            // 
+            // lbWrongBD
+            // 
+            this.lbWrongBD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbWrongBD.AutoSize = true;
+            this.lbWrongBD.Location = new System.Drawing.Point(779, 261);
+            this.lbWrongBD.Name = "lbWrongBD";
+            this.lbWrongBD.Size = new System.Drawing.Size(0, 16);
+            this.lbWrongBD.TabIndex = 39;
             // 
             // FrmSignUp
             // 
@@ -542,5 +553,6 @@
         private System.Windows.Forms.Label lbWrongAddress;
         private System.Windows.Forms.Label lbWrongEmail;
         private System.Windows.Forms.Label lbWrongBirthday;
+        private System.Windows.Forms.Label lbWrongBD;
     }
 }
