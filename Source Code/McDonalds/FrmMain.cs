@@ -289,7 +289,19 @@ namespace McDonalds
             int count = HoaDonDAO.Instance.getHoaDon().Count+1;
             string id = "HD" + count.ToString("D7");
             int stt = count % 100;
-            HoaDonDAO.Instance.createHD(id, DateTime.Now, 1, stt, sum, taiKhoanKH.IDKH, sum, 0, 0,comboBox1.Text);
+            if(comboBox1.Text=="")
+            {
+                MessageBox.Show("Chưa chọn phương thức thanh toán");
+                return;
+            }
+            else if(comboBox1.Text=="Tiền mặt")
+            {
+                HoaDonDAO.Instance.createHD(id, DateTime.Now, 1, stt, sum, taiKhoanKH.IDKH, sum, 0, 0,comboBox1.Text);
+            }
+            else
+            {
+                HoaDonDAO.Instance.createHDDATHANHTOAN(id, DateTime.Now, 1, stt, sum, taiKhoanKH.IDKH, sum, sum, sum, comboBox1.Text);
+            }    
             List<string> list = new List<string>();
             foreach (Mon mon in Mons)
             {
@@ -330,7 +342,7 @@ namespace McDonalds
                     int count1 = 0;
                     foreach (CTMon ctmon2 in CTMons)
                     {
-                        if (ctmon2.IDCTMon == ctmon2.IDCTMon)
+                        if (ctmon.IDCTMon == ctmon2.IDCTMon)
                         {
                             count1++;
                         }

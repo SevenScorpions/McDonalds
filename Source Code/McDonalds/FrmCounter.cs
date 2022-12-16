@@ -156,5 +156,10 @@ namespace McDonalds
                 valid= false;
             }
         }
+
+        private void listViewDonHang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

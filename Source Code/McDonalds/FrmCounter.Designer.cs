@@ -133,6 +133,7 @@
             this.listViewDonHang.TabIndex = 1;
             this.listViewDonHang.UseCompatibleStateImageBehavior = false;
             this.listViewDonHang.View = System.Windows.Forms.View.Details;
+            this.listViewDonHang.SelectedIndexChanged += new System.EventHandler(this.listViewDonHang_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
