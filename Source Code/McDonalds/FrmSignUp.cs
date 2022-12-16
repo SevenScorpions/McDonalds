@@ -84,7 +84,7 @@ namespace McDonalds
             }
 
             //kiểm tra email
-            if (email == "" || email.Contains("@gmail.com") == false)
+            if (email == "" || email.Contains("@") == false)
             {
                 valid = false;
                 lbWrongEmail.Text = "Email không hợp lệ";
@@ -147,6 +147,11 @@ namespace McDonalds
                 MessageBox.Show("Bạn đã đăng ký thành công");
                 this.Close();
             }
+        }
+
+        private void tbEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

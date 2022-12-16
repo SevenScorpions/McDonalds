@@ -398,6 +398,7 @@
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(351, 41);
             this.tbEmail.TabIndex = 8;
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
             // bttnSignUp
             // 
