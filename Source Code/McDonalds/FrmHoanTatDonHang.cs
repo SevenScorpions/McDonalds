@@ -31,12 +31,17 @@ namespace McDonalds
             foreach (HoaDon item in data)
             {
                 //list[i] = new itemDonHang();
-                if (item.HoanTat != true)
+                if (item.HoanTat != true && item.ThanhToan!=true)
                 {
                     itemDonHang itemdonhang = new itemDonHang(item,Frm_Load);
                     flowLayoutPanel1.Controls.Add(itemdonhang);
                 }
             }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
