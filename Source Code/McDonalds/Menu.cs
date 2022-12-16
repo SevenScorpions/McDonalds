@@ -25,6 +25,8 @@ namespace McDonalds
         {
 
         }
+        private FrmDatMon frmDatMon;
+        public FrmDatMon FrmDatMon { get { return frmDatMon; } }
         public EventHandler eve;
         public EventHandler eve1;
         private object obj;
@@ -76,7 +78,7 @@ namespace McDonalds
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmDatMon frmDatMon = new FrmDatMon(obj,eve,eve1);
+            frmDatMon = new FrmDatMon(obj, eve, eve1);
             frmDatMon.ShowDialog();
         }
 

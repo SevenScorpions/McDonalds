@@ -52,7 +52,15 @@ namespace McDonalds
                 foreach(CTMon ctmon in ctmons)
                 {
                     Mon mon = MonDAO.Instance.getMon(ctmon.IDMon)[0];
-                    if(!mons.Contains(mon))
+                    bool valid = true;
+                    foreach(Mon mon1 in mons)
+                    {
+                        if(mon1.IDMon==mon.IDMon)
+                        {
+                            valid = false; break;
+                        }
+                    }
+                    if(valid)
                     {
                         mons.Add(mon);
                     }

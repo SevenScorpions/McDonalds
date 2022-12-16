@@ -183,22 +183,58 @@ namespace McDonalds
             List<object> objs = new List<object>();
             Button button = sender as Button;
             objs = button.Tag as List<object>;
-            object mon = e;
+            object m = e;
             List<CTMon> ctms = new List<CTMon>();
             foreach(object obj in objs)
             {
                 if(obj is CTMon)
                 {
                     CTMon ctmon = (CTMon)obj;
-                    CTMons.Add(ctmon);
                     ctms.Add(ctmon);
                 }
                 else
                 {
-                    mon = obj; 
+                    m = obj; 
                 }
             }
-            addCart(mon,ctms);
+            List<Mon> mons = new List<Mon>();
+            if (m is Combo)
+            {
+                List<CTMon> ctmons = new List<CTMon>();
+                Combo combo = (Combo)m;
+                ctmons = CTMonDAO.Instance.getCTMonByIdCombo(combo.IDCombo);
+                
+                foreach (CTMon ctmon in ctmons)
+                {
+                    Mon mon = MonDAO.Instance.getMon(ctmon.IDMon)[0];
+                    bool valid = true;
+                    foreach (Mon mon1 in mons)
+                    {
+                        if (mon1.IDMon == mon.IDMon)
+                        {
+                            valid = false; break;
+                        }
+                    }
+                    if (valid)
+                    {
+                        mons.Add(mon);
+                    }
+                }
+            }
+            else if(m is Mon)
+            {
+                Mon mon = (Mon)m;
+                mons.Add(mon);
+            }
+            if(((m is Mon) || (m is Combo)) && ctms.Count == mons.Count)
+            {
+                foreach (CTMon ctmon in ctms)
+                {
+                    CTMons.Add(ctmon);
+                }
+                addCart(m,ctms);
+                
+            }
         }
         public void btnOrder_ClickMon(object sender, EventArgs e)
         {
