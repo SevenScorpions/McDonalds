@@ -68,8 +68,16 @@ namespace McDonalds
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderColor = Color.White;
                     btn.BackColor=Color.White;
-                    btn.Tag = mon;
                     btn.Text = mon.TenMon;
+                    List<ItemChitiet> ict = new List<ItemChitiet>();
+                    foreach (CTMon ctmon in ctmons)
+                    {
+                        if (ctmon.IDMon == mon.IDMon)
+                        {
+                            ict.Add(new ItemChitiet(ctmon, mon.Img, clickChoose));
+                        }
+                    }
+                    btn.Tag = ict;
                     btn.Click += new System.EventHandler(btn_Click);
                     flowLayoutPanel1.Controls.Add(btn);
                     if(i==1)
@@ -85,14 +93,10 @@ namespace McDonalds
         {
             flowLayoutPanel2.Controls.Clear();
             Button button = sender as Button;
-            selectedButton= button;
-            Mon mon = ((Mon)button.Tag);
-            foreach (CTMon ctmon in ctmons)
+            List<ItemChitiet> controls = (List<ItemChitiet>)(button.Tag);
+            foreach(ItemChitiet control in controls)
             {
-                if(ctmon.IDMon==mon.IDMon)
-                {
-                    flowLayoutPanel2.Controls.Add(new ItemChitiet(ctmon, mon.Img,clickChoose));
-                }
+                flowLayoutPanel2.Controls.Add(control);
             }
         }
         public void clickChoose(object sender, EventArgs e)
